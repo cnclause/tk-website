@@ -1,5 +1,5 @@
 .DS_Store
-node_modules
+/client/node_modules
 /dist
 
 # local env files
@@ -19,3 +19,8 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw?
+
+# stripe
+/stripe-server/.venv
+/stripe-server/.env
+/stripe-server/__pycache__
