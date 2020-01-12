@@ -1,32 +1,49 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link class="nav-link" to="/">Home</router-link>
+      <router-link class="nav-link" to="/about">About</router-link>
+      <router-link class="nav-link" to="/donate">Donate</router-link>
+      <router-link class="nav-link" to="/projects">Projects</router-link>
     </div>
     <router-view/>
+    <footer id="footer">
+      <Footer />
+    </footer>
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import Footer from '@/views/Footer.vue';
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+export default {
+  components:{
+    Footer
   }
+    
 }
+</script>
+
+<style lang="scss">
+@import './styles/global.scss';
+
+
+#nav{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-link{
+  text-decoration: none;
+  font-family: $body-font;
+  font-size: 15pt;
+  color: $light-blue;
+  cursor: pointer;
+}
+
+.router-link-exact-active{
+  border-top: 2px solid currentColor;
+}
+
+
 </style>
