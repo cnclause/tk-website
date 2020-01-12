@@ -4,6 +4,8 @@ import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import Donate from '../views/Donate.vue'
 import Projects from '../views/Projects.vue'
+import Staff from '../components/StaffContainer.vue'
+import Kids from '../components/KidsContainer.vue'
 
 Vue.use(VueRouter)
 
@@ -16,7 +18,19 @@ const routes = [
   {
     path: '/about',
     name: 'about',
-    component: About
+    component: About,
+    children:[
+      {
+        path:'/staff',
+        name:'staff',
+        component: Staff
+      },
+      {
+        path:'/meet-the-kids',
+        name:'kids',
+        component: Kids
+      },
+    ]
   },
   {
     path: '/donate',

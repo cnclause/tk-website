@@ -45,5 +45,16 @@ export default {
   border-top: 2px solid currentColor;
 }
 
+.dropdown {
+  float: left;
+  overflow: hidden;
+  display:none;
+}
+.dropdown:hover{
+  display:block;
+}
+#nav a:hover, .dropdown:hover {
+  background-color: red;
+}
 
 </style>
