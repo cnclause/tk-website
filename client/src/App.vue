@@ -1,8 +1,9 @@
 <template>
   <div id="app">
-    <div class="nav-container">
+    <header class="nav-container">
       <Navigation />
-    </div>
+      <router-view/>
+    </header>
     <footer id="footer">
       <Footer />
     </footer>

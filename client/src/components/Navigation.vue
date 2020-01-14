@@ -1,19 +1,41 @@
 <template>
     <div id="nav">
-    <router-view/>
       <router-link class="nav-link" to="/">Home</router-link>
       <div class="dropdown"> 
           <router-link class="nav-link" to="/about">
-            About
+            About Us
           </router-link>
           <i class="fa fa-caret-down" aria-hidden="true"></i>
         <div class="dropdown-content">
           <router-link class="nav-link" to="/meet-the-kids">Meet the Birds</router-link>
           <router-link class="nav-link" to="/staff">Meet the Staff</router-link>
+          <router-link class="nav-link" to="/about">Our Story</router-link>
         </div>
       </div>
+      <div class="dropdown"> 
+          <router-link class="nav-link" to="/our-impact">
+            Our Impact
+          </router-link>
+            <i class="fa fa-caret-down" aria-hidden="true"></i>
+        <div class="dropdown-content">
+          <router-link class="nav-link" to="/projects">Projects</router-link>
+          <router-link class="nav-link" to="/programs">Programs</router-link>
+        </div>
+      </div> 
+      <div class="dropdown"> 
+          <router-link class="nav-link" to="/get-involved">
+            Get Involved
+          </router-link>
+            <i class="fa fa-caret-down" aria-hidden="true"></i>
+        <div class="dropdown-content">
+          <router-link class="nav-link" to="/donate">Donate</router-link>
+          <router-link class="nav-link" to="/positions-available">Positions Available</router-link>
+          <router-link class="nav-link" to="/volunteer">Volunteer</router-link>
+          <router-link class="nav-link" to="/plan-fundraiser">Plan a Fundraiser</router-link>
+          <router-link class="nav-link" to="/contact-us">Contact Us</router-link>
+        </div>
+      </div> 
       <router-link class="nav-link" to="/donate">Donate</router-link>
-      <router-link class="nav-link" to="/projects">Projects</router-link>
     </div>
 </template>
 
@@ -87,7 +109,8 @@
 }
 
 .fa{
-    color: $light-blue
+    color: $light-blue;
+    padding-left: 1pt;
 }
 
 </style>
