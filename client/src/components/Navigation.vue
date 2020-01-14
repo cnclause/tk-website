@@ -31,7 +31,7 @@
           <router-link class="nav-link" to="/donate">Donate</router-link>
           <router-link class="nav-link" to="/positions-available">Positions Available</router-link>
           <router-link class="nav-link" to="/volunteer">Volunteer</router-link>
-          <router-link class="nav-link" to="/plan-fundraiser">Plan a Fundraiser</router-link>
+          <router-link class="nav-link" to="/plan-a-fundraiser">Plan a Fundraiser</router-link>
           <router-link class="nav-link" to="/contact-us">Contact Us</router-link>
         </div>
       </div> 
