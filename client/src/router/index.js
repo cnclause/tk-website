@@ -18,19 +18,17 @@ const routes = [
   {
     path: '/about',
     name: 'about',
-    component: About,
-    children:[
-      {
-        path:'/staff',
-        name:'staff',
-        component: Staff
-      },
-      {
-        path:'/meet-the-kids',
-        name:'kids',
-        component: Kids
-      },
-    ]
+    component: About
+  },
+  {
+    path:'/staff',
+    name:'staff',
+    component: Staff
+  },
+  {
+    path:'/meet-the-kids',
+    name:'kids',
+    component: Kids
   },
   {
     path: '/donate',
