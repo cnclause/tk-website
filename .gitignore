@@ -5,6 +5,8 @@
 # local env files
 .env.local
 .env.*.local
+/client/.env
+/client/.env.production
 
 # Log files
 npm-debug.log*
@@ -24,3 +26,4 @@ yarn-error.log*
 /stripe-server/.venv
 /stripe-server/.env
 /stripe-server/__pycache__
+
