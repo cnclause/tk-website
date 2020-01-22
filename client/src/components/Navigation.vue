@@ -35,7 +35,7 @@
           <router-link class="nav-link" to="/contact-us">Contact Us</router-link>
         </div>
       </div> 
-      <router-link class="nav-link" to="/donate">Donate</router-link>
+      <router-link class="nav-link donate" to="/donate">Donate</router-link>
     </div>
 </template>
 
@@ -50,9 +50,18 @@
 .nav-link{
   text-decoration: none;
   font-family: $body-font;
-  font-size: 15pt;
+  font-size: 13pt;
   color: $light-blue;
   cursor: pointer;
+  background-color: #ffffff;
+}
+
+.nav-link:hover{
+  color: #000;
+}
+
+.donate{
+  color: #FC6600;
 }
 
 .router-link-exact-active{
@@ -66,7 +75,7 @@
 
 /* Dropdown button */
 .dropdown {
-  font-size: 15pt;
+  font-size: 13pt;
   border: none;
   outline: none;
   background-color: inherit;
@@ -75,9 +84,9 @@
 }
 
 /* Add a red background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover {
-  font-weight: bold;
-}
+// .navbar a:hover, .dropdown:hover {
+//   color: #0000;
+// }
 
 /* Dropdown content (hidden by default) */
 .dropdown-content {
@@ -85,17 +94,20 @@
   position: absolute;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 999;
+  // position: absolute;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a{
   float: none;
-  padding: 12px 16px;
+  padding: 6px 8px;
+  font-size: 12pt;
   text-decoration: none;
   display: block;
   text-align: left;
-  font-weight: 300;
+  font-weight: 200;
+   z-index: 999;
 }
 
 /* Add a grey background color to dropdown links on hover */
@@ -111,6 +123,10 @@
 .fa{
     color: $light-blue;
     padding-left: 1pt;
+}
+
+.fa:hover{
+  color: #000;
 }
 
 </style>
