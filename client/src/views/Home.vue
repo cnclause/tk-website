@@ -20,6 +20,7 @@ export default {
 .title{
   font-family: $title-font;
   text-align: center;
+  z-index: -1;
 }
 
 .header {
