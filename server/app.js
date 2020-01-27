@@ -6,6 +6,7 @@ var logger = require('morgan');
 const cors = require('cors')
 require('dotenv').config()
 
+const stripe = require('./stripe/stripe')
 
 
 var app = express();
@@ -22,6 +23,8 @@ app.get('/', (req, res) => {
     message: "we are home"
   })
 })
+
+app.use('/stripe', stripe)
 
 
 // catch 404 and forward to error handler
