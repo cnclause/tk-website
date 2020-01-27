@@ -14,5 +14,17 @@ router.post('/charge', (req, res) => {
   })()
 })
 
+router.post('/paymentIntent', (req, res) => {
+  (async () => {
+    const paymentIntent = await stripe.paymentIntents.create({
+      amount: 1000,
+      currency: 'usd',
+      payment_method_types: ['card'],
+      receipt_email: 'jenny.rosen@example.com',
+    });
+    res.json(paymentIntent)
+  })();
+})
+
 
 module.exports = router;
