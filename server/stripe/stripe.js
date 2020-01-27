@@ -4,11 +4,12 @@ const stripe = require('stripe')('sk_test_f73VuavWFDH4oM4gcKNZAaU2')
 
 router.post('/charge', (req, res) => {
   (async () => {
+    console.log('request', req.body)
     const charge = await stripe.charges.create({
-      amount: 1000,
+      amount: req.body.amount,
       currency: 'usd',
       source: 'tok_visa',
-      receipt_email: 'jenny.rosen@example.com',
+      receipt_email: req.body.email,
     });
     res.json(charge)
   })()
@@ -17,10 +18,10 @@ router.post('/charge', (req, res) => {
 router.post('/paymentIntent', (req, res) => {
   (async () => {
     const paymentIntent = await stripe.paymentIntents.create({
-      amount: 1000,
+      amount: req.body.amount,
       currency: 'usd',
       payment_method_types: ['card'],
-      receipt_email: 'jenny.rosen@example.com',
+      receipt_email: req.body.receipt_email,
     });
     res.json(paymentIntent)
   })();
