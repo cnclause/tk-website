@@ -1,40 +1,60 @@
 <template>
-  <div id="app">
-    <header class="nav-container">
-      <Navigation />
-      <router-view/>
-    </header>
-    <footer id="footer">
-      <Footer />
-    </footer>
-  </div>
+  <v-app>
+    <v-app-bar
+      app
+      color="primary"
+      dark
+    >
+      <div class="d-flex align-center">
+        <v-img
+          alt="Vuetify Logo"
+          class="shrink mr-2"
+          contain
+          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
+          transition="scale-transition"
+          width="40"
+        />
+
+        <v-img
+          alt="Vuetify Name"
+          class="shrink mt-1 hidden-sm-and-down"
+          contain
+          min-width="100"
+          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
+          width="100"
+        />
+      </div>
+
+      <v-spacer></v-spacer>
+
+      <v-btn
+        href="https://github.com/vuetifyjs/vuetify/releases/latest"
+        target="_blank"
+        text
+      >
+        <span class="mr-2">Latest Release</span>
+        <v-icon>mdi-open-in-new</v-icon>
+      </v-btn>
+    </v-app-bar>
+
+    <v-content>
+      <HelloWorld/>
+    </v-content>
+  </v-app>
 </template>
 
 <script>
-import Navigation from '@/components/Navigation.vue';
-import Footer from '@/views/Footer.vue';
-// import Home from '@/views/Home.vue';
-
+import HelloWorld from './components/HelloWorld';
 
 export default {
-  components:{
-    Footer,
-    Navigation,
-    // Home
-  }
-    
-}
+  name: 'App',
+
+  components: {
+    HelloWorld,
+  },
+
+  data: () => ({
+    //
+  }),
+};
 </script>
-
-<style lang="scss">
-
-
-#footer{
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-
-</style>
