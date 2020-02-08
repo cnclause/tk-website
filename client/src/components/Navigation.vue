@@ -1,5 +1,13 @@
 <template>
-    <div id="nav">
+  <v-toolbar app>
+    <v-toolbar-items>
+        <v-btn flat to="/about"> About Us </v-btn>
+        <v-btn flat to="/our-impact"> Our Impact </v-btn>
+        <v-btn flat to="/get-involved"> Get Involved </v-btn>
+        <v-btn flat to="/donate"> Donate </v-btn>
+    </v-toolbar-items>
+  </v-toolbar>
+   <!-- <div id="nav">
       <router-link class="nav-link" to="/">Home</router-link>
       <div class="dropdown"> 
           <router-link class="nav-link" to="/about">
@@ -36,97 +44,97 @@
         </div>
       </div> 
       <router-link class="nav-link donate" to="/donate">Donate</router-link>
-    </div>
+    </div> -->
 </template>
 
 <style lang="scss">
 @import '@/styles/global.scss';
 
-#nav{
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.nav-link{
-  text-decoration: none;
-  font-family: $body-font;
-  font-size: 13pt;
-  color: $light-blue;
-  cursor: pointer;
-  background-color: #ffffff;
-}
-
-.nav-link:hover{
-  color: #000;
-}
-
-.donate{
-  color: #FC6600;
-}
-
-.router-link-exact-active{
-  border-top: 2px solid currentColor;
-}
-
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-/* Dropdown button */
-.dropdown {
-  font-size: 13pt;
-  border: none;
-  outline: none;
-  background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
-}
-
-/* Add a red background color to navbar links on hover */
-// .navbar a:hover, .dropdown:hover {
-//   color: #0000;
+// #nav{
+//   display: flex;
+//   justify-content: space-evenly;
 // }
 
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 999;
-  // position: absolute;
-}
+// .nav-link{
+//   text-decoration: none;
+//   font-family: $body-font;
+//   font-size: 13pt;
+//   color: $light-blue;
+//   cursor: pointer;
+//   background-color: #ffffff;
+// }
 
-/* Links inside the dropdown */
-.dropdown-content a{
-  float: none;
-  padding: 6px 8px;
-  font-size: 12pt;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-  font-weight: 200;
-   z-index: 999;
-}
+// .nav-link:hover{
+//   color: #000;
+// }
 
-/* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
+// .donate{
+//   color: #FC6600;
+// }
 
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
+// .router-link-exact-active{
+//   border-top: 2px solid currentColor;
+// }
 
-.fa{
-    color: $light-blue;
-    padding-left: 1pt;
-}
+// .dropdown {
+//   float: left;
+//   overflow: hidden;
+// }
 
-.fa:hover{
-  color: #000;
-}
+// /* Dropdown button */
+// .dropdown {
+//   font-size: 13pt;
+//   border: none;
+//   outline: none;
+//   background-color: inherit;
+//   font-family: inherit; /* Important for vertical align on mobile phones */
+//   margin: 0; /* Important for vertical align on mobile phones */
+// }
+
+// /* Add a red background color to navbar links on hover */
+// // .navbar a:hover, .dropdown:hover {
+// //   color: #0000;
+// // }
+
+// /* Dropdown content (hidden by default) */
+// .dropdown-content {
+//   display: none;
+//   position: absolute;
+//   min-width: 160px;
+//   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+//   z-index: 999;
+//   // position: absolute;
+// }
+
+// /* Links inside the dropdown */
+// .dropdown-content a{
+//   float: none;
+//   padding: 6px 8px;
+//   font-size: 12pt;
+//   text-decoration: none;
+//   display: block;
+//   text-align: left;
+//   font-weight: 200;
+//    z-index: 999;
+// }
+
+// /* Add a grey background color to dropdown links on hover */
+// .dropdown-content a:hover {
+//   background-color: #ddd;
+// }
+
+// /* Show the dropdown menu on hover */
+// .dropdown:hover .dropdown-content {
+//   display: block;
+// }
+
+// .fa{
+//     color: $light-blue;
+//     padding-left: 1pt;
+// }
+
+// .fa:hover{
+//   color: #000;
+// }
 
 </style>

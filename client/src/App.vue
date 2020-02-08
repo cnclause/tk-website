@@ -1,23 +1,23 @@
 <template>
   <v-app>
-    <div class="navbar-container">
+    <div>
       <Navigation />
     </div>
-    <v-content>
-      <Home/>
-    </v-content>
+  <v-content>
+    <router-view></router-view>
+  </v-content>
   </v-app>
 </template>
 
 <script>
-import Home from './views/Home';
+// import Home from './views/Home';
 import Navigation from './components/Navigation';
 
 export default {
   name: 'App',
 
   components: {
-    Home,
+    // Home,
     Navigation
   }
 };
