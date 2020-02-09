@@ -26,4 +26,5 @@ yarn-error.log*
 /stripe-server/.venv
 /stripe-server/.env
 /stripe-server/__pycache__
+/server/.env
 
