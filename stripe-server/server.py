@@ -39,6 +39,7 @@ def create_charge():
 
 @app.route('/charge/<charge_id>')
 def get_charge(charge_id):
+    print('is this even a thing????')
     stripe.api_key = os.environ.get('STRIPE_SECRET_KEY')
     response_object = {
         'status': 'success',
