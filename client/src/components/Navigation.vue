@@ -1,12 +1,25 @@
 <template>
-  <v-toolbar app>
-    <v-toolbar-items>
+  <v-toolbar app dense>
+      <v-toolbar-items class="hidden-sm-and-down">
         <v-btn flat to="/about"> About Us </v-btn>
         <v-btn flat to="/our-impact"> Our Impact </v-btn>
         <v-btn flat to="/get-involved"> Get Involved </v-btn>
         <v-btn flat to="/donate"> Donate </v-btn>
     </v-toolbar-items>
+    <v-menu class="hidden-md-and-up">
+      <v-toolbar-side-icon class="hidden-md-and-up" slot="activator"></v-toolbar-side-icon>
+      <v-list>
+        <v-list-tile>
+          <v-list-tile-content>
+            <v-list-tile-title>
+              About Us
+            </v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+      </v-list>
+    </v-menu>
   </v-toolbar>
+
    <!-- <div id="nav">
       <router-link class="nav-link" to="/">Home</router-link>
       <div class="dropdown"> 
