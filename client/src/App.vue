@@ -1,6 +1,6 @@
 <template>
   <v-app>
-     <v-toolbar app absolute max-height=7rem flat>
+     <v-app-bar app absolute max-height=7rem flat>
       <v-toolbar-items class="hidden-sm-and-down">
         <v-btn text to="/about"> About Us </v-btn>
         <v-btn text to="/our-impact"> Our Impact </v-btn>
@@ -21,7 +21,7 @@
         </v-list-tile>
       </v-list>
     </v-menu>
-  </v-toolbar>
+  </v-app-bar >
     <v-content>
       <router-view></router-view> 
     </v-content>
