@@ -5,7 +5,7 @@
         <v-btn text to="/about"> About Us </v-btn>
         <v-btn text to="/our-impact"> Our Impact </v-btn>
         <v-btn text to="/get-involved"> Get Involved </v-btn>
-        <v-btn text to="/donate"> Donate </v-btn>
+        <v-btn class="yellow darken-4" text to="/donate"> Donate </v-btn>
     </v-toolbar-items>
     <v-menu class="hidden-md-and-up">
       <template v-slot:activator="{ on }" >
