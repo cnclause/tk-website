@@ -1,67 +1,82 @@
 <template>
-    <div class='home-body-cards'>
-        <v-card
-        class="mx-auto"
-        max-width="344"
-        >
-        <v-card-text class="stat-card">
-            <div>Word of the Day</div>
-            <p class="display-1 text--primary">
-            be•nev•o•lent
-            </p>
-            <p>adjective</p>
-            <div class="text--primary">
-            well meaning and kindly.<br>
-            "a benevolent smile"
-            </div>
-        </v-card-text>
-        <v-card-actions>
-            <v-btn
-            text
-            color="deep-purple accent-4"
+    <div class='home-body'>
+        <div class="stat-title">
+            1,239 Families Surveys
+        </div>
+        <div class="stat-card-container">
+            <v-card
+            class="mx-auto"
+            max-width="344"
             >
-            Learn More
-            </v-btn>
-        </v-card-actions>
-        </v-card>
-        <v-card
-        class="mx-auto stat-card"
-        max-width="344"
-        >
-        <v-card-text class="stat-card">
-            <div class="card-text">
-            Children Not<br>
-            in School
-            </div>
-             <v-progress-circular
-                class="stat-progress"
-                :rotate="360"
-                :size="100"
-                :width="15"
-                :value="schoolValue"
-                color="teal"
+            <v-card-text class="stat-card">
+                <div class="card-text">
+                Families Making Less Than<br>
+                $80.00 a Month
+                </div>
+                <v-progress-circular
+                    class="stat-progress"
+                    :rotate="360"
+                    :size="100"
+                    :width="15"
+                    :value="incomeValue"
+                    color="teal"
+                >
+                    {{incomeValue}}%
+                </v-progress-circular>
+            </v-card-text>
+            <v-card-actions>
+                <v-btn
+                text
+                color="deep-purple accent-4"
+                >
+                Learn More
+                </v-btn>
+            </v-card-actions>
+            </v-card>
+            <v-card
+            class="mx-auto stat-card"
+            max-width="344"
             >
-                {{schoolValue}}%
-            </v-progress-circular>
-        </v-card-text>
-        <v-card-actions>
-            <v-btn
-            text
-            color="deep-purple accent-4"
-            >
-            Learn More
-            </v-btn>
-        </v-card-actions>
-        </v-card>
+            <v-card-text class="stat-card">
+                <div class="card-text">
+                Children Not<br>
+                in School
+                </div>
+                <v-progress-circular
+                    class="stat-progress"
+                    :rotate="360"
+                    :size="100"
+                    :width="15"
+                    :value="schoolValue"
+                    color="teal"
+                >
+                    {{schoolValue}}%
+                </v-progress-circular>
+            </v-card-text>
+            <v-card-actions>
+                <v-btn
+                text
+                color="deep-purple accent-4"
+                >
+                Learn More
+                </v-btn>
+            </v-card-actions>
+            </v-card>
+        </div>
     </div>  
 </template>
 
 <script>
 export default {
+    components: {
+    },
     data () {
     return {
       schoolInterval: {},
       schoolValue: 0,
+      incomeInterval: {},
+      incomeValue: 0
+
     }
   },
   beforeDestroy () {
@@ -74,13 +89,20 @@ export default {
       }
       this.schoolValue += 5
     }, 500)
+    this.incomeInterval = setInterval(() => {
+      if (this.incomeValue === 96) {
+        return (this.incomeValue = 0)
+      }
+      this.incomeValue += 12
+    }, 500)
   },
 }
 </script>
 
 <style>
-.home-body-cards {
+.home-body {
     display: flex;
+    flex-direction: column;
 }
 
 .card-text{
@@ -88,14 +110,19 @@ export default {
     text-align: center;
     line-height: 2rem;
 }
-
+.stat-title{
+    text-align: center;
+    font-size: 20pt;
+}
 .stat-card{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* .stat-progess{
+.stat-card-container{
+    display: flex;
+}
 
-} */
+
 </style>
