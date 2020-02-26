@@ -2,14 +2,19 @@
   <div class="home">
     <h1 class="title header">Timoun Kontan </h1>
     <h3 class="title slogan">"little by little the bird builds its nest"</h3>
+    <HomeBody />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
+import HomeBody from '@/components/HomePage/HomeBody'
 
 export default {
   name: 'home',
+
+  components: {
+    HomeBody
+  }
   
 }
 </script>

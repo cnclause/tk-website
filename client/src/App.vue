@@ -1,6 +1,6 @@
 <template>
   <v-app>
-     <v-app-bar app absolute max-height=7rem flat>
+     <!-- <v-app-bar app absolute max-height=7rem flat>
       <v-toolbar-items class="hidden-sm-and-down">
         <v-btn text to="/about"> About Us </v-btn>
         <v-btn text to="/our-impact"> Our Impact </v-btn>
@@ -21,7 +21,8 @@
         </v-list-tile>
       </v-list>
     </v-menu>
-  </v-app-bar >
+  </v-app-bar > -->
+  <Navigation />
     <v-content>
       <router-view></router-view> 
     </v-content>
@@ -29,10 +30,15 @@
 </template>
 
 <script>
+import Navigation from './components/Navigation'
+
+
 export default {
+
   name: 'App',
 
   components: {
+    Navigation
   },
 
   data: () => ({
