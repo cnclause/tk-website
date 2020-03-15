@@ -105,10 +105,6 @@
   margin: 0; /* Important for vertical align on mobile phones */
 }
 
-/* Add a red background color to navbar links on hover */
-// .navbar a:hover, .dropdown:hover {
-//   color: #0000;
-// }
 
 /* Dropdown content (hidden by default) */
 .dropdown-content {
