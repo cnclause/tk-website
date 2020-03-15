@@ -5,7 +5,7 @@
         </div>
         <div class="stat-card-container">
             <v-card
-            class="mx-auto"
+            class="mx-auto stat-card"
             max-width="344"
             >
             <v-card-text class="stat-card">
