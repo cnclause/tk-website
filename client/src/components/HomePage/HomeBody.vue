@@ -9,7 +9,7 @@
             max-width="344"
             >
             <v-card-text class="stat-card">
-                <div class="card-text">
+                <div class="card-text body-1">
                 Families Making Less Than<br>
                 $80.00 a Month
                 </div>
@@ -19,7 +19,7 @@
                     :size="100"
                     :width="15"
                     :value="incomeValue"
-                    color="teal"
+                    color="light-blue accent-3"
                 >
                     {{incomeValue}}%
                 </v-progress-circular>
@@ -38,7 +38,7 @@
             max-width="344"
             >
             <v-card-text class="stat-card">
-                <div class="card-text">
+                <div class="card-text body-1">
                 Children Not<br>
                 in School
                 </div>
@@ -48,7 +48,7 @@
                     :size="100"
                     :width="15"
                     :value="schoolValue"
-                    color="teal"
+                    color="light-blue accent-3"
                 >
                     {{schoolValue}}%
                 </v-progress-circular>
@@ -107,9 +107,9 @@ export default {
 }
 
 .card-text{
-    font-size: 18pt;
     text-align: center;
     line-height: 2rem;
+    color: #000000;
 }
 .stat-title{
     text-align: center;

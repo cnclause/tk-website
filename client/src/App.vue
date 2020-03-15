@@ -26,11 +26,13 @@
     <v-content>
       <router-view></router-view> 
     </v-content>
+    <Footer />
   </v-app>
 </template>
 
 <script>
 import Navigation from './components/Navigation'
+import Footer from './components/Footer'
 
 
 export default {
@@ -38,7 +40,8 @@ export default {
   name: 'App',
 
   components: {
-    Navigation
+    Navigation,
+    Footer
   },
 
   data: () => ({
