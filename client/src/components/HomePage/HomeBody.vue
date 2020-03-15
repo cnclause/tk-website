@@ -1,7 +1,7 @@
 <template>
     <div class='home-body'>
-        <div class="stat-title">
-            1,239 Families Surveys
+        <div class="stat-title headline">
+            Out of 1,239 Families Surveys
         </div>
         <div class="stat-card-container">
             <v-card
@@ -103,6 +103,7 @@ export default {
 .home-body {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .card-text{
@@ -112,16 +113,18 @@ export default {
 }
 .stat-title{
     text-align: center;
-    font-size: 20pt;
+    padding: 3rem;
 }
 .stat-card{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 50%;
 }
 
 .stat-card-container{
     display: flex;
+    width: 60%;
 }
 
 
