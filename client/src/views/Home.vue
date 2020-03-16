@@ -31,6 +31,7 @@ export default {
 .title-header-container{
   position: relative;
   overflow: hidden;
+  z-index: 0;
 }
 
 .title-header-container h1{
@@ -70,7 +71,7 @@ export default {
 .title{
   font-family: $title-font;
   text-align: center;
-  // z-index: -1;
+  z-index: -1;
 }
 
 // .header{
