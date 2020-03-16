@@ -37,7 +37,7 @@
       </div> 
       <router-link class="nav-link donate" to="/donate">Donate</router-link>
     </div> -->
-    <v-app-bar app absolute max-height=7rem flat>
+    <v-app-bar app absolute max-height=7rem text>
       <v-toolbar-items class="hidden-sm-and-down">
         <v-btn text to="/about"> About Us </v-btn>
         <v-btn text to="/our-impact"> Our Impact </v-btn>

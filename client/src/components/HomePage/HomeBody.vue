@@ -5,10 +5,11 @@
         </div>
         <div class="stat-card-container">
             <v-card
-            class="mx-auto"
+            class="mx-auto stat-card-outter"
             max-width="344"
+            flat
             >
-            <v-card-text class="stat-card">
+            <v-card-text class="stat-card-inner">
                 <div class="card-text body-1">
                 Families Making Less Than<br>
                 $80.00 a Month
@@ -34,10 +35,11 @@
             </v-card-actions>
             </v-card>
             <v-card
-            class="mx-auto stat-card"
+            class="mx-auto stat-card-outter"
             max-width="344"
+            flat
             >
-            <v-card-text class="stat-card">
+            <v-card-text class="stat-card-inner">
                 <div class="card-text body-1">
                 Children Not<br>
                 in School
@@ -115,17 +117,25 @@ export default {
     text-align: center;
     padding: 3rem;
 }
-.stat-card{
+
+.stat-card-container{
+    display: flex;
+    width: 60%;
+}
+
+.stat-card-outter{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 50%;
 }
 
-.stat-card-container{
+.stat-card-inner{
     display: flex;
-    width: 60%;
+    flex-direction: column;
+    align-items: center;
 }
+
 
 
 </style>
