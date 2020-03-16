@@ -1,5 +1,7 @@
 <template>
     <div class='home-body'>
+        <div class='mission-statement'> From Roots to Wings exists to helps develop communities by following the lead of community members and leaders something something</div>
+        <HomeTimeline />
         <div class="stat-title headline">
             Out of 1,239 Families Surveys
         </div>
@@ -69,8 +71,11 @@
 </template>
 
 <script>
+import HomeTimeline from './HomeTimeline.vue'
+
 export default {
     components: {
+        HomeTimeline
     },
     data () {
     return {
@@ -106,6 +111,14 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.mission-statement{
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 15pt;
+    width: 30%;
+    font-weight: 300;
 }
 
 .card-text{
