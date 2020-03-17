@@ -1,7 +1,7 @@
 <template>
     <v-app-bar app fixed max-height=5rem short color='white'>
       <v-toolbar-items right class="hidden-sm-and-down">
-        <v-btn  class="btn-nav" text to='/' exact>
+        <v-btn text to='/' exact>
           <v-img src='https://lh3.googleusercontent.com/9F-lVBcZLWSgH_VPa0qZl_UtcYHfo3WNyT1oKXxqEjXN8YLvfIveStG2Sf_uwWvvjMJtwklUs6tuByRhoPxMrIDNLX6bXEbR_oauR7enF55TIjeBvnwLpfkCwJzfC8JN7j18op4pAgqkNMjpLnks84rUFM54ex5RkZjD6xedKt0RbLg8m9Azzr1lQlDLi8HvgztJYUSCz1tnopty5EHASjISzUxZ9OnukjW_CN3xOLyhL0dV88oNe6KnxRGnRyDRpF7pnSx4Pl9lEHAxXBCBeC7uUdglQIhxhfpoaxt2Id-3JHPMZ_3HOhul4Gsl1NBy2XQSLkDvcT0QcOvuwVQREZlZncFn3bgwF7rKnVWg9x2e-tg1_JikJ3swwdAtuJSQ7NNx8M0Hw3H6ZubKqYk3ULx5NG-iuxLHm47pvSYYd8uEQ-N-B8rdbaq0mEqm-j2-Apa7FjEdLZK49EWB1N4ow1ROGg8qiFe23FbSf3pkA_WAydBVy9Y30iuj4L_bOQHyXSITWGZOSOm5m1tYqcGwYHQY4cBxGOGfaqvneWu_LQigTzJdvW0dOiinHKO97lvatWTI6pvLbur0z2NxR-4NUVnhwzqfvdp4JGtoveww4zJu9pQvf28-gUj6No2VljpMnvA-wKkPy50TqpBtrA3R5NmdiEUoUzX3KW6xNz8icuS_u_54XsfcrI7VRD82GQ=w2160-h1216-no' width='7.5rem' height='3rem'> </v-img>
         </v-btn>
       <v-menu open-on-hover offset-x="offset">
@@ -12,7 +12,7 @@
             text
           >
           About Us
-          <v-icon >fa fa-caret-down</v-icon>
+          <v-icon class='nav-icon'>fa fa-caret-down</v-icon>
           </v-btn>
         </template>
         <v-list>
@@ -35,7 +35,7 @@
             text
           >
           Our Impact
-          <v-icon >fa fa-caret-down</v-icon>
+          <v-icon class='nav-icon' >fa fa-caret-down</v-icon>
           </v-btn>
         </template>
         <v-list>
@@ -55,7 +55,7 @@
             text
           >
           Get Involved
-          <v-icon >fa fa-caret-down</v-icon>
+          <v-icon class='nav-icon'>fa fa-caret-down</v-icon>
           </v-btn>
         </template>
         <v-list>
@@ -107,8 +107,8 @@
 <style lang="scss">
 @import '@/styles/global.scss';
 
-.v-btn:active:before{
-  opacity: 0;
+.nav-icon{
+  margin-left: 0.5rem;
 }
 
 </style>
