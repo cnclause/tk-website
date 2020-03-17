@@ -103,6 +103,7 @@
   display:flex;
   flex-flow: column;
   align-items: center;
+  justify-content: center;
   font-size: 13pt;
   border: none;
   outline: none;
