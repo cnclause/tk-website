@@ -2,7 +2,7 @@
     <div class='home-body'>
         <div :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']" class='mission-statement'> From Roots to Wings exists to helps develop communities by following the lead of community members and leaders something something</div>
         <HomeTimeline />
-        <div class="stat-title headline">
+        <!-- <div class="stat-title headline">
             Out of 1,239 Families Surveys
         </div>
         <div class="stat-card-container">
@@ -66,16 +66,19 @@
                 </v-btn>
             </v-card-actions>
             </v-card>
-        </div>
+        </div> -->
+        <AmazonSmile />
     </div>  
 </template>
 
 <script>
 import HomeTimeline from './HomeTimeline.vue'
+import AmazonSmile from './AmazonSmile.vue'
 
 export default {
     components: {
-        HomeTimeline
+        HomeTimeline,
+        AmazonSmile
     },
     data () {
     return {
