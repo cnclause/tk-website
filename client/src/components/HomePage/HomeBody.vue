@@ -1,6 +1,6 @@
 <template>
     <div class='home-body'>
-        <div class='mission-statement'> From Roots to Wings exists to helps develop communities by following the lead of community members and leaders something something</div>
+        <div :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']" class='mission-statement'> From Roots to Wings exists to helps develop communities by following the lead of community members and leaders something something</div>
         <HomeTimeline />
         <div class="stat-title headline">
             Out of 1,239 Families Surveys
@@ -113,13 +113,25 @@ export default {
     align-items: center;
 }
 
-.mission-statement{
+.mission-statement.body-2{
+    text-align: center;
+    width: 90%;
+    margin-top: 1rem;
+}
+
+.mission-statement.body-1{
+    text-align: center;
+    width: 30%;
+    margin-top: 2rem;
+}
+
+/* .mission-statement{
     text-align: center;
     margin-top: 1rem;
     font-size: 15pt;
     width: 30%;
     font-weight: 300;
-}
+} */
 
 .card-text{
     text-align: center;
