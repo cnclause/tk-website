@@ -74,23 +74,6 @@ export default {
   z-index: -1;
 }
 
-// .header{
-//   font-size: 80pt;
-//   font-weight: bold;
-// }
-
-//  @media #{map-get($grid-breakpoints, 'md') - 1}{
-//     .header{
-//       font-size: 15pt;
-//     }
-//   }
-
-//   @media #{map-get($grid-breakpoints, 'md')}{
-//     .header{
-//       font-size: 80pt;
-//     }
-//   }
-
 .slogan {
   font-size: 30pt;
 }

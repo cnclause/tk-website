@@ -117,6 +117,7 @@ export default {
     text-align: center;
     width: 90%;
     margin-top: 1rem;
+    font-weight: 300;
 }
 
 .mission-statement.body-1{
