@@ -30,6 +30,7 @@ export default {
 
 
 .donate-title-container{
+    width: 50%;
     margin: 2rem;
     z-index: 0;
     height: 40rem;
