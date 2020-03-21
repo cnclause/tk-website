@@ -95,69 +95,7 @@
   
             <v-btn text>Cancel</v-btn>
             </v-stepper-content>
-        <!-- <form class="donate-form">
-            <label :class="[$vuetify.breakpoint.mdAndUp ? 'headline font-weight-light mb-4' : 'body-2 font-weight-light mb-4']" for="amount">Gift Amount (USD)</label>
-            <input
-                type="number"
-                v-model="amount"
-                placehoulder="0.00"
-                name="amount"
-                required
-            >
-            <v-radio-group>
-                <v-radio
-                    :label="'$15'"
-                    name="amount"
-                    v-model="amount"
-                ></v-radio>
-                <v-radio
-                    :label="'$25'"
-                    name="amount"
-                    v-model="amount"
-                ></v-radio>
-                <v-radio
-                    :label="'$50'"
-                    name="amount"
-                    v-model="amount"
-                ></v-radio>
-                <v-radio
-                    :label="'$100'"
-                    name="amount"
-                    v-model="amount"
-                ></v-radio>
-        </v-radio-group>
-            <label :class="[$vuetify.breakpoint.mdAndUp ? 'headline font-weight-light mb-4' : 'body-2 font-weight-light mb-4']" for="CardNum">Credit Card Number</label>
-            <input 
-                type="text"
-                v-model="card.number"
-                placeholder="XXXXXXXXXXXXXXX"
-                name="CardNum"
-                required
-            >
-            <label :class="[$vuetify.breakpoint.mdAndUp ? 'headline font-weight-light mb-4' : 'body-2 font-weight-light mb-4']" for="CVC">CVC</label>
-            <input 
-                type="text"
-                v-model="card.cvc"
-                placeholder="XXX"
-                name="CVC"
-                required
-            >
-            <label :class="[$vuetify.breakpoint.mdAndUp ? 'headline font-weight-light mb-4' : 'body-2 font-weight-light mb-4']" for="ExpDate">Card Expiration Date</label>
-            <input 
-                type="text"
-                v-model="card.exp"
-                placeholder="MM/YY"
-                name="ExpDate"
-                required
-            >
-            <v-btn
-                @click.prevent="validate"
-                :disabled="stripeCheck"
-            >
-            Submit
-            </v-btn>
-        </form>
-        <div v-show="errors">
+        <!-- <div v-show="errors">
             <ol>
                 <li v-for="(error, index) in errors" :key="index">
                     {{error}}
