@@ -17,13 +17,6 @@
               :step="1"
             >
                     <label :class="[$vuetify.breakpoint.mdAndUp ? 'headline font-weight-light mb-4' : 'body-2 font-weight-light mb-4']" for="amount">Gift Amount (USD)</label>
-                        <!-- <input
-                            type="number"
-                            v-model="amount"
-                            placehoulder="0.00"
-                            name="amount"
-                            required
-                        > -->
                         <v-radio-group class="amount-group" v-model="amount">
                             <v-radio
                                 :label="'$15'"
@@ -64,32 +57,35 @@
                 ></v-divider>
             </v-stepper-header>
             <v-stepper-content
-              :step="2"
+                class="card-info-container"
+                :step="2"
             >
-              <label :class="[$vuetify.breakpoint.mdAndUp ? 'headline font-weight-light mb-4' : 'body-2 font-weight-light mb-4']" for="CardNum">Credit Card Number</label>
-                <input 
-                    type="text"
-                    v-model="card.number"
-                    placeholder="XXXXXXXXXXXXXXX"
-                    name="CardNum"
-                    required
-                >
-            <label :class="[$vuetify.breakpoint.mdAndUp ? 'headline font-weight-light mb-4' : 'body-2 font-weight-light mb-4']" for="CVC">CVC</label>
-                <input 
-                    type="text"
-                    v-model="card.cvc"
-                    placeholder="XXX"
-                    name="CVC"
-                    required
-                >
-            <label :class="[$vuetify.breakpoint.mdAndUp ? 'headline font-weight-light mb-4' : 'body-2 font-weight-light mb-4']" for="ExpDate">Card Expiration Date</label>
-                <input 
-                    type="text"
-                    v-model="card.exp"
-                    placeholder="MM/YY"
-                    name="ExpDate"
-                    required
-                >
+                <div class="card-info-container">
+                <label :class="[$vuetify.breakpoint.mdAndUp ? 'headline font-weight-light mb-4' : 'body-2 font-weight-light mb-4']" for="CardNum">Credit Card Number</label>
+                    <input 
+                        type="text"
+                        v-model="card.number"
+                        placeholder="XXXXXXXXXXXXXXX"
+                        name="CardNum"
+                        required
+                    >
+                <label :class="[$vuetify.breakpoint.mdAndUp ? 'headline font-weight-light mb-4' : 'body-2 font-weight-light mb-4']" for="CVC">CVC</label>
+                    <input 
+                        type="text"
+                        v-model="card.cvc"
+                        placeholder="XXX"
+                        name="CVC"
+                        required
+                    >
+                <label :class="[$vuetify.breakpoint.mdAndUp ? 'headline font-weight-light mb-4' : 'body-2 font-weight-light mb-4']" for="ExpDate">Card Expiration Date</label>
+                    <input 
+                        type="text"
+                        v-model="card.exp"
+                        placeholder="MM/YY"
+                        name="ExpDate"
+                        required
+                    >
+                </div>
             <v-btn
                 @click.prevent="validate"
                 :disabled="stripeCheck"
@@ -286,6 +282,11 @@ export default {
 
 .amount-group{
     margin-left: 2rem;
+}
+
+.card-info-container{
+    display: flex;
+    flex-flow: column;
 }
 
 
