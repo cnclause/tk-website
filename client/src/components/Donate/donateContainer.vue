@@ -20,18 +20,22 @@
                         <v-radio-group class="amount-group" v-model="amount">
                             <v-radio
                                 :label="'$15'"
+                                :value='15.00'
                                 name="amount"
                             ></v-radio>
                             <v-radio
                                 :label="'$25'"
+                                :value='25.00'
                                 name="amount"
                             ></v-radio>
                             <v-radio
                                 :label="'$50'"
+                                :value='50.00'
                                 name="amount"
                             ></v-radio>
                             <v-radio
                                 :label="'$100'"
+                                :value='100.00'
                                 name="amount"
                             ></v-radio>
                     </v-radio-group>
@@ -41,7 +45,6 @@
                 >
                     Continue
                 </v-btn>
-                 <v-btn text>Cancel</v-btn>
             </v-stepper-content>
             <v-stepper-header>
                 <v-stepper-step
@@ -93,16 +96,16 @@
             Submit
             </v-btn>
   
-            <v-btn text>Cancel</v-btn>
+            <v-btn @click="backStep(2)" text>Cancel</v-btn>
             </v-stepper-content>
-        <!-- <div v-show="errors">
+         </v-stepper>
+        <div v-show="errors">
             <ol>
                 <li v-for="(error, index) in errors" :key="index">
                     {{error}}
                 </li>
             </ol>
-        </div> -->
-        </v-stepper>
+        </div>
     </section>
 </template>
 
@@ -160,7 +163,7 @@ export default {
             }
         },
         createToken() {
-            let STRIPE_SERVER = `${process.env.STRIPE_SERVER_URL || 'http://localhost:4242'}/charge`
+            let STRIPE_SERVER = `${process.env.STRIPE_SERVER_URL || 'http://localhost:3000'}/stripe/charge`
             console.log("stripekey", this.stripePublishableKey)
             console.log("stripeserver", STRIPE_SERVER)
             this.stripeCheck = true;
@@ -169,7 +172,7 @@ export default {
             if (response.error) {
                 this.stripeCheck = false;
                 this.errors.push(response.error.message);
-                console.error(response);
+                console.error('response', response);
             } else {
                 const payload = {
                     token: response.id,
@@ -182,7 +185,7 @@ export default {
                     },
                     body: JSON.stringify(payload)
                 })
-                    .then( resp => {console.log(resp.json())})
+                    .then( resp => console.log('resp after stripe fetch', resp))
             }
             });
         },
@@ -194,6 +197,13 @@ export default {
                 this.e1 = 1
             } else {
                 this.e1 = n + 1
+            }
+        },
+        backStep(n){
+            if(n === 1){
+                null
+            } else {
+                this.e1 = n - 1
             }
         }
     }
