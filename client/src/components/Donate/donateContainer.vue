@@ -103,14 +103,17 @@
                         required
                     >
                 </div>
-            <v-btn
-                @click.prevent="validate"
-                :disabled="stripeCheck"
-            >
-            Submit
-            </v-btn>
-  
-            <v-btn @click="backStep(2)" text>Cancel</v-btn>
+            <div class="donate-button-container">
+                <v-btn
+                    @click.prevent="validate"
+                    :disabled="stripeCheck"
+                    outlined
+                    color="blue darken-2"
+                >
+                Submit
+                </v-btn>
+                <v-btn @click="backStep(2)" text>Cancel</v-btn>
+            </div>
             </v-stepper-content>
          </v-stepper>
     </section>
@@ -242,6 +245,10 @@ export default {
 .card-info-container{
     display: flex;
     flex-flow: column;
+}
+
+.donate-button-container{
+    margin-top: 1rem;
 }
 
 
