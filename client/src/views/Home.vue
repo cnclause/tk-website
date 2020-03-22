@@ -29,16 +29,16 @@ export default {
 // @import '~vuetify/src/styles/settings/variables.scss';
 
 .title-header-container{
-  margin-top: 2rem;
+  margin: 2rem;
   // position: relative;
   // overflow: hidden;
   z-index: 0;
   height: 30rem;
-  background-image: url('https://lh3.googleusercontent.com/vS5RCXNtEYTZEpIXedVRbY8eLaKB0S4pv2H-RD8hGsOOSdr1tyIi3f4CX5wHBIxnVCYX9XC4Sy2twl_GbcccWR01LAXLcLTpvO-lXb5jNczuDsgGM5jWJSMlRIDn3eVD5XsF1ez31nEUo1sI79SCP4RToheLKIOdIvfh_n8ZDIRBBY21zQx2IAAEV0KnowJaS3YJIgEefh6i9U8IbiJY00a8L2NExw27hgxewfmoU8OjTQy0qwTF-3oN1kJJyaSwSLzpEqKT7zT1p-nNiFYzBfxmc_XfcDyqPR00MK-ORXvHMEb7V0GbLpG5c8gC6vVZExm_XICrbBUT3kiI9U9RjJ4fgfrB-g66-gSTVrZCxrlBl2mBMlQ1xQ6UYp5oOjq1h7KCDhMDt7jy4KHiiP9AZH0DmNGSrc3gDPSryhO_g2lv9ITREhVR5PMbyXK6KjbyT11509ouDfLZ1JhDfyjuDikSnpeN3lPwIdMzQLhq4HJ9Agby5hZYOuz7xJJrVq9HOtSeqrIIYezIIOM4Rlmo_nXJBz6pjLB6TkM_7TIbQEL-bf5aNfbtLpqTMuT0aEuVXMNHiVUtRBXx7fUqrQWo4sdd6x-81lUl2DWYT0grd_yXScPlT0Z_HDwuXG_cDxlcYkwOCHNqMLKP8hsQlHin7396Kslbmml7kaukOuX-089Rfj4xWD4MELxbfrWNgg=w1280-h853-no');
+  background-image: url('https://lh3.googleusercontent.com/qt-G3tcCmLWw6L3BTPQyaDSIpw_BJVChV_5mwRpL6YpZ41SNg6YAyvGHxQsx-kE9aW80uBV6NhapGDfv2bdM5gXkr8sA4lx531gUUrJSnI57ylq-ZkNyWMSpItKo4SrKYfxu1eQPsgDZTrv0gpZfaCy4KbikIaxYrYpLf4jvnXXVa8RDXDUzspa9j22kn77ikbyYrfJLTtN0CMt3Qk2m9m44u33kTyQTCFp-Fc8-CpwmECnmpIxmK5UEZrM7GgTyvP6nDjoz35RwARqOcHl9bYSkLHOF-RZ5BPLzusK6EFMQYFMCcYCulP9WA1yk7Evn50UPfYvhwx1KEBN0jWZasGBcBCWaKleVL0TJvdlgsc2zA1K_vTBzS8hO-cTDYWIQU1NPcngSH0LuRhYExyXTUGEneG-Cz8wPrc_HmlkxMmD-JJzremXspEqgFR4CWWjIeFCujykM38wO-cpHR3LagJp-x0MavwoafypH-Cb2lKzaemj-_OWZ5y-a9wm6N3GiZQt67ThAcyU6dtgGEgUf5UgoahSSpVluW02TVeGITHiZWFKpBJgwu2QgSHn-pVH57didQQmSnr1fKOcdhNjHkdfbkrCjdf5gjUivNpjqdRSogvH01H6TSzFobEPGG5CoFs4NUNSqqheTt-lRMUzzQLMYuT0Xgxz2i4L7ryBGgRQY3rsYqp7zJpc1ubTyHi0Wk7tawY8pysOwNmGvSNNVJpsslKHuWh-QfNO0S2foRvCBMDFVHKtouxk=w487-h274-no');
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: auto;
-  // background-size: contain;
+  // background-size: auto;
+  background-size: cover;
 }
 
 .title-header-container h1{

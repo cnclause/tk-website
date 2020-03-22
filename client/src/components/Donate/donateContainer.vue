@@ -1,45 +1,104 @@
 <template>
     <section class="donate-container">
-        <form class="donate-form">
-            <label for="CardNum">Credit Card Number</label>
-            <input 
-                type="text"
-                v-model="card.number"
-                placeholder="XXXXXXXXXXXXXXX"
-                name="CardNum"
-                required
+        <v-stepper
+        v-model="e1"
+        :alt-labels="altLabels"
+        :vertical="vertical"
+        class="stepper-container"
+        >   
+            <v-stepper-step
+              :complete="e1 > 1"
+              :step="1"
+              :editable="editable"
             >
-            <label for="CVC">CVC</label>
-            <input 
-                type="text"
-                v-model="card.cvc"
-                placeholder="XXX"
-                name="CVC"
-                required
+                Step 1
+            </v-stepper-step>
+            <v-stepper-content
+              :step="1"
             >
-            <label for="ExpDate">Card Expiration Date</label>
-            <input 
-                type="text"
-                v-model="card.exp"
-                placeholder="MM/YY"
-                name="ExpDate"
-                required
+                    <label :class="[$vuetify.breakpoint.mdAndUp ? 'headline font-weight-light mb-4' : 'body-2 font-weight-light mb-4']" for="amount">Gift Amount (USD)</label>
+                        <v-radio-group class="amount-group" v-model="amount">
+                            <v-radio
+                                :label="'$15'"
+                                :value='15.00'
+                                name="amount"
+                            ></v-radio>
+                            <v-radio
+                                :label="'$25'"
+                                :value='25.00'
+                                name="amount"
+                            ></v-radio>
+                            <v-radio
+                                :label="'$50'"
+                                :value='50.00'
+                                name="amount"
+                            ></v-radio>
+                            <v-radio
+                                :label="'$100'"
+                                :value='100.00'
+                                name="amount"
+                            ></v-radio>
+                    </v-radio-group>
+                <v-btn
+                    color="primary"
+                    @click="nextStep(1)"
+                >
+                    Continue
+                </v-btn>
+            </v-stepper-content>
+            <v-stepper-header>
+                <v-stepper-step
+                    :complete="e1 > 2"
+                    :step="2"
+                    :editable="editable"
+                >
+                    Step 2
+                </v-stepper-step>
+                <v-divider
+                    v-if="2 !== steps"
+                    :key="2"
+                ></v-divider>
+            </v-stepper-header>
+            <v-stepper-content
+                class="card-info-container"
+                :step="2"
             >
-            <label for="amount">Amount (USD)</label>
-            <input
-                type="number"
-                v-model="amount"
-                placehoulder="0.00"
-                name="amount"
-                required
-            >
-            <button 
+                <div class="card-info-container">
+                <label :class="[$vuetify.breakpoint.mdAndUp ? 'headline font-weight-light mb-4' : 'body-2 font-weight-light mb-4']" for="CardNum">Credit Card Number</label>
+                    <input 
+                        type="text"
+                        v-model="card.number"
+                        placeholder="XXXXXXXXXXXXXXX"
+                        name="CardNum"
+                        required
+                    >
+                <label :class="[$vuetify.breakpoint.mdAndUp ? 'headline font-weight-light mb-4' : 'body-2 font-weight-light mb-4']" for="CVC">CVC</label>
+                    <input 
+                        type="text"
+                        v-model="card.cvc"
+                        placeholder="XXX"
+                        name="CVC"
+                        required
+                    >
+                <label :class="[$vuetify.breakpoint.mdAndUp ? 'headline font-weight-light mb-4' : 'body-2 font-weight-light mb-4']" for="ExpDate">Card Expiration Date</label>
+                    <input 
+                        type="text"
+                        v-model="card.exp"
+                        placeholder="MM/YY"
+                        name="ExpDate"
+                        required
+                    >
+                </div>
+            <v-btn
                 @click.prevent="validate"
                 :disabled="stripeCheck"
             >
             Submit
-            </button>
-        </form>
+            </v-btn>
+  
+            <v-btn @click="backStep(2)" text>Cancel</v-btn>
+            </v-stepper-content>
+         </v-stepper>
         <div v-show="errors">
             <ol>
                 <li v-for="(error, index) in errors" :key="index">
@@ -63,9 +122,26 @@ export default {
             amount: 0.00,
             errors: [],
             stripePublishableKey: process.env.STRIPE_PUBLISHABLE_KEY || 'pk_test_6DyTSkJQYL6RZCfwis7Zwiuz',
-            stripeCheck: false
+            stripeCheck: false,
+            e1: 1,
+            steps: 3,
+            altLabels: false,
+            editable: false,
+            vertical: false
         }
     },
+    watch: {
+    steps (val) {
+      if (this.e1 > val) {
+        this.e1 = val
+      }
+    },
+    vertical () {
+      this.e1 = 2
+      requestAnimationFrame(() => this.e1 = 1) // Workarounds
+    },
+  },
+
     methods: {
         validate() {
             this.errors = [];
@@ -87,7 +163,7 @@ export default {
             }
         },
         createToken() {
-            let STRIPE_SERVER = `${process.env.STRIPE_SERVER_URL || 'http://localhost:4242'}/charge`
+            let STRIPE_SERVER = `${process.env.STRIPE_SERVER_URL || 'http://localhost:3000'}/stripe/charge`
             console.log("stripekey", this.stripePublishableKey)
             console.log("stripeserver", STRIPE_SERVER)
             this.stripeCheck = true;
@@ -96,7 +172,7 @@ export default {
             if (response.error) {
                 this.stripeCheck = false;
                 this.errors.push(response.error.message);
-                console.error(response);
+                console.error('response', response);
             } else {
                 const payload = {
                     token: response.id,
@@ -109,13 +185,57 @@ export default {
                     },
                     body: JSON.stringify(payload)
                 })
-                    .then( resp => {console.log(resp.json())})
+                    .then( resp => console.log('resp after stripe fetch', resp))
             }
             });
+        },
+        onInput (val) {
+            this.steps = parseInt(val)
+        },
+        nextStep (n) {
+            if (n === this.steps) {
+                this.e1 = 1
+            } else {
+                this.e1 = n + 1
+            }
+        },
+        backStep(n){
+            if(n === 1){
+                null
+            } else {
+                this.e1 = n - 1
+            }
         }
-    },
+    }
 }
 </script>
 
-<style scoped>
+<style>
+.donate-container{
+    margin: 2rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 50%;
+}
+
+.donate-form{
+    display: flex;
+    flex-flow: column;
+}
+
+.stepper-container{
+    width: 100%;
+}
+
+.amount-group{
+    margin-left: 2rem;
+}
+
+.card-info-container{
+    display: flex;
+    flex-flow: column;
+}
+
+
 </style>

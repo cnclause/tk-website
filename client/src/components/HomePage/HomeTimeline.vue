@@ -1,7 +1,6 @@
 <template>
   <v-timeline class='hometimeline' :class="[$vuetify.breakpoint.mdAndUp ? 'large-timeline' : 'small-timeline']">
       <v-timeline-item
-        
         v-for="(project, i) in projects"
         :key="i"
         :color="project.color"
