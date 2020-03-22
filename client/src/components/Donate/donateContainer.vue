@@ -1,6 +1,7 @@
 <template>
     <section class="donate-container">
-        <v-stepper
+        <iframe allowpaymentrequest="" frameborder="0" height="900px" name="donorbox" scrolling="no" seamless="seamless" src="https://donorbox.org/embed/recurring-donation-34" style="max-width: 500px; min-width: 310px; max-height:none!important" width="100%"></iframe>
+        <!-- <v-stepper
         v-model="e1"
         :alt-labels="altLabels"
         :vertical="vertical"
@@ -129,7 +130,7 @@
                 <v-btn @click="backStep(2)" text>Cancel</v-btn>
             </div>
             </v-stepper-content>
-         </v-stepper>
+         </v-stepper> -->
     </section>
 </template>
 
