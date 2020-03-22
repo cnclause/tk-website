@@ -64,6 +64,20 @@
                 :step="2"
             >
                 <div class="card-info-container">
+                    <div v-if="errors.length > 0">
+                        <v-alert
+                            outlined
+                            type="error"
+                            prominent
+                            border="left"
+                        >
+                            <ol>
+                                <li v-for="(error, index) in errors" :key="index">
+                                    {{error}}
+                                </li>
+                            </ol>
+                        </v-alert>
+                    </div>
                 <label :class="[$vuetify.breakpoint.mdAndUp ? 'headline font-weight-light mb-4' : 'body-2 font-weight-light mb-4']" for="CardNum">Credit Card Number</label>
                     <input 
                         type="text"
@@ -99,13 +113,6 @@
             <v-btn @click="backStep(2)" text>Cancel</v-btn>
             </v-stepper-content>
          </v-stepper>
-        <div v-show="errors">
-            <ol>
-                <li v-for="(error, index) in errors" :key="index">
-                    {{error}}
-                </li>
-            </ol>
-        </div>
     </section>
 </template>
 
