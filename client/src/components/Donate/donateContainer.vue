@@ -16,6 +16,20 @@
             <v-stepper-content
               :step="1"
             >
+                <div v-if="errors.length > 0">
+                    <v-alert
+                        outlined
+                        type="error"
+                        prominent
+                        border="left"
+                    >
+                        <ol>
+                            <li v-for="(error, index) in errors" :key="index">
+                                {{error}}
+                            </li>
+                        </ol>
+                    </v-alert>
+                </div>
                     <label :class="[$vuetify.breakpoint.mdAndUp ? 'headline font-weight-light mb-4' : 'body-2 font-weight-light mb-4']" for="amount">Gift Amount (USD)</label>
                         <v-radio-group class="amount-group" v-model="amount">
                             <v-radio
@@ -41,7 +55,7 @@
                     </v-radio-group>
                 <v-btn
                     color="primary"
-                    @click="nextStep(1)"
+                    @click="validateAmount(1)"
                 >
                     Continue
                 </v-btn>
@@ -64,6 +78,20 @@
                 :step="2"
             >
                 <div class="card-info-container">
+                    <div v-if="errors.length > 0">
+                        <v-alert
+                            outlined
+                            type="error"
+                            prominent
+                            border="left"
+                        >
+                            <ol>
+                                <li v-for="(error, index) in errors" :key="index">
+                                    {{error}}
+                                </li>
+                            </ol>
+                        </v-alert>
+                    </div>
                 <label :class="[$vuetify.breakpoint.mdAndUp ? 'headline font-weight-light mb-4' : 'body-2 font-weight-light mb-4']" for="CardNum">Credit Card Number</label>
                     <input 
                         type="text"
@@ -89,23 +117,19 @@
                         required
                     >
                 </div>
-            <v-btn
-                @click.prevent="validate"
-                :disabled="stripeCheck"
-            >
-            Submit
-            </v-btn>
-  
-            <v-btn @click="backStep(2)" text>Cancel</v-btn>
+            <div class="donate-button-container">
+                <v-btn
+                    @click.prevent="validate"
+                    :disabled="stripeCheck"
+                    outlined
+                    color="blue darken-2"
+                >
+                Submit
+                </v-btn>
+                <v-btn @click="backStep(2)" text>Cancel</v-btn>
+            </div>
             </v-stepper-content>
          </v-stepper>
-        <div v-show="errors">
-            <ol>
-                <li v-for="(error, index) in errors" :key="index">
-                    {{error}}
-                </li>
-            </ol>
-        </div>
     </section>
 </template>
 
@@ -160,6 +184,14 @@ export default {
             }
             if (valid) {
                 this.createToken();
+            }
+        },
+        validateAmount(n){
+            this.errors = [];
+            if(this.amount === 0.00){
+                this.errors.push('Please select amount')
+            } else {
+                this.nextStep(n)
             }
         },
         createToken() {
@@ -235,6 +267,10 @@ export default {
 .card-info-container{
     display: flex;
     flex-flow: column;
+}
+
+.donate-button-container{
+    margin-top: 1rem;
 }
 
 
