@@ -1,6 +1,6 @@
 <template>
-    <section class="donate-container">
-        <iframe allowpaymentrequest="" frameborder="0" height="40rem" name="donorbox" scrolling="no" seamless="seamless" src="https://donorbox.org/embed/recurring-donation-34" style="max-width: 500px; min-width: 310px; max-height:none!important" width="100%"></iframe>
+    <section class="donate-container" :class="[$vuetify.breakpoint.mdAndUp ? 'donatebox-large' : 'donatebox-small']">
+        <iframe  allowpaymentrequest="" frameborder="0" height="40rem" name="donorbox" scrolling="no" seamless="seamless" src="https://donorbox.org/embed/recurring-donation-34" style="max-width: 500px; min-width: 310px; max-height:none!important" width="100%"></iframe>
         <!-- <v-stepper
         v-model="e1"
         :alt-labels="altLabels"
@@ -252,6 +252,10 @@ export default {
     width: 50%;
 }
 
+.donate-container.donatebox-small{
+    align-self: center;
+}
+
 .donate-form{
     display: flex;
     flex-flow: column;
@@ -273,6 +277,5 @@ export default {
 .donate-button-container{
     margin-top: 1rem;
 }
-
 
 </style>
