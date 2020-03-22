@@ -1,6 +1,6 @@
 <template>
     <section class="donate-container">
-        <iframe allowpaymentrequest="" frameborder="0" height="900px" name="donorbox" scrolling="no" seamless="seamless" src="https://donorbox.org/embed/recurring-donation-34" style="max-width: 500px; min-width: 310px; max-height:none!important" width="100%"></iframe>
+        <iframe allowpaymentrequest="" frameborder="0" height="40rem" name="donorbox" scrolling="no" seamless="seamless" src="https://donorbox.org/embed/recurring-donation-34" style="max-width: 500px; min-width: 310px; max-height:none!important" width="100%"></iframe>
         <!-- <v-stepper
         v-model="e1"
         :alt-labels="altLabels"

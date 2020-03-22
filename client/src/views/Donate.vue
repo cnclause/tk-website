@@ -42,5 +42,7 @@ export default {
 
 .donate-title{
     text-align: center;
+    color: #2d81c5;
+    text-shadow: 1px 1px #ffffff;
 }
 </style>
