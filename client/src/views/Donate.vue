@@ -57,6 +57,7 @@ export default {
 }
 
 .donate-title.display-2{
+    width: 40%;
     font-size: 30pt;
 }
 
