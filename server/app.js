@@ -6,16 +6,22 @@ var logger = require('morgan');
 const cors = require('cors')
 require('dotenv').config()
 
-
+const stripe = require('./stripe/stripe')
 
 var app = express();
 
+
+var listener = app.listen(3000, function(){
+  console.log('Listening on port ' + listener.address().port); 
+});
 
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(cors())
+
+app.use('/stripe', stripe)
 
 app.get('/', (req, res) => {
   res.json({
