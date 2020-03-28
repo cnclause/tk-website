@@ -64,6 +64,10 @@ export default {
     font-size: 10pt;
 }
 
+.large-timeline-text{
+    font-size: 15pt;
+}
+
 .timeline-title.body-2{
     margin-bottom: 0pt !important;
     text-align: center;
