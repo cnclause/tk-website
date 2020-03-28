@@ -60,10 +60,12 @@
 
     .body-1.logo-info{
         font-size: 15pt !important;
+        color: rgba(0, 0, 0, 0.6);
     }
     .body-2.logo-info{
         font-size: 11pt !important;
         font-weight: 300;
+        color: rgba(0, 0, 0, 0.6);
     }
 
 

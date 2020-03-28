@@ -17,6 +17,10 @@
         width: 90%;
     }
 
+    .our-story-text{
+        color: rgba(0, 0, 0, 0.6);
+    }
+
     .our-story-title{
         margin-bottom: 2rem;
         margin-top: 3rem;
