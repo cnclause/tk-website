@@ -1,9 +1,7 @@
 <template>
-    <div class='home-body'>
-        <div :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']" class='mission-statement'> From Roots to Wings exists to helps develop communities by following the lead of community members and leaders something something</div>
-        <HomeTimeline />
-        <!-- <div class="stat-title headline">
-            Out of 1,239 Families Surveys
+    <div class="our-impact-stat-container">
+        <div class="stat-title headline">
+                Out of 1,239 Families Surveys
         </div>
         <div class="stat-card-container">
             <v-card
@@ -12,10 +10,6 @@
             flat
             >
             <v-card-text class="stat-card-inner">
-                <div class="card-text body-1">
-                Families Making Less Than<br>
-                $80.00 a Month
-                </div>
                 <v-progress-circular
                     class="stat-progress"
                     :rotate="360"
@@ -26,6 +20,10 @@
                 >
                     {{incomeValue}}%
                 </v-progress-circular>
+                <div class="card-text body-1">
+                96% of Families Make Less Than<br>
+                $80.00 a Month
+                </div>
             </v-card-text>
             <v-card-actions>
                 <v-btn
@@ -42,10 +40,6 @@
             flat
             >
             <v-card-text class="stat-card-inner">
-                <div class="card-text body-1">
-                Children Not<br>
-                in School
-                </div>
                 <v-progress-circular
                     class="stat-progress"
                     :rotate="360"
@@ -56,6 +50,10 @@
                 >
                     {{schoolValue}}%
                 </v-progress-circular>
+                <div class="card-text body-1">
+                55% of Children Are Not<br>
+                in School
+                </div>
             </v-card-text>
             <v-card-actions>
                 <v-btn
@@ -66,56 +64,79 @@
                 </v-btn>
             </v-card-actions>
             </v-card>
-        </div> -->
-        <AmazonSmile />
-    </div>  
+        </div>
+    </div>
 </template>
 
 <script>
-import HomeTimeline from './HomeTimeline.vue'
-import AmazonSmile from './AmazonSmile.vue'
-
 export default {
-    components: {
-        HomeTimeline,
-        AmazonSmile
+    data () {
+    return {
+      schoolInterval: {},
+      schoolValue: 0,
+      incomeInterval: {},
+      incomeValue: 0
+
     }
+  },
+  beforeDestroy () {
+    clearInterval(this.interval)
+  },
+  mounted () {
+    this.schoolInterval = setInterval(() => {
+      if (this.schoolValue === 55) {
+        return (this.schoolValue = 0)
+      }
+      this.schoolValue += 5
+    }, 600)
+    this.incomeInterval = setInterval(() => {
+      if (this.incomeValue === 96) {
+        return (this.incomeValue = 0)
+      }
+      this.incomeValue += 12
+    }, 600)
+  }
 }
 </script>
 
-<style>
-.home-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+<style lang="scss">
+    .our-impact-stat-container{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
 
-.mission-statement.body-2{
-    text-align: center;
-    width: 90%;
-    margin-top: 1rem;
-    font-weight: 300;
-}
+    .stat-title{
+        text-align: center;
+        padding: 3rem;
+    }
 
-.mission-statement.body-1{
-    text-align: center;
-    width: 30%;
-    margin-top: 2rem;
-}
+    .stat-card-container{
+        display: flex;
+        width: 65%;
+    }
 
-/* .mission-statement{
-    text-align: center;
-    margin-top: 1rem;
-    font-size: 15pt;
-    width: 30%;
-    font-weight: 300;
-} */
+    .stat-card-outter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+    }
 
-.card-text{
-    text-align: center;
-    line-height: 2rem;
-    color: #000000;
-}
+    .stat-card-inner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
 
+    .stat-progress{
+        margin-bottom: 2rem;
+    }
+
+    .card-text.body-1{
+        color: rgba(0, 0, 0, 0.6);
+        font-size: 14pt !important;
+    }
 
 </style>

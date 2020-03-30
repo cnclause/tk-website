@@ -1,14 +1,19 @@
 <template>
-     <div class="our-impact">
-    <div class="our-impact-container">
-      <h1 class ="our-impact-title" :class="[$vuetify.breakpoint.mdAndUp ? 'display-4' : 'display-2']">Our Impact</h1>
-    </div>
+    <div class="our-impact">
+      <div class="our-impact-container">
+        <h1 class ="our-impact-title" :class="[$vuetify.breakpoint.mdAndUp ? 'display-4' : 'display-2']">Our Impact</h1>
+      </div>
+      <OurImpactContainer />
   </div>
 </template>
 
 <script>
+import OurImpactContainer from '../components/OurImpact/OurImpactContainer.vue'
 export default {
-    name: 'impact'
+    name: 'impact',
+    components: {
+      OurImpactContainer
+    }
 }
 </script>
 
