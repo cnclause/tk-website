@@ -11,6 +11,7 @@
             >
             <v-card-text class="stat-card-inner">
                 <v-progress-circular
+                    :class="[$vuetify.breakpoint.mdAndUp ? 'progress-large' : 'progress-small']"
                     class="stat-progress"
                     :rotate="360"
                     :size="200"
@@ -41,10 +42,9 @@
             >
             <v-card-text class="stat-card-inner">
                 <v-progress-circular
-                    class="stat-progress"
+                    class="stat-progress-one"
                     :rotate="360"
-                    :size="200"
-                    :width="30"
+                 
                     :value="schoolValue"
                     color="blue darken-3"
                 >
@@ -133,6 +133,13 @@ export default {
     .stat-progress{
         margin-bottom: 2rem;
         font-size: 18pt;
+        width: 15rem;
+        size: 30rem;
+    }
+
+    .v-progress-circular{
+        width: 15rem !important;
+        height: 15rem !important;
     }
 
     .card-text.body-1{
