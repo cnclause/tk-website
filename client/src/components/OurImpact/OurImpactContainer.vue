@@ -13,10 +13,10 @@
                 <v-progress-circular
                     class="stat-progress"
                     :rotate="360"
-                    :size="100"
-                    :width="15"
+                    :size="200"
+                    :width="30"
                     :value="incomeValue"
-                    color="light-blue accent-3"
+                    color="blue darken-3"
                 >
                     {{incomeValue}}%
                 </v-progress-circular>
@@ -28,9 +28,9 @@
             <v-card-actions>
                 <v-btn
                 text
-                color="deep-purple accent-4"
+                color="blue accent-4"
                 >
-                Learn More
+                Learn About Our Programs
                 </v-btn>
             </v-card-actions>
             </v-card>
@@ -43,10 +43,10 @@
                 <v-progress-circular
                     class="stat-progress"
                     :rotate="360"
-                    :size="100"
-                    :width="15"
+                    :size="200"
+                    :width="30"
                     :value="schoolValue"
-                    color="light-blue accent-3"
+                    color="blue darken-3"
                 >
                     {{schoolValue}}%
                 </v-progress-circular>
@@ -58,9 +58,9 @@
             <v-card-actions>
                 <v-btn
                 text
-                color="deep-purple accent-4"
+                color="blue accent-4"
                 >
-                Learn More
+                Learn About Our Programs
                 </v-btn>
             </v-card-actions>
             </v-card>
@@ -132,11 +132,12 @@ export default {
 
     .stat-progress{
         margin-bottom: 2rem;
+        font-size: 18pt;
     }
 
     .card-text.body-1{
-        color: rgba(0, 0, 0, 0.6);
-        font-size: 14pt !important;
+        color: rgba(0, 0, 0, 0.75);
+        font-size: 15pt !important;
     }
 
 </style>
