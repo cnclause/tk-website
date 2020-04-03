@@ -33,4 +33,10 @@ export default {
     // padding-top: 0px;
     color: white;
   }
+
+  .our-impact-title.display-2{
+    color: white;
+    font-size: 50pt !important;
+    padding-top: 5rem;
+  }
 </style>
