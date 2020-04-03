@@ -1,9 +1,9 @@
 <template>
     <div class="our-impact-stat-container">
-        <div class="stat-title headline">
+        <div class="stat-title headline subtitle-1">
                 Out of 1,239 Families Surveys
         </div>
-        <div class="stat-card-container">
+        <div class="stat-card-container" :class="[$vuetify.breakpoint.mdAndUp ? 'progress-container-large' : 'progress-container-small']">
             <v-card
             class="mx-auto stat-card-outter"
             max-width="344"
@@ -11,26 +11,27 @@
             >
             <v-card-text class="stat-card-inner">
                 <v-progress-circular
+                    :class="[$vuetify.breakpoint.mdAndUp ? 'large-circle' : 'small-circle']"
                     class="stat-progress"
                     :rotate="360"
-                    :size="100"
-                    :width="15"
                     :value="incomeValue"
-                    color="light-blue accent-3"
+                    color="blue darken-3"
                 >
                     {{incomeValue}}%
                 </v-progress-circular>
-                <div class="card-text body-1">
+                <div class="card-text" :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']">
                 96% of Families Make Less Than<br>
                 $80.00 a Month
                 </div>
             </v-card-text>
             <v-card-actions>
                 <v-btn
+                :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']"
+                class="btn-text-progress"
                 text
-                color="deep-purple accent-4"
+                color="blue accent-4"
                 >
-                Learn More
+                Learn About Our Programs
                 </v-btn>
             </v-card-actions>
             </v-card>
@@ -41,16 +42,15 @@
             >
             <v-card-text class="stat-card-inner">
                 <v-progress-circular
+                    :class="[$vuetify.breakpoint.mdAndUp ? 'large-circle' : 'small-circle']"
                     class="stat-progress"
                     :rotate="360"
-                    :size="100"
-                    :width="15"
                     :value="schoolValue"
-                    color="light-blue accent-3"
+                    color="blue darken-3"
                 >
                     {{schoolValue}}%
                 </v-progress-circular>
-                <div class="card-text body-1">
+                <div class="card-text" :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']">
                 55% of Children Are Not<br>
                 in School
                 </div>
@@ -58,9 +58,11 @@
             <v-card-actions>
                 <v-btn
                 text
-                color="deep-purple accent-4"
+                color="blue accent-4"
+                :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']"
+                class="btn-text-progress"
                 >
-                Learn More
+                Learn About Our Programs
                 </v-btn>
             </v-card-actions>
             </v-card>
@@ -111,9 +113,14 @@ export default {
         padding: 3rem;
     }
 
-    .stat-card-container{
+    .progress-container-large.stat-card-container{
         display: flex;
         width: 65%;
+    }
+
+    .progress-container-small.stat-card-container{
+        display: flex;
+        width: 100%;
     }
 
     .stat-card-outter{
@@ -130,13 +137,30 @@ export default {
         width: 100%;
     }
 
-    .stat-progress{
+    .large-circle.v-progress-circular{
+        width: 15rem !important;
+        height: 15rem !important;
         margin-bottom: 2rem;
+        font-size: 20pt;
+    }
+
+    .small-circle.v-progress-circular{
+        width: 5rem !important;
+        height: 5rem !important;
+        margin-bottom: 0.5rem;
     }
 
     .card-text.body-1{
-        color: rgba(0, 0, 0, 0.6);
-        font-size: 14pt !important;
+        color: rgba(0, 0, 0, 0.75);
+        font-size: 15pt !important;
+    }
+
+    .btn-text-progress.body-2{
+        font-size: 8pt !important;
+    }
+
+    .btn-text-progress.body-1{
+        font-size: 16pt !important;
     }
 
 </style>
