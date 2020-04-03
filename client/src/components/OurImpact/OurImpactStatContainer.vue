@@ -1,6 +1,6 @@
 <template>
     <div class="our-impact-stat-container">
-        <div class="stat-title headline">
+        <div class="stat-title headline subtitle-1">
                 Out of 1,239 Families Surveys
         </div>
         <div class="stat-card-container" :class="[$vuetify.breakpoint.mdAndUp ? 'progress-container-large' : 'progress-container-small']">

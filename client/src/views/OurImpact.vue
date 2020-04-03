@@ -3,16 +3,20 @@
       <div class="our-impact-container">
         <h1 class ="our-impact-title" :class="[$vuetify.breakpoint.mdAndUp ? 'display-4' : 'display-2']">Our Impact</h1>
       </div>
-      <OurImpactContainer />
+      <OurImpactStatContainer />
+      <ProgramImpact />
   </div>
 </template>
 
 <script>
-import OurImpactContainer from '../components/OurImpact/OurImpactContainer.vue'
+import OurImpactStatContainer from '../components/OurImpact/OurImpactStatContainer.vue'
+import ProgramImpact from '../components/OurImpact/ProgramImpact'
+
 export default {
     name: 'impact',
     components: {
-      OurImpactContainer
+      OurImpactStatContainer,
+      ProgramImpact
     }
 }
 </script>
