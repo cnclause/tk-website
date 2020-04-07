@@ -1,3 +1,3 @@
 <template>
-    <h1> Meeth the Birds </h1>
+    <h1> Meet the Birds </h1>
 </template>
