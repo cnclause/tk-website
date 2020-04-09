@@ -1,26 +1,27 @@
 <template>
     <div class="programs-container">
+        <h1> Health and Wellness </h1>
         <div class="each-program-container" :class="[$vuetify.breakpoint.mdAndUp ? 'each-program-container-large' : 'each-program-container-small']">
             <div class="program-info">
-                <h1 class="each-program-title" :class="[$vuetify.breakpoint.mdAndUp ? 'subtitle-1' : 'subtitle-2']"> Health and Wellness </h1>
+                <h1 class="each-program-title" :class="[$vuetify.breakpoint.mdAndUp ? 'subtitle-1' : 'subtitle-2']"> Yoga </h1>
                 <p class="program-description" :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']"> orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
             </div>
             <div class="program-img-container">
-                <v-img clas="program-img" src="https://lh3.googleusercontent.com/fjC6fwTFW74wbMGvmS-tLwRes9ZUUP2BRHlxg7pbzNdq3DyVSebRyy8ayBKGoQo4NVIN0Ow8te4mgtNgsWRvfz4V99TxNQMlIJ70ieGcVPwkYsz5JDqlqu_O9Xrb_82KxXtLit4U_nCUHZ1YFT6A--sa9MSAHV7TvV5CA9_Atn-iDnEI_jE3f-JqOnjFed9BUMPLfaFHnRFnFynEVba0CEVLcvEd6-YoU6odLrKrKZbN5Ty6NEwvJ_7AYKcZCxMmoXwmsgLHnAmmUyCcUadzR-o09_cPebhBQMMGyKI3D9ZKDYXKQ-0h_AjetnD01YbVCjfZB2-7F7uGcyEBTnsAxm_3N_bQWDHudT1OUlk5HsIuu4FeZ0DH0bH45A0z8A_I7o8KJINuDkoEaokMgc_TlSljYioxVXxqX9-NXQSj2PqEru5av3plb4DuObe2Ns8J_tS16CpleKY_UXjPVTyXu1iEFdeaRvDJCEtX60g7iNtkzQJvxHVk2TMpkTr-178A9GKtc4nN6p4vSglzDWbl3kbIA9dAd8bmRmLTwrHuCoAPGIeCXWxRGsqv6eID0br0o9zoAJsSYUNQGapZqpUG1XH5ZDHC4LBzY7G0YU4EjUpu_s-iNYa1neoPmps0xCKlLDzW_Txnl9oy4dRIRnxZ1Ws6oD6AGKZ-N6ztnhRS7jDdr3V83sByjdaWQt3n5oq19E8ack8TBhhy72SB4HdaINUbDpUI93LpzQLzgWDTDRi2ZT3xzYhG880=w2220-h1480-no">
+                <v-img clas="program-img" src="https://lh3.googleusercontent.com/aaO9EoglwY4n9buJ3r8IznVdiwxsC_xJBkb9Eh2ForFkOVdFOCinyGmIk4ngoZ1ID559bvMcLuuFW7vxtM0XYZLnmN-lGbXzw8vNJNbT92BSrpRidyBnP9HWauJSQr4uygxNR9Wz4z3ADJECPvlEC3BE1VmILEN-Qs-O0_g6XpqKhHne2ARRNowzsRLD58d8YDq0JdEo50G54Qs4wZ_XfEpEM49ya_oRAC3RtzT-2EC1PdWXOF6ZTViayjj2K8HRzhI6Rk1SDXsJW-NrgcSO9XUjHY2ODUNo6XaBGb2CvDSgyzNUKE67_rm9PShHcNZGjPNJlcgp2D2xNdxvg5RQnQMpy2yidDkb5azo6FuxyAzF9LOzC3GGNanAMpH9uB0-QQoOEp5DAvL6_SdqzZfy4_3mvWQwRX9siv3S9n6_CccxAFAMYEIF-FdZnNDIVBHKj69Tlqd1AlW969BER-BmQLefpX7mYZ6xPk-j0i0sM6Tn45hbIL2HhxNwHvapc9QAB4j8Kvp-5zuBQejFquuVTIbWGhV6JJE-N5805_XzSdSNtn9vnzbKGWilVdwzd3sGa7is7wGIZ0VwySTzmMh6Kp6ru8Cir5jo2kf7be7IAtbeHD9HviGZJp-VPKvvfFxp7yWebCfd67tS2aR_VCfe4J98DDrFkNqwBLyelxpw82d5ZyKdeblZnX_u-rvv_4J2TjHfcTcKHqqiK77rOj9EQRYXT2TnrAYS2Umd3sqmZappPETI5P_SGPs=w426-h284-no">
                 </v-img>
+            </div>
+        </div>
+        <div class="each-program-container" :class="[$vuetify.breakpoint.mdAndUp ? 'each-program-container-large' : 'each-program-container-small']">
+            <div class="program-img-container">
+                <v-img clas="program-img" src="https://lh3.googleusercontent.com/W4j7i5F9W3GKfbdRbSpxbEvkZCtErjn43bh265Xv7nVvCc68K4fER9f006A23vcYSEg8lNVxFIKgaZP3EHDXVm3_d-yeIce8io_GgAQFPmGvQ4mq8UvLWLzUrgrqX1W7LstgY93GxEb-H46j7yYx3tz6sSltBYtuB8pJUdeHiZNRShTzajS8MDc0SPKXnEYo1FPKnjT-2dRnfyI9unSwGIOrwag5yDAuXuEUK0LHP3UPvodli-haHLkPnKNnWPId9cZk0FWyhizB8R_j14uIklwrQrHp5CPid5CZi4YRip3L_088G-3H3lopRQG1NKAA-3eqMXN8VrqRGI7GGLIM5zdphSr4WAfz56afH1Vs1FBMKtiRUzdAMAZB24ksBE5s5OjVpsB7HziWlncR72yroBWEbHr3em7o7SiSSYWs7pWaQ2-U-DaUmmnNei9phA5Zg4cuC5tPtC3ftYOI1yFXWuirezR5VUNO8AOAqUkh9YvpFbT7FmupQ2IMHwVF_XQTc3DF42H7qt3D5n3SV8QN2yK2yKD6sFdMGLFuPgh3SAbQpJVMrMcL-igmc-gogh4tCuFgAP9Sju0_zt4O9BdPZX_I_MHwu4uZ3D57hH8MUFc4oKf9gzfxun4wwmbElnBP8KEjb78pkd1DHrIzZa4sDL4DxtVowDY-hZThr1CEidjiIfN3dVV3XvAW34VYbnqiayUaoKLN0bh9ffEXGbHtwMndClgKvMg-IeR3f5WyAzdbzAN5-FwxnfA=w1894-h1262-no">
+                </v-img>
+            </div>
+            <div class="program-info">
+                <h1 class="each-program-title" :class="[$vuetify.breakpoint.mdAndUp ? 'subtitle-1' : 'subtitle-2']"> Women's Health and Sex Eduation </h1>
+                <p class="program-description" :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']"> orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
             </div>
         </div>
         <v-divider class="program-divider"></v-divider>
-        <div class="each-program-container" :class="[$vuetify.breakpoint.mdAndUp ? 'each-program-container-large' : 'each-program-container-small']">
-            <div class="program-img-container">
-                <v-img clas="program-img" src="https://lh3.googleusercontent.com/DRAEmuAL2Q6xXdQwzM5w42N9MeC5GJGRuh6y95Egmkjv3tO6kujruFMRdU9TZtOPcKWA6p19uHuSRw6kN4VHitrpimmWyJgvvdtVbnn53q3IGoNDq_IF0LeEzKKKZa0i99QJB5n-7YETtUfw3G7gYaDmpJimr82KCcyOXTD43dXf3wglmDx2lJEb7xyzW1Cuc9ftI59uXU5TaT6ObBAFLIcmaqgpVhCIjRWuNK9JGf4gfZG13nzwypSgcb-heVI8XXX-9tN1jVdIu6lHDIxycIElQOROSoE1ieWDNhOVxIZqpWiK5eh1Hk8u-pgFAOHYpxMyaD-uKSvwVft32Vy4ztsEvMyKqcrFsYyFeKMk2-gwJ5VaZZRq9_rEh0KurXv4Z0XpqjxmzV-kA02o2bKhaq0Cv2KC0m_rBequbc3iqgULbSKagEDfkEb0oCeWGiIXeyd-CINTUv2y0ircXaSquTNxuMiVWl7_d4mgUHdgr4uaKj1gO_bmjiaxLddS3-pxIJ14gVlydz7bEpGDjN725GDDs3xDKkks2V5Pxq3TfDkVOkTpPrvrx8q4Hk1fsqKSmA0Q8LzQOO8bZqHp0-u3zcW37_xPGHDJDzEYnZusJWvf9oe4aDOGTT8hEEpcbTyllbQOUFip6YzmPE7TkdLSiYVCEEljBj-kRtVD2BA2av-5q8p12SJ33Uo-d7YDrB2vcqtqvqUv1xNt3zMfYZC00LB_pB54cWuwo1eXDIxfw7cuUNY7g7j_-hc=w2368-h1578-no">
-                </v-img>
-            </div>
-            <div class="program-info">
-                <h1 class="each-program-title" :class="[$vuetify.breakpoint.mdAndUp ? 'subtitle-1' : 'subtitle-2']"> Education </h1>
-                <p class="program-description" :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']"> orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-            </div>
-        </div>
     </div>
 </template>
 
@@ -73,6 +74,10 @@
     font-size: 18pt !important;
     text-align: center;
     line-height: 2rem !important;
+}
+
+.each-program-title.subtitle-1{
+    line-height: 3rem !important;
 }
 
 </style>
