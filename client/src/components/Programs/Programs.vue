@@ -5,18 +5,21 @@
     </div>
     <EducationProgramsContainer />
     <WellnessProgramsContainer />
+    <EconomicProgramsContainer />
   </div>
 </template>
 
 <script>
 import EducationProgramsContainer from './EducationProgramsContainer.vue'
 import WellnessProgramsContainer from './WellnessProgramsContainer.vue'
+import EconomicProgramsContainer from './EconomicProgramsContainer.vue'
 
 export default {
     name: 'programs',
     components: {
         EducationProgramsContainer,
-        WellnessProgramsContainer
+        WellnessProgramsContainer,
+        EconomicProgramsContainer
     }
 }
 </script>
