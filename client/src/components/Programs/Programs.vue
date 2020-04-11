@@ -3,13 +3,21 @@
     <div class="program-container">
       <h1 class ="program-title" :class="[$vuetify.breakpoint.mdAndUp ? 'display-4' : 'display-2']">Our Programs</h1>
     </div>
-    <AboutUsContainer />
+    <EducationProgramsContainer />
+    <WellnessProgramsContainer />
   </div>
 </template>
 
 <script>
+import EducationProgramsContainer from './EducationProgramsContainer.vue'
+import WellnessProgramsContainer from './WellnessProgramsContainer.vue'
+
 export default {
-    name: 'programs'
+    name: 'programs',
+    components: {
+        EducationProgramsContainer,
+        WellnessProgramsContainer
+    }
 }
 </script>
 
