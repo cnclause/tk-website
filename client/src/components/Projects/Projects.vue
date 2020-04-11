@@ -1,18 +1,23 @@
 <template>
     <div class="projects">
-    <div class="project-container">
-      <h1 class ="project-title" :class="[$vuetify.breakpoint.mdAndUp ? 'display-4' : 'display-2']">Our Projects</h1>
-    </div>
-
+        <div class="project-container">
+        <h1 class ="project-title" :class="[$vuetify.breakpoint.mdAndUp ? 'display-4' : 'display-2']">Our Projects</h1>
+        </div>
+        <CoronaProjectContainer />
+        <CommunityCenterProjectContainer />
   </div>
 </template>
 
 <script>
+import CoronaProjectContainer from './CoronaProjectContainer'
+import CommunityCenterProjectContainer from './CommunityCenterProjectContainer'
 
 
 export default {
     name: 'projects',
     components: {
+        CoronaProjectContainer,
+        CommunityCenterProjectContainer
     }
 }
 </script>
