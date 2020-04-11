@@ -1,6 +1,6 @@
 <template>
     <div class="programs-container">
-        <h1> Health and Wellness </h1>
+        <h1 class=" wellness-heading programs-heading" :class="[$vuetify.breakpoint.mdAndUp ? 'display-4' : 'display-2']"> Health and Wellness </h1>
         <div class="each-program-container" :class="[$vuetify.breakpoint.mdAndUp ? 'each-program-container-large' : 'each-program-container-small']">
             <div class="program-info">
                 <h1 class="each-program-title" :class="[$vuetify.breakpoint.mdAndUp ? 'subtitle-1' : 'subtitle-2']"> Yoga </h1>
@@ -78,6 +78,10 @@
 
 .each-program-title.subtitle-1{
     line-height: 3rem !important;
+}
+
+.wellness-heading{
+    color: #E91E63;
 }
 
 </style>
