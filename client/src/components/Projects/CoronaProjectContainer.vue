@@ -7,7 +7,7 @@
                 <p class="project-description" :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']"> orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
             </div>
             <div class="project-img-container">
-                <v-img clas="project-img" src="https://lh3.googleusercontent.com/aaO9EoglwY4n9buJ3r8IznVdiwxsC_xJBkb9Eh2ForFkOVdFOCinyGmIk4ngoZ1ID559bvMcLuuFW7vxtM0XYZLnmN-lGbXzw8vNJNbT92BSrpRidyBnP9HWauJSQr4uygxNR9Wz4z3ADJECPvlEC3BE1VmILEN-Qs-O0_g6XpqKhHne2ARRNowzsRLD58d8YDq0JdEo50G54Qs4wZ_XfEpEM49ya_oRAC3RtzT-2EC1PdWXOF6ZTViayjj2K8HRzhI6Rk1SDXsJW-NrgcSO9XUjHY2ODUNo6XaBGb2CvDSgyzNUKE67_rm9PShHcNZGjPNJlcgp2D2xNdxvg5RQnQMpy2yidDkb5azo6FuxyAzF9LOzC3GGNanAMpH9uB0-QQoOEp5DAvL6_SdqzZfy4_3mvWQwRX9siv3S9n6_CccxAFAMYEIF-FdZnNDIVBHKj69Tlqd1AlW969BER-BmQLefpX7mYZ6xPk-j0i0sM6Tn45hbIL2HhxNwHvapc9QAB4j8Kvp-5zuBQejFquuVTIbWGhV6JJE-N5805_XzSdSNtn9vnzbKGWilVdwzd3sGa7is7wGIZ0VwySTzmMh6Kp6ru8Cir5jo2kf7be7IAtbeHD9HviGZJp-VPKvvfFxp7yWebCfd67tS2aR_VCfe4J98DDrFkNqwBLyelxpw82d5ZyKdeblZnX_u-rvv_4J2TjHfcTcKHqqiK77rOj9EQRYXT2TnrAYS2Umd3sqmZappPETI5P_SGPs=w426-h284-no">
+                <v-img class="project-img" src="https://lh3.googleusercontent.com/owYTeBAnsLfoJGfb7WXS5P4Gr2l37HRzQpFSfvOZFOvE_hyueN91P9UGHtb81blqoMsPasxs2D40P5mNRCawyl-ARiaIBYP9TMIK2mwZ_fdQMXXUpjVL95MSmd4l5mD6sIOF3xwuNmuAYE_KJyE728UkbBv_dQXDoPLKDNPSgP_acCY2w3EwMwgnUIjMMl0feSE2CgFfRlJlw7u3msfPVmh3zOn2YczkmtDvS8cE-QcP45QMb2WgKykee416bTG1hZhZlGzN0q71L0SHHYnGmGv08JfP2qlmaTWjMHg8Sv2gAT3F4xvHlxrK3jBBvmkLwNDFiH0zHBsLnllcE7I1QUNtfvPFnyV_MJdxqQCsLCoedmkDT5I9OuRIOcZOBpX1gPVCQpxy-_dj7TfDZ38gMPnQmtEW1L9433sts3VOJ1ZXsswVl47fKiickk5yW_qgUE_Kv4FqfiBVsmAzkkOFXH7A9XfZwgY7cxDopU2speaQau7Qj-RFaMZFTFTovF2JA-XvLtZNU-EPPt5cy9b-e5vB80dm3nZKwprpV6IfQhXgHvSJtEOktvubXzPEKhIhzqh46UAizc6DNdQT2aPHoGSE7FE7EvwYzjXjRrItcfQKJqGJZYi4OffbV7IZbtr7FlgEnhEd5nWO1IKLWS_FGjXPu6ddXKyKZazf5Xb-fME5g1bWv9OVz8b6iy89UAligWwB3eAMXulFrX9gc85L7Ek-Q9Vrx8qCHEihciEsTVbK_wxBmVavWbE=w1080-h810-no">
                 </v-img>
             </div>
         </div>
@@ -52,6 +52,7 @@
 
 .project-description{
     margin-top: 2rem;
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .project-divider{

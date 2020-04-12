@@ -3,11 +3,11 @@
         <h1 class=" economic-heading programs-heading" :class="[$vuetify.breakpoint.mdAndUp ? 'display-4' : 'display-2']"> Economic Programs </h1>
         <div class="each-program-container" :class="[$vuetify.breakpoint.mdAndUp ? 'each-program-container-large' : 'each-program-container-small']">
             <div class="program-info">
-                <h1 class="each-program-title" :class="[$vuetify.breakpoint.mdAndUp ? 'subtitle-1' : 'subtitle-2']"> Scholarships </h1>
+                <h1 class="each-program-title" :class="[$vuetify.breakpoint.mdAndUp ? 'subtitle-1' : 'subtitle-2']"> Microloans </h1>
                 <p class="program-description" :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']"> orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
             </div>
             <div class="program-img-container">
-                <v-img clas="program-img" src="https://lh3.googleusercontent.com/-6O9_0r5L5yTZm3XJMa0mKr8Y1G7OtyM97hI8HDuAFEQSYJznqHF783FQJPwRKGgYlppI9tUxmraE7raVYu2DzeZ_oDgesoJbb31NFqtveK9jwF9uLhEBDLc9UE8wF2knxnIhwqxxF2RAcUv_7E9rdcsAloL5Y94X8_PsjPyc1-RYfTn9rHauQTapCBrOwbZKaOcOUWg_lEb7pXvuugWi2i5RhVkICzu3uUFY986c8Q3Ys8c4f5BB322L3H2Rb68j4tpa3GnihCZsWNCrn-G-vAIX4NkChQ13rlDLfmdRCtfQqLPvXsLqh9fIojY-DOVYDVBswi-iCPdS_WGbJB8sduID8P8_ekf6eXtn0XSYtH0OYzG1i0qQzjuMeYDQMGsDj_Qmn0y4nQDqRtLbM5Gkp8HM5H8sVa6gsmr9IlinAXkXPdyRnpAoMKx9BK5vLQ3RN9dMmEpymyyC_SQDsfckB_TQeA2JC21mkaf2aW-W7m60HkTPRGCkvFafZMa9YdHMejDN-A06tMPOUHUdyjl8KUXYvhXUEemWZFkM34BBoPIpSKW1YoZDSbXiK-Im6pyS5oO4emq0a4K2rFlKwSlgL0aozj12m-Xa7G7bDwSicicT7c8EE7EUrD37xh0RpEjs9k8MAKp00hDSH2Agy_k8L-3f64z2VJDnUZem9_fEQKuiSuuGreLzLQVgpXbpzXFCKDa8D5PO0toSWprKhtHC1QALqFUaNRi14_jTyx2QHPOmFd2nnVW1aY=w1024-h576-no">
+                <v-img clas="program-img" src="https://lh3.googleusercontent.com/aFbsmCxGcHnRFwYbpnsqY6D0O96YjjaHRML-Oa7ks4s9DVmcRZ1QJv4ph5Mckc5Df9fF5BEE3lxzh6B_WBkra6JyJSnoNJsSRGqrK_OjrYtdS_pYfZ4HOw3AYKGjAMCmiHK6Btbfdp-WmUu_xMCdlQ_c6YGmkJhIgFDM6rhMF9jq5GGdM_I5wJGqGnCuSQJrBSyLLTtG3onunbKAmSpc5tQ5eSAQiZ539lfgzXla8n_4O2QyOOxpm6kYi-fpO4oNA1ciT35Y-pi3UStSn3vC6Dr3H2IzZ_-ZMdzxtdszNzQTksm4-kUfg-Hs_3erDQWTpnF0gh76DfqgE-vS-GllpxGDXbUtxeB-9SotuHCtRFo2XeurPJ1VpFaGfpUPLro2Rj_u23edbzIMN8-ouI1bSbCoPosQnke21Pvw_EEIeGTnGJ5-uP9luzdYo1wQNzzNr6VtXn60RYKI9zTTSKR1Bm1T14Pwn268bPKOpLR78BtsLz16WLn4dCFTcHIYYx5B6r8oQ6-gp5EllswfvmMyQWTl3bvO_Xv8ptAjDvbs3-FpjsQTjw1HPWYugcLrq4gV8m1hMl9UiEpm4FeVU6pY85LcXTXOaYh7KcG0koFN3W5EhtmypGXnK7ZpcuVSTUPUlfykSdhqfH7RXwXfYakp_haLXIGzvaPdFLrneHECvxWt6jdPzgSyEE8z0iIYOQTXc_znTUUGkpXQb1hlORWfvv2ZID9sqHu0qO-hD8Pi23MyYTAZn9JFRcs=w1856-h1236-no">
                 </v-img>
             </div>
         </div>
@@ -51,6 +51,7 @@
 
 .program-description{
     margin-top: 2rem;
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .program-divider{

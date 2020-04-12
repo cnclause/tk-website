@@ -3,7 +3,7 @@
         <h1 class="community-center-heading projects-heading" :class="[$vuetify.breakpoint.mdAndUp ? 'display-4' : 'display-2']"> Community Center </h1>
         <div class="each-project-container" :class="[$vuetify.breakpoint.mdAndUp ? 'each-project-container-large' : 'each-project-container-small']">
             <div class="project-img-container">
-                <v-img clas="project-img" src="https://lh3.googleusercontent.com/aaO9EoglwY4n9buJ3r8IznVdiwxsC_xJBkb9Eh2ForFkOVdFOCinyGmIk4ngoZ1ID559bvMcLuuFW7vxtM0XYZLnmN-lGbXzw8vNJNbT92BSrpRidyBnP9HWauJSQr4uygxNR9Wz4z3ADJECPvlEC3BE1VmILEN-Qs-O0_g6XpqKhHne2ARRNowzsRLD58d8YDq0JdEo50G54Qs4wZ_XfEpEM49ya_oRAC3RtzT-2EC1PdWXOF6ZTViayjj2K8HRzhI6Rk1SDXsJW-NrgcSO9XUjHY2ODUNo6XaBGb2CvDSgyzNUKE67_rm9PShHcNZGjPNJlcgp2D2xNdxvg5RQnQMpy2yidDkb5azo6FuxyAzF9LOzC3GGNanAMpH9uB0-QQoOEp5DAvL6_SdqzZfy4_3mvWQwRX9siv3S9n6_CccxAFAMYEIF-FdZnNDIVBHKj69Tlqd1AlW969BER-BmQLefpX7mYZ6xPk-j0i0sM6Tn45hbIL2HhxNwHvapc9QAB4j8Kvp-5zuBQejFquuVTIbWGhV6JJE-N5805_XzSdSNtn9vnzbKGWilVdwzd3sGa7is7wGIZ0VwySTzmMh6Kp6ru8Cir5jo2kf7be7IAtbeHD9HviGZJp-VPKvvfFxp7yWebCfd67tS2aR_VCfe4J98DDrFkNqwBLyelxpw82d5ZyKdeblZnX_u-rvv_4J2TjHfcTcKHqqiK77rOj9EQRYXT2TnrAYS2Umd3sqmZappPETI5P_SGPs=w426-h284-no">
+                <v-img clas="project-img" src="https://lh3.googleusercontent.com/l56QeqQVeZw5daVJGmJeCEAqTuSv7hErjEe-jlbFAh4y-B1i1ZMG-xCuTvCOtlEIpzGKbjK1iItwTP9ut3Sbg-WCKo1Y1CDB8JwJgo44tvBhIX3mYxJz7kXMvHBuegEKBgmOGgJLyI4l6vy86ZxR2fAXPzSCB6EfmsjjLWO_7lnSEfhnwzxkbT8TmBguEZmzUbzy4M3x_bokcS_zgD2BrykTBIG5ymu-x-3DxeF3I444lometHExIdSqvZjRgeiSR-E_C3sDen8rY_p0Q6PntD7fh8FfD7a4bhQQ-hBCJ0p2USm_vse88NwqrKCP96il5NCu2n-cCtwAW7ST-1EYQmBCzT2xoUhzvYG3tYaojTs1Vue-zohM4f9i_9XzjMvf2fswDFlo_S5YXpXehTFDswIk095BTBSEcSG5-Ry0xV3qjwImB-l7kEbPPZZngKYdtuYXmvC4XxcXRoYlZUD_PW5WhW6wA-cMli4gvac-fJVQ-SVSsXbK7Oh0nzb94JO-rmykBPKPv234dsUztD3g3YoogjfU5anHTcowmYBakH99Lj9BQ97K1d0waal1718uEAm9XU4CukhsHW-evaoYPKHCWnwvnxaI-egBKT5NJrDORH3e3pUtSnyU_EEvv4SX9xgCpygiVGQWeiwBbORd71y2fAcqJcmOCtI6EYwiot2UrVBtN70zvP0T5vkgbJ8SKbMnpzJumxzKJm1mAsGox7e3Q5jqSaLh5nffnNsf2sZU5hg9QzbP_y0=w1888-h1260-no">
                 </v-img>
             </div>
             <div class="project-info">
@@ -11,7 +11,6 @@
                 <p class="project-description" :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']"> orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
             </div>
         </div>
-        <v-divider class="project-divider"></v-divider>
     </div>
 </template>
 
@@ -52,6 +51,7 @@
 
 .project-description{
     margin-top: 2rem;
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .project-divider{
