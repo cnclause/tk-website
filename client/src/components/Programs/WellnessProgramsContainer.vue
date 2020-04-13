@@ -62,6 +62,7 @@
 
 .program-description{
     margin-top: 2rem;
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .program-divider{

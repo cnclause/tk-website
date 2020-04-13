@@ -3,7 +3,6 @@
     <div class='title-header-container'>
       <h1 :class="[$vuetify.breakpoint.mdAndUp ? 'display-4' : 'display-2']" class="title header">From Roots to Wings </h1>
       <h3 :class="[$vuetify.breakpoint.mdAndUp ? 'display-3' : 'display-1']" class="title slogan">"little by little the bird builds its nest"</h3>
-      <!-- <img src='https://lh3.googleusercontent.com/569a8jibDuLQgkgPeYA6ENze80gLofvID36UEBeiAtJUNe-1kTUZLinsqgE3_gViicgBS6jWwedgzkAdv09v2J-Glctn65AfwNRc79lWW6C-rAhcm8WYWAidYDfEyQHQzQ0TXpnD0VyiMp1T7jIqwPwf0Ie3xwoN3XuhQjUEtiLebefNTU7EEjtf_h6WKTQEZJxGP-6HucL5PgT_gFaPyHJAdokALksAm5-j6SUcVVEvxvUIu6RalTP9zPA0StSemNHG1XORIar7cRfXD_D2f4TzlnF6SYoIqZ8puthV3QXjIYCnkjKgJWlaZ5VGhNRIQuRkpnxqbsr59onsEKCaGOzBJaYpyCYt9OGY9djL35CaCXs0W4VfT8YJmfpF0BcuqubInEk_R4ZvYBm9O9Mg12JbghztQLpSm3sn-XlEPbehtd7w4oeWkJ28Nj0jjSGGP9vVmV1pioYLA-I-NQddDC39B3EBM8Pnd5SG1TavVZbpJxq9OcXo1QQpb2RH6Ru2WK76Vux5f5lyitOGsORI0FYRZsttflP5OoV4BIibr75FfvdL3VuIDGZA5oAT5BYLwNXBCkj611Qnq-GtOjQIxaYwMK_euHtlpGUQbdRyMlCcMw95wNbEEZZ6iVMMmctm5iZCaH3tU9mukUTm84kIgF6eIlOKwNaBs6UIOMO8soJ_sYMUI2kU57sm2ykg4g=w2160-h1216-no'> -->
     </div>
     <HomeBody />
   </div>
