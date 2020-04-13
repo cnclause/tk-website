@@ -3,12 +3,21 @@
       <div class="get-involved-container">
       <h1 class ="get-involved-title" :class="[$vuetify.breakpoint.mdAndUp ? 'display-4' : 'display-2']">Get Involved</h1>
     </div>
+    <GetInvolvedSubHeaderContainer />
+    <GetInvolvedOptions />
   </div>
 </template>
 
 <script>
+import GetInvolvedSubHeaderContainer from '../components/GetInvolved/GetInvolvedSubHeaderContainer.vue'
+import GetInvolvedOptions from '../components/GetInvolved/GetInvolvedOptions'
+
 export default {
-    name: 'involved'
+    name: 'involved',
+    components: {
+      GetInvolvedSubHeaderContainer,
+      GetInvolvedOptions
+    }
 }
 </script>
 
