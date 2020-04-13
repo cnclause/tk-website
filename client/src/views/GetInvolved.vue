@@ -1,6 +1,6 @@
 <template>
-     <div class="get-involved">
-    <div class="get-involved-container">
+    <div class="get-involved">
+      <div class="get-involved-container">
       <h1 class ="get-involved-title" :class="[$vuetify.breakpoint.mdAndUp ? 'display-4' : 'display-2']">Get Involved</h1>
     </div>
   </div>
