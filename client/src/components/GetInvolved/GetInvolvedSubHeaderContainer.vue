@@ -30,6 +30,7 @@
   .get-involved-subheader.body-2{
     text-align: center;
     font-size: 16pt !important;
+    margin: 1rem;
   }
 
   strong{
@@ -40,6 +41,11 @@
     text-align: center;
     margin-top: 1rem;
     font-size: 15pt !important;
+  }
+
+  .get-involved-subheader-info.body-2{
+    text-align: center;
+    margin-top: 0.5rem;
   }
 
   .get-involved-subheader-btn{
