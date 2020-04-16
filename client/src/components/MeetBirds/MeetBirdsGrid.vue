@@ -34,6 +34,7 @@
             bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
             thumbnail: "https://lh3.googleusercontent.com/9cOKMzEu_8Ea0lhyIewkF8VlFdjvb4EtS9S1nZo2hlMzi4dwwJXmnq2hdkja5djAbZesLSl7kd_DWhqDhVgf-_s8RBxFV8bN_L0s1kXG5MZd3QILGaYX9dOOTglm8s8R18Kv8Uu14Npk291btIpiy37RndCulEWFNKbHWwiIuuzP3e-e2DCP5wMZPzjbeUKxyDsLyxfimBxIR5Wg8I4qM5BZRP6FcSttGsvaZ9UXjle5nJYuQT3CoXuDDtvxoW5hIMo82EXFXmWn3c1bjRn7B-O5CQIqx5DZDZ0q5eK_fDeovvD1oPpxsYwzL-Meqa8U5y0TfExeu5s8ClxqQZ_YhRZsGiuyTAG5oDCnwML1mpZdmAFM4MtGvUKEZywrZVtXq_oX9iXy11XstmvXYpWlgpXChPi-Q2-rZvfiljTk997LZ1K2h8R-H95cHtIhGYPtQKqdY29JyrghKfn-9MKYMVR5C3hlCPocFOmBfTZVUUCE-MSkS951BoN0xDrP55zCmqXHu5zeeUonKDvxcCM-aebNuLwyjMqWtbtPjIVQrFxfmmmn0hFCEmJm0xyFFKWApQxrQ8eqB520wb5IPnp5FwR43WKWuGIgSNZaaPKsy3sbkKYDTxpglr5cqkHxW8trgqusEc78NwIsEFJhWrbci5EpRw7q0lirvU9TVbadMZXyULhpOpb-sshPn3VRnK8C0xqx7R-TkPezFvq4oVKJJqBHQs259Bp_eddViOY-hlS6viqkg61uiQ=s250-k-rw-no",
             flipped: true,
+            lawerence: true
             },
             {
             id: 3,

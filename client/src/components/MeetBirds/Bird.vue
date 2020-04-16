@@ -2,7 +2,7 @@
    <div :class="[$vuetify.breakpoint.mdAndUp ? 'bird-card-large' : 'bird-card-small']">
        <div class="inner-div">
             <div id=img-div>
-            <img :src='bird.thumbnail' onload="this.width/=1.8;this.onload=null" />
+            <img :src='bird.thumbnail' :onload="bird.lawerence ? 'this.width*=2' : 'this.width/=1.3'" />
         </div>
             <div id="text-div">
             <div id="h1-div">
@@ -29,11 +29,12 @@
 
         .inner-div{
             display: flex;
+            align-items: center;
 
             #text-div{
             float: left;
-            padding: 50px;
-
+            padding-right: 50px;
+            padding-left: 50px;
             h1{
                 font-size: 20pt ;
                 font-weight: 400;
