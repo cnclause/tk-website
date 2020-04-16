@@ -5,7 +5,7 @@
             <p>{{bird.bio}}</p>
             </div>
           <div id=img-div>
-            <img :src='bird.thumbnail' onload="this.width/=1.8;this.onload=null">
+            <img :src='bird.thumbnail' onload="this.width/=1.3">
         </div>
         </div>
 </template>
@@ -22,8 +22,10 @@
      #bird-card{
         padding: 20px;
         display: flex;
+        align-items: center;
         
         #text-div{
+            
             float: left;
             padding: 50px;
             h1{
