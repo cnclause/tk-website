@@ -1,7 +1,7 @@
 <template>
    <div id="bird-card">
           <div id=img-div>
-            <img :src='bird.thumbnail'>
+            <img :src='bird.thumbnail' onload="this.width/=2;this.onload=null" />
         </div>
             <div id="text-div">
             <h1>{{bird.name}}</h1>
@@ -20,21 +20,25 @@
 
 <style lang="scss" scoped>
     #bird-card{
-        padding: 50px;
+        padding: 20px;
         display: flex;
         
         #text-div{
             float: left;
-            padding: 30px;
+            padding: 50px;
+            h1{
+                padding-bottom: 30px;
+            }
+            p{
+                color: #666;
+            }
         }
         #img-div{
             display: flex;
             justify-content: center;
-            width: 50%;
-            height: 80%;
+             background-color: #f2f2f2;
             img{
-                width: 80%;
-                padding: 10px;
+                padding: 20px;
             }
         }
     }
