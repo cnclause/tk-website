@@ -42,7 +42,7 @@
           <v-list-item to="/projects">
             Projects
           </v-list-item>
-          <v-list-item to="/projects">
+          <v-list-item to="/programs">
             Programs
           </v-list-item>
         </v-list>
