@@ -16,7 +16,7 @@
           </v-btn>
         </template>
         <v-list>
-          <v-list-item to="/meet-the-kids">
+          <v-list-item to="/meet-the-birds">
             Meet the Birds
           </v-list-item>
           <v-list-item to="/staff">

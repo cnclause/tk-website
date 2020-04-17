@@ -6,9 +6,6 @@ import Donate from '../views/Donate.vue'
 import Impact from '../views/OurImpact.vue'
 import GetInvolved from '../views/GetInvolved.vue'
 import Staff from '../components/StaffContainer.vue'
-import Kids from '../components/KidsContainer.vue'
-import Projects from '../components/Projects/Projects.vue'
-import Programs from '../components/Programs/Programs.vue'
 import Volunteer from '../components/Volunteer.vue'
 import PlanAFundraiser from '../components/PlanFundraiser.vue'
 import PositionsAvailable from '../components/Positions.vue'
@@ -33,9 +30,9 @@ const routes = [
     component: Staff
   },
   {
-    path:'/meet-the-kids',
-    name:'kids',
-    component: Kids
+    path:'/meet-the-birds',
+    name:'birds',
+    component: Birds
   },
   {
     path: '/donate',
