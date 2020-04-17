@@ -8,7 +8,7 @@
                 <img :src='bird.thumbnail' :onload="[$vuetify.breakpoint.mdAndUp ? 'this.width/=1.3' : 'this.width/=1.5']"/>
             </div>
        </div> 
-    </div>
+    </div> 
 </template>
 
 <script>

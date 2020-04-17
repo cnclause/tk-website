@@ -1,6 +1,6 @@
 <template>
-    <div>
-     <h1 class="title">Meet the Birds</h1>
+    <div class="meet-bird-container">
+     <h1 class ="meet-birds-title" :class="[$vuetify.breakpoint.mdAndUp ? 'display-4' : 'display-2']">Meet the Birds</h1>
      <MeetBirdsGrid/>
     </div>
 </template>
@@ -14,3 +14,20 @@ export default {
     }
 }
 </script>
+
+<style>
+    .meet-birds-title{
+        text-align: center;
+    }
+
+    .meet-birds-title.display-2{
+        font-size: 40pt !important;
+        margin-left: 7rem;
+    }
+
+    .meet-bird-container{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+</style>
