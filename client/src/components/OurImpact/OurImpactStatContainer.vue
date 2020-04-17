@@ -1,6 +1,6 @@
 <template>
     <div class="our-impact-stat-container">
-        <div class="stat-title headline subtitle-1">
+        <div class="stat-title headline subtitle-1" :class="[$vuetify.breakpoint.mdAndUp ? 'stat-title-large' : 'stat-title-small']">
                 Out of 1,239 Families Surveys
         </div>
         <div class="stat-card-container" :class="[$vuetify.breakpoint.mdAndUp ? 'progress-container-large' : 'progress-container-small']">
@@ -111,6 +111,10 @@ export default {
     .stat-title{
         text-align: center;
         padding: 3rem;
+    }
+
+    .stat-title.stat-title-small{
+        line-height: 3rem !important;
     }
 
     .progress-container-large.stat-card-container{
