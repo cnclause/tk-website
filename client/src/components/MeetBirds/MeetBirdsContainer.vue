@@ -22,7 +22,6 @@ export default {
 
     .meet-birds-title.display-2{
         font-size: 40pt !important;
-        margin-left: 7rem;
     }
 
     .meet-bird-container{

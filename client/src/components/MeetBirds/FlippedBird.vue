@@ -8,7 +8,7 @@
         </div>
         <div class="meet-bird-img-containter">
                 <v-img class="meet-bird-img" :src='bird.thumbnail' 
-                max-height="30rem"
+                max-height="20rem"
                 contain></v-img>
         </div>
     </div>
@@ -27,12 +27,14 @@
     .bird-card-large{
         display: flex; 
         align-items: center;
-        width: 80%;
+        width: 75%;
         margin-top: 3rem;
 
 
         .meet-bird-img-containter{
             width: 45%;
+            display: flex;
+            justify-content: left;
         }
 
         .meet-bird-info-containter{
@@ -48,7 +50,6 @@
         flex-flow:column;
         align-items: center;
         padding-bottom: 5px;
-        margin-left: 5rem;
         margin-top: 2rem;
         margin-bottom: 2rem;
         width: 100%;
@@ -74,6 +75,7 @@
         color: #28abe2;
         font-size: 30pt !important;
         font-weight: 700 !important;
+        text-align: center;
     }
     
 

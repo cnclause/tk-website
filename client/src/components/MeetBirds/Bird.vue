@@ -2,7 +2,7 @@
    <div :class="[$vuetify.breakpoint.mdAndUp ? 'bird-card-large' : 'bird-card-small']">
             <div class="meet-bird-img-containter">
                 <v-img class="meet-bird-img"
-                max-height="30rem"
+                max-height="20rem"
                 contain
                 :src='bird.thumbnail'></v-img>
             </div>
@@ -27,7 +27,7 @@
     .bird-card-large{
         display: flex; 
         align-items: center;
-        width: 80%;
+        width: 75%;
         margin-top: 3rem;
 
 
@@ -47,7 +47,6 @@
         flex-flow:column;
         align-items: center;
         padding-bottom: 5px;
-        margin-left: 5rem;
         margin-top: 2rem;
         margin-bottom: 2rem;
         width: 100%;
@@ -73,6 +72,7 @@
         color: #28abe2;
         font-size: 30pt !important;
         font-weight: 700 !important;
+        text-align: center;
     }
     
 
