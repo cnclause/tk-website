@@ -1,8 +1,10 @@
 <template>
    <div :class="[$vuetify.breakpoint.mdAndUp ? 'bird-card-large' : 'bird-card-small']">
-       <!-- <div class="inner-div"> -->
             <div class="meet-bird-img-containter">
-                <v-img class="meet-bird-img" :src='bird.thumbnail'></v-img>
+                <v-img class="meet-bird-img"
+                max-height="30rem"
+                contain
+                :src='bird.thumbnail'></v-img>
             </div>
              <div class="meet-bird-info-containter">
                 <div class="meet-bird-name-container">
@@ -10,7 +12,6 @@
                 </div>
             <p>{{bird.bio}}</p>
         </div>
-       <!-- </div> -->
     </div>
 </template>
 
@@ -29,9 +30,6 @@
         width: 80%;
         margin-top: 3rem;
 
-        .meet-bird-img{
-            max-height: 25rem !important;
-        }
 
         .meet-bird-img-containter{
             width: 45%;
@@ -68,6 +66,7 @@
         padding: 0pt;
         font-size: 35pt !important;
         font-weight: 700 !important;
+        letter-spacing: 0.75rem !important;
     }
 
     .meet-bird-kid-name.display-2{
