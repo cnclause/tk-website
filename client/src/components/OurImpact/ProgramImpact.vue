@@ -23,6 +23,18 @@
                  <v-btn class="learn-about-programs-btn white--text" depressed color="cyan" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']"> Learn About Our Programs </v-btn>
             </div>
         </div>
+        <v-divider class="impact-divider"></v-divider>
+        <div class="program-impact-container" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']">
+            <div class="program-impact-info" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']">
+                <h1 class="program-impact-title" :class="[$vuetify.breakpoint.mdAndUp ? 'subtitle-1' : 'subtitle-2']"> Economics </h1>
+                <p class="program-impact-description" :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']"> orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <v-btn class="learn-about-programs-btn white--text" depressed color="green" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']"> Learn About Our Programs </v-btn>
+            </div>
+            <div class="program-impact-img-container" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']">
+                <v-img clas="program-impact-img" src="https://lh3.googleusercontent.com/egIejaiJgw4hdTPlhIbxRZ5WFO0gfm_noFgWfmLErcYb92Yq1ztUjlNFTi2EoaDCYR8onreMTAM105I1zNlIU0pJIt355iN5G7sLE7k9ey2W7i6NGYWQBokRIaR5uAoPRP2paSlbIodiJ5hdIlK0hVCSZA-uAfiFN0AFq22eIblScQ1TcI3_SboXe9dUkCektyByyPn9jB3msEpn5VC73FNykgfv2cw18xuM2v-y2Wn1Hg52ZvybAmNrVVaxNH5dezNJp8hO-9GPa5emo_hZMKIZ_N-0zNPO3_PMgfV-VI8LnKpbWuSwKW5tqNfwDvVK0w4I8s4caFrtgrYK6eGst6EUkV3Cdk3nQBz4YY3xJvH0LAFokXbbgpxb9A4D83CiVIVNw0tckbGdoeO7y5I8T9xDdFDEDf3oLl-imwXpbYGCpWdKxNlvBQyuwqXZ-GZuPbHLKVfTGdI2Oa62S5CcMva_kIA227OFSZAWDGOwxI_Ft5NjWJ2Ks_4b0GI8TckeNAilcov0Os8KZQ9ToQaAF5sEQTynAch4T3UD2wLuZMYCiJJ23XrwRwUEZsvpkY_qhQf5LwFkP3TYOwsypnmN8nqCNU7NOIFppzb3l8lwlAfp50WMWrVdlDPst1IykeOaYiEqmDBFCxXEqqFdvnJAe6KwV5ThKZ8wrye3aiVScj1m0HB_znkFjxfIhW2T7-WGy1jaPMYzCUvxgZcwss6hAyBtpEFEs2xEE6TNmCUiL0GEmmzp51UMdRc=w1856-h1236-no">
+                </v-img>
+            </div>
+        </div>
     </div>
 </template>
 
