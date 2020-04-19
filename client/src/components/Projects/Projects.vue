@@ -1,7 +1,7 @@
 <template>
     <div class="projects">
         <div class="project-container">
-        <h1 class ="project-title" :class="[$vuetify.breakpoint.mdAndUp ? 'display-4' : 'display-2']">Our Projects</h1>
+            <h1 class ="project-title" :class="[$vuetify.breakpoint.mdAndUp ? 'display-4' : 'display-2']">Our Projects</h1>
         </div>
         <CoronaProjectContainer />
         <CommunityCenterProjectContainer />

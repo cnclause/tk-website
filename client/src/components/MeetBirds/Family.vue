@@ -1,14 +1,12 @@
 <template>
-   <div :class="[$vuetify.breakpoint.mdAndUp ? 'bird-card-large' : 'bird-card-small']">
-       <div id='inner-div'>
-            <div id='name-div'>
-                <h1>{{bird.name}}</h1>
-            </div>
-            <div id="pic-div">
-                <img :src='bird.thumbnail' :onload="[$vuetify.breakpoint.mdAndUp ? 'this.width/=1.3' : 'this.width/=1.5']"/>
-            </div>
-       </div> 
-    </div>
+   <div :class="[$vuetify.breakpoint.mdAndUp ? 'family-card-large' : 'family-card-small']">
+        <div class='family-name-container'>
+            <h1 class="family-name" :class="[$vuetify.breakpoint.mdAndUp ? 'display-4' : 'display-2']">{{bird.name}}</h1>
+        </div>
+        <div class='family-img-container' :class="[$vuetify.breakpoint.mdAndUp ? 'family-img-container-large' : 'family-img-container-small']">
+            <v-img :src='bird.thumbnail' :class="[$vuetify.breakpoint.mdAndUp ? 'family-img-large' : 'family-img-small']" contain max-height="20rem"></v-img>
+        </div>
+    </div> 
 </template>
 
 <script>
@@ -18,60 +16,43 @@
     }
 </script>
 
-<style lang="scss" scoped>
-    .bird-card-large{
-        padding: 20px;
+<style lang="scss">
+    .family-card-large{
         display: flex;
-        justify-content: center;
-        #inner-div{
-            justify-content: block;
-             #name-div{
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            padding: 5px;
-            h1{
-                font-size: 20pt ;
-                font-weight: 400;
-                margin-right: 1.5rem;
-                text-align: center;
-                padding-bottom: 10px;
-            }
-            }
-            #pic-div{
-                background-color: #f2f2f2;
-  
-                img{
-                      padding: 20px;
-                }
-            }
-        }
+        flex-flow: column;
+        align-items: center;
+        margin-top: 8rem;
+        margin-bottom: 5rem;
        
     }
-     .bird-card-small{
-        padding: 20px;
+
+     .family-card-small{
+        display: flex;
+        flex-flow: column;
+        align-items: center; 
+    }
+
+    .family-name.display-4{
+        font-size: 50pt !important;
+        padding-top: 0pt !important;
+        margin-bottom: 1rem;
+        letter-spacing: 0.75rem !important;
+    }
+    .family-name.display-2{
+        font-size: 35pt !important;
+        padding-top: 0pt !important;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .family-img-container-small{
+        width: 45%;
         display: flex;
         justify-content: center;
-        padding-bottom: 5px;
-        #inner-div{
-            justify-content: block;
-             #name-div{
-            display: flex;
-            justify-content: center;
-            padding: 5px;
-            h1{
-                font-size: 20pt ;
-                font-weight: 400;
-                margin-right: 1.5rem;
-                text-align: center;
-            }
-            }
-            #pic-div{
-                img{
-                      padding: 20px;
-                }
-            }
-        }
-       
+    }
+
+    .family-img-small{
+        margin-bottom: 3rem;
+
     }
 </style>

@@ -1,16 +1,17 @@
 <template>
    <div :class="[$vuetify.breakpoint.mdAndUp ? 'bird-card-large' : 'bird-card-small']">
-       <div class="inner-div">
-            <div id=img-div>
-            <img :src='bird.thumbnail' :onload="bird.lawerence ? 'this.width*=2' : 'this.width/=1.3'" />
-        </div>
-            <div id="text-div">
-            <div id="h1-div">
-            <h1>{{bird.name}}</h1>
+            <div class="meet-bird-img-containter">
+                <v-img class="meet-bird-img"
+                max-height="20rem"
+                contain
+                :src='bird.thumbnail'></v-img>
             </div>
+             <div class="meet-bird-info-containter">
+                <div class="meet-bird-name-container">
+                    <h1 class="meet-bird-kid-name" :class="[$vuetify.breakpoint.mdAndUp ? 'display-4' : 'display-2']">{{bird.name}}</h1>
+                </div>
             <p>{{bird.bio}}</p>
-            </div>
-       </div>
+        </div>
     </div>
 </template>
 
@@ -22,80 +23,56 @@
 </script>
 
 
-<style lang="scss" scoped>
+<style lang="scss">
     .bird-card-large{
-        padding: 20px;
         display: flex; 
+        align-items: center;
+        width: 75%;
+        margin-top: 3rem;
 
-        .inner-div{
-            display: flex;
-            align-items: center;
 
-            #text-div{
-            float: left;
-            padding-right: 50px;
-            padding-left: 50px;
-            h1{
-                font-size: 20pt ;
-                font-weight: 400;
-                margin-right: 1.5rem;
-
-                padding-bottom: 30px;
-            }
-            
-            p{
-                color: #666;
-            }
+        .meet-bird-img-containter{
+            width: 45%;
         }
 
-        #img-div{
-            display: flex;
-            justify-content: center;
-             background-color: #f2f2f2;
-
-            img{
-                padding: 20px;
-            }
+        .meet-bird-info-containter{
+            width: 45%;
+            margin-right: 3rem;
         }
-        }   
-       
+
     }
 
     .bird-card-small{
-        padding: 20px;
         display: flex; 
-        justify-content: center;
+        flex-flow:column;
+        align-items: center;
         padding-bottom: 5px;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        width: 100%;
 
-        .inner-div{
-            display: block;
-
-        #text-div{
-            #h1-div{
-                display: flex;
-                justify-content: center;
-                h1{
-                     font-size: 20pt ;
-                    font-weight: 400;
-                    margin-right: 1.5rem;
-                    text-align: center;
-                    padding-bottom: 10px;
-                }
-                }
-                p{
-                    color: #666;
-                    text-align: center;
-                }
+         .meet-bird-img-containter{
+            width: 90%;
         }
-        #img-div{
-            display: flex;
-            justify-content: center;
 
-            img{
-                padding: 20px;
-            }
+        .meet-bird-info-containter{
+            width: 90%;
         }
     }
+
+    .meet-bird-kid-name.display-4{
+        color: #28abe2;
+        padding: 0pt;
+        font-size: 35pt !important;
+        font-weight: 700 !important;
+        letter-spacing: 0.75rem !important;
+    }
+
+    .meet-bird-kid-name.display-2{
+        color: #28abe2;
+        font-size: 30pt !important;
+        font-weight: 700 !important;
+        text-align: center;
     }
     
 

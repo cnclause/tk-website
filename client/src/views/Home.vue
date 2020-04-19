@@ -17,9 +17,9 @@ export default {
   components: {
     HomeBody
   }, 
-  mounted () {
-    console.log(this.$vuetify.breakpoint)
-  },
+  // mounted () {
+  //   console.log(this.$vuetify.breakpoint)
+  // },
 }
 </script>
 
