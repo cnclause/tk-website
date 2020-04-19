@@ -124,6 +124,7 @@ export default {
 
     .progress-container-small.stat-card-container{
         display: flex;
+        flex-flow: column;
         width: 100%;
     }
 
@@ -149,8 +150,8 @@ export default {
     }
 
     .small-circle.v-progress-circular{
-        width: 5rem !important;
-        height: 5rem !important;
+        width: 10rem !important;
+        height: 10rem !important;
         margin-bottom: 0.5rem;
     }
 
@@ -159,8 +160,14 @@ export default {
         font-size: 15pt !important;
     }
 
+    .card-text.body-2{
+        color: rgba(0, 0, 0, 0.75);
+        font-size: 12pt !important;
+        margin-top: 1rem;
+    }
+
     .btn-text-progress.body-2{
-        font-size: 8pt !important;
+        font-size: 12pt !important;
     }
 
     .btn-text-progress.body-1{
