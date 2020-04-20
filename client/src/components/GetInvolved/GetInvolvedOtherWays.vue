@@ -69,6 +69,7 @@
         margin-right: 1rem;
         font-size: 18pt !important;
         letter-spacing: 0.5rem !important;
+        line-height: 2rem !important;
     }
 
     .get-involved-other-icon-img.large{

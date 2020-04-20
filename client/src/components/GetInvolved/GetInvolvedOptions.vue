@@ -1,10 +1,10 @@
 <template>
     <div class="get-involved-options-container">
-        <div class="get-involved-options">
+        <div class="get-involved-options" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']">
             <GetInvolvedFundraise />
             <GetInvolvedVolunteer />
         </div>
-        <div class="get-involved-options">
+        <div class="get-involved-options" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']">
             <GetInvolvedJoinTeam />
             <GetInvolvedOtherWays />
         </div>
@@ -33,8 +33,13 @@ export default {
         flex-flow: column;
         align-items: center;
     }
-    .get-involved-options{
+    .get-involved-options.large{
         display: flex;
         flex-direction: row;
+    }
+
+    .get-involved-options.small{
+        display: flex;
+        flex-flow: column;
     }
 </style>
