@@ -7,7 +7,7 @@
             </div>
             <div class="get-involved-fundraise-info">
                 <p class="get-involved-fundraise-info-description" :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']"> orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                <v-btn class="get-involved-fundraise-btn"> Fundraise With Us </v-btn>
+                <v-btn class="get-involved-fundraise-btn green--text" text> Fundraise With Us </v-btn>
             </div>
         </v-card>
     </div>
@@ -95,6 +95,7 @@
 
     .get-involved-fundraise-btn{
         margin-bottom: 1rem;
+        font-size: 14pt !important;
     }
 
     

@@ -7,7 +7,7 @@
             </div>
             <div class="get-involved-volunteer-info">
                 <p class="get-involved-volunteer-info-description" :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']"> orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                <v-btn class="get-involved-volunteer-btn"> Volunteer With Us </v-btn>
+                <v-btn class="get-involved-volunteer-btn amber--text" text> Volunteer With Us </v-btn>
             </div>
         </v-card>
     </div>
@@ -95,5 +95,6 @@
 
     .get-involved-volunteer-btn{
         margin-bottom: 1rem;
+        font-size: 14pt !important;
     }
 </style>
