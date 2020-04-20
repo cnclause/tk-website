@@ -2,7 +2,7 @@
     <div class="get-involved-volunteer" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']">
         <v-card outlined class="get-involved-volunteer-card" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']" flat>
             <div class="get-involved-volunteer-title-container" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']" >
-                <img class="get-involved-volunteer-icon-img" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']" src="https://lh3.googleusercontent.com/iXM0KaLp5NkuF1HzhD4TAosXEtETwjJhoUr3xniIXcswxUMi0qPd7JOIuYAPt4zbxg5oDcFzCBWl2deRfwmIebribENNonVnxz8Vqrge7WbIj4a5KZDJiW0B3i93gHCGYLm71iAdVWgBVslHTeEHUys_sQUyim7F37qEvBl1EG_v0oXrVNWkkIzS5HkA9E_TeXrJIaKTl6u91RdtpQsIpmVYhiO0iZhVNpY36lAFPxq57LsJgheGgrgsFGJlqI1IxrJSxW2VN-vmotysYQLbLJXkQ71GiotX3tk4pHyEanMAT1OtXoKHymeZJyRppZCa3zibtm4DkhzKrCjZK2UUF6Y7zKCxEK3KNAwx1a9NTFFzGL_eDG0sry3gMj4YjW4P8vFFc7sZ4kcr88Y9v0Ew6KkmamAvZTIM5BDjwD4QhszWjT9IejjeEp-nB6Gc01vaccMC0Rt2kUvT8AfOKk3FUIDFfiCnf2U0ALFi6x2m6rSEKNVAZuNCSwiNaGfxp8hQBibxFBWSnbzsawTHl2-e0WckTubBdlYLKNH_5OWJVPGb3K9BhAV4NuDXXpSQ89ekU60U0ua5973kYYgamQTErJwdyHJuhgAtfhq5yrlYLzc8_GZISoyayUfsthkLC-uLk121eWoTtDFX9hgxqOcDFIAB3NRt2D9rpTGIctYzttAAfPOMRmELV_v8Fb2PXPz5c0EsUamFg7GiuQfmWdCo-6QyG7E3tqEKLRblYyzmpg7N7vwiN_1RYgw=s128-no"/> 
+                <v-img class="get-involved-volunteer-icon-img" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']" src="https://lh3.googleusercontent.com/A8G3b35yi5j6RBZNdq4H2xbDNe9Gz6rAU4kBG9UUycL80OEXIX4eFQwpw-JtoJYB2_mhgJYv2Iv5ieboALFrVEE9oQZlq4f2EycTn95uy8PduLFTvUaDvlrnRX6X6nRULQpD_6JCxJghsVvuWI7h_4NYLFIpLpV9H4pg-BVtr8S763_jlolabbUxyFIGLc1ipVN8CRfOmA0et123VH2V394CZztMPAG5iwdsc_K9NXMLCn1BLu4iuHi_LqR4VJG0kgQ6FnbBQ7hlVPa2XKGG_f0cUmlEHEb4wQb2ht2R3beu2EKe5Fq-Itb6Y-sqHwe-Y6KJmnEb4ayjqmOBT7DFGuKuJGwWFXnVAW7oO8IHiY3pB32Upy_BIWEFbjQjlp9Kjkwg4iIBYBxAcDqL2a1-we-Hc6m1h4TGzt4gSgL1Q-THUMSge-mejnijbDylGplMpmR-BSt2qmyuSXKxS4bZOWuLLDq-_vUXBSW_33qAn0ghvxpbITExvd1Dvek1c8BNe3tNW3sre4ybdur74hP2lewD6BaXupIclpdmB0KtwSKsDNxSB0UnxP4dPoeT1S1qGZQvcilS22ETb3cxon1r05x1kFYP2BRW0kzNNWCRNyA5RvgZUlIYbsaTp9UOeuABFKtwiRd_WgcatfJw7kd7yeYf1fzcu7ZQYP2J1y31tbs5fvPjvq_9RComstpSGQ-jhXmPfkCcoFEVtwJSvCay240Y6AI8_P_Cftawa04XMPYOPx0_FtcLYXk=s128-no"></v-img> 
                 <h1 class="get-involved-volunteer-title" :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']"> Volunteer</h1>
             </div>
             <div class="get-involved-volunteer-info">
@@ -17,9 +17,10 @@
     .get-involved-volunteer.large{
         width: 50%;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         margin: 0pt;
         margin-top: 3rem;
+        margin-left: 1rem;
     }
 
     .get-involved-volunteer.small{
@@ -70,8 +71,8 @@
     }
 
     .get-involved-volunteer-icon-img.large{
-        width: 8rem;
-        height: 8rem;
+        width: 7rem;
+        height: 7rem;
         margin: 1rem;
     }
 
