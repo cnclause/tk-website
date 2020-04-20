@@ -15,9 +15,10 @@
 
 <style>
     .get-involved-fundraise.large{
-        width: 80%;
+        width: 50%;
         display: flex;
         justify-content: center;
+        margin: 0pt;
         margin-top: 3rem;
     }
 
@@ -30,7 +31,7 @@
     }
 
     .get-involved-fundraise-card.large{
-        width: 40%;
+        width: 60%;
         display: flex;
         flex-flow: column;
         align-items: center;
