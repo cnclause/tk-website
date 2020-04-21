@@ -17,7 +17,7 @@
 
 <script>
     export default {
-         name: "Bird",
+        name: "Bird",
         props: ["bird"]
     }
 </script>
