@@ -1,7 +1,7 @@
 <template>
-    <div class="contact-form-container">
-        <h1 class="contact-form-title" :class="[$vuetify.breakpoint.mdAndUp ? 'subtitle-1' : 'subtitle-2']"> We Look Forward to Hearing From You </h1>
-        <v-form class="contact-form" v-model="isValid">
+    <div class="contact-form-container" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']">
+        <h1 class="contact-form-title" :class="[$vuetify.breakpoint.mdAndUp ? 'subtitle-1' : 'subtitle-2']"> We Look Forward to Hearing from You </h1>
+        <v-form class="contact-form" v-model="isValid" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']">
             <v-text-field
                 v-model="name"
                 label="Name"
@@ -54,17 +54,37 @@ export default {
         display: flex;
         flex-flow: column;
         align-items: center;
-        margin-top: 4rem;
-
     }
-    .contact-form-title{
+
+    .contact-form-container.large{
+        margin-top: 4rem;
+    }
+
+    .contact-form-container.small{
+        margin-top: 2rem;
+    }
+
+    .contact-form-title.subtitle-1{
         margin-top: 4rem;
         color: #00BCD4;
     }
 
-    .contact-form{
+    .contact-form-title.subtitle-2{
+        font-size: 15pt !important;
+        color: #00BCD4;
+    }
+
+    .contact-form.large{
         width: 40%;
         margin-top: 3rem;
+        display: flex;
+        flex-flow: column;
+        // align-items: center;
+    }
+
+    .contact-form.small{
+        width: 90%;
+        margin-top: 2rem;
         display: flex;
         flex-flow: column;
         // align-items: center;
