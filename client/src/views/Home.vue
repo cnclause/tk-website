@@ -32,9 +32,9 @@ export default {
   // position: relative;
   // overflow: hidden;
   z-index: 0;
-  height: 30rem;
+  height: 35rem;
   background-image: url('https://rootstowingspictures.s3-us-west-1.amazonaws.com/Yoga-Yellow-ShowdyLeading.jpg');
-  background-position: center; /* Center the image */
+  background-position: center center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   // background-size: auto;
   background-size: cover;
