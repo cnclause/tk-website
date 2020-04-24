@@ -2,7 +2,7 @@
     <div class="get-involved-join" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']">
         <v-card outlined class="get-involved-join-card" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']" flat>
             <div class="get-involved-join-title-container" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']" >
-                <v-img class="get-involved-join-icon-img" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']" src="https://lh3.googleusercontent.com/M8VRV6Tpo027ILyZjzkFEkAx_mY6M3R0l9Ns584AEEkaYFISamixY3w1JSaBnXfFCEuSd2BfpyqquyareZbhhZihaVq_-_pZaQwYInkpMPG-_6U1OaNkufunyLZshbrwGzQYtHq2kXansil8oaPUn19QTWUui7NJCN4hKWCJvL_xe3idZ4Ety5kJLLYAgcTir78cb9aGly1v4JTnLrtJQYQ3cXMj6sN1QkslaYgvr2lz-la3tx8JKghDfvykmJyt-5EvYlb9fFtjvFugvKj0aOwLDZnACzrVNp9dOqRIiqPnKLN7tCEUt33ymGk5htmJOandYZ8W-jaVFprM4YG2tnlG6mdJAXUZHuWVvs6q_R5V6OOx8Cz--GXCzrxGUlsaFOFY6RWaMRWCkR-Gil-L5RV8txxRy0aFKbHTCDxfiC1vJ5dXJxENBpTpColbMVBm5XWA2qQGZqAwOQDAnmPiyydpR8xzJ6mzJP9qLf0jpieYRW7KLj9Ty2xhPlMgfpmR0xsk9kDI6x3PG5tErSxLL0QX8D_yIgCM_bS-wIAG6ZECED5ohhvX13j1ZE70xYCIb5JGx-mtRW4vf3U4nHd7Zboi4fRVC9yIkqfwIsXreofIZ26srD0w9-easTCOSTzb3KEykwwyu8l-FAUzyrNOuJfJZiKzhRH8Tm-aTyO8ttm2EynGsj_1RBMW6IqnGw71JFR6JDf4D6YPCBR8jtS_8ZrXGD3zvT-QJJmRyAuA2fXbnIJ9XLLC8Lc=s128-no"></v-img> 
+                <v-img class="get-involved-join-icon-img" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']" src="https://rootstowingspictures.s3-us-west-1.amazonaws.com/JoinUsIcon.png"></v-img> 
                 <h1 class="get-involved-join-title" :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']"> Join Our Team</h1>
             </div>
             <div class="get-involved-join-info">

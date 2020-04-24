@@ -10,7 +10,7 @@ import Projects from '../components/Projects/Projects.vue'
 import Birds from '../components/MeetBirds/MeetBirdsContainer.vue'
 import Staff from '../components/StaffContainer.vue'
 import Volunteer from '../components/Volunteer.vue'
-import PlanAFundraiser from '../components/PlanFundraiser.vue'
+import PlanFundraiser from '../components/PlanFundraiser/PlanFundraiser.vue'
 import PositionsAvailable from '../components/Positions.vue'
 import ContactUs from '../views/ContactUs.vue'
 
@@ -74,8 +74,8 @@ const routes = [
   },
   {
     path: '/plan-a-fundraiser',
-    name: 'fundraiser',
-    component: PlanAFundraiser
+    name: 'plan',
+    component: PlanFundraiser
   },
   {
     path: '/contact-us',

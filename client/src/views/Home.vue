@@ -33,7 +33,7 @@ export default {
   // overflow: hidden;
   z-index: 0;
   height: 30rem;
-  background-image: url('https://lh3.googleusercontent.com/qt-G3tcCmLWw6L3BTPQyaDSIpw_BJVChV_5mwRpL6YpZ41SNg6YAyvGHxQsx-kE9aW80uBV6NhapGDfv2bdM5gXkr8sA4lx531gUUrJSnI57ylq-ZkNyWMSpItKo4SrKYfxu1eQPsgDZTrv0gpZfaCy4KbikIaxYrYpLf4jvnXXVa8RDXDUzspa9j22kn77ikbyYrfJLTtN0CMt3Qk2m9m44u33kTyQTCFp-Fc8-CpwmECnmpIxmK5UEZrM7GgTyvP6nDjoz35RwARqOcHl9bYSkLHOF-RZ5BPLzusK6EFMQYFMCcYCulP9WA1yk7Evn50UPfYvhwx1KEBN0jWZasGBcBCWaKleVL0TJvdlgsc2zA1K_vTBzS8hO-cTDYWIQU1NPcngSH0LuRhYExyXTUGEneG-Cz8wPrc_HmlkxMmD-JJzremXspEqgFR4CWWjIeFCujykM38wO-cpHR3LagJp-x0MavwoafypH-Cb2lKzaemj-_OWZ5y-a9wm6N3GiZQt67ThAcyU6dtgGEgUf5UgoahSSpVluW02TVeGITHiZWFKpBJgwu2QgSHn-pVH57didQQmSnr1fKOcdhNjHkdfbkrCjdf5gjUivNpjqdRSogvH01H6TSzFobEPGG5CoFs4NUNSqqheTt-lRMUzzQLMYuT0Xgxz2i4L7ryBGgRQY3rsYqp7zJpc1ubTyHi0Wk7tawY8pysOwNmGvSNNVJpsslKHuWh-QfNO0S2foRvCBMDFVHKtouxk=w487-h274-no');
+  background-image: url('https://rootstowingspictures.s3-us-west-1.amazonaws.com/Yoga-Yellow-ShowdyLeading.jpg');
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   // background-size: auto;

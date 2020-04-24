@@ -2,7 +2,7 @@
     <div class="get-involved-other" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']">
         <v-card outlined class="get-involved-other-card" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']" flat>
             <div class="get-involved-other-title-container" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']" >
-                <v-img class="get-involved-other-icon-img" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']" src="https://lh3.googleusercontent.com/MNUC5OWfDmzlacBju9l-esHWhoaU9vXOgR4pJ2Siz3Ul7E7eVpRfIIelH75yqqBs1O59HmMsVIO20eoS36nDo88FL_WBDLgNI7t6ljbzhAIiTK4cukUTDi5LhXdKDqPWsK7ZhAD3lRwGHWjsjWcNxZ-A0lQs5WH7Q-XYSt1pCnRAPFwNei5yc6MYSegsLL3XDAhtjSdRuLoQzm1Mhwmkcstx4atFIVui0T2bSrYmtTPP1CQc6zE2CQDOd-WUt0PhT1e-jBZxU3eL05bdnsmPS4JWd0q1K6CwbpruNlsIxpF-bZL7BKJllwIxkS40Y5ey5mHi8NExn7-Iq47PMq8dl0nbNbabKjEIbWBOPTXE0mV0asD6d7fmkMwdPpvV9TegjIQhhQ7T6rF4qUq6lLdJY26G8uE9jngL3eA5ZcmLeEPoHZ7CY600ktw0Rx2jDHNrmizZyHGYo7D8gpIvINkeYF7vv8TxhapgE2NniiaVbnyMfOJk21OpPbtWtnLPYFJjHaJ2utAhNjn0DlxHE3yQHlqICcRMAQPpvkdLbL21uGZI91QW85SMUPLAJUnado8cj4kFjmuO8n9A7QURkJG2245pgZXtdBir6_P2KIx1XXlkvMY2M2xsU25jMgaTMxmSykpO9C91xsiSDuBaCyrw2b2yQzmRMO3gPYA9qRyFKrrfAOwmbEoEAssMywsQZA_y9x-cibRNnjdZg2iPhKqMP1VyVKbNMVaIdP-hON_yP1dhWLcgwqz537Y=s128-no"></v-img> 
+                <v-img class="get-involved-other-icon-img" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']" src="https://rootstowingspictures.s3-us-west-1.amazonaws.com/amazonIcon.png"></v-img> 
                 <h1 class="get-involved-other-title" :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']"> Other Ways to Give</h1>
             </div>
             <div class="get-involved-other-info">
