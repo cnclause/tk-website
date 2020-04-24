@@ -3,7 +3,7 @@
         <h1 class="community-center-heading projects-heading" :class="[$vuetify.breakpoint.mdAndUp ? 'display-4' : 'display-2']"> Community Center </h1>
         <div class="each-project-container" :class="[$vuetify.breakpoint.mdAndUp ? 'each-project-container-large' : 'each-project-container-small']">
             <div class="project-img-container">
-                <v-img clas="project-img" src="https://lh3.googleusercontent.com/l56QeqQVeZw5daVJGmJeCEAqTuSv7hErjEe-jlbFAh4y-B1i1ZMG-xCuTvCOtlEIpzGKbjK1iItwTP9ut3Sbg-WCKo1Y1CDB8JwJgo44tvBhIX3mYxJz7kXMvHBuegEKBgmOGgJLyI4l6vy86ZxR2fAXPzSCB6EfmsjjLWO_7lnSEfhnwzxkbT8TmBguEZmzUbzy4M3x_bokcS_zgD2BrykTBIG5ymu-x-3DxeF3I444lometHExIdSqvZjRgeiSR-E_C3sDen8rY_p0Q6PntD7fh8FfD7a4bhQQ-hBCJ0p2USm_vse88NwqrKCP96il5NCu2n-cCtwAW7ST-1EYQmBCzT2xoUhzvYG3tYaojTs1Vue-zohM4f9i_9XzjMvf2fswDFlo_S5YXpXehTFDswIk095BTBSEcSG5-Ry0xV3qjwImB-l7kEbPPZZngKYdtuYXmvC4XxcXRoYlZUD_PW5WhW6wA-cMli4gvac-fJVQ-SVSsXbK7Oh0nzb94JO-rmykBPKPv234dsUztD3g3YoogjfU5anHTcowmYBakH99Lj9BQ97K1d0waal1718uEAm9XU4CukhsHW-evaoYPKHCWnwvnxaI-egBKT5NJrDORH3e3pUtSnyU_EEvv4SX9xgCpygiVGQWeiwBbORd71y2fAcqJcmOCtI6EYwiot2UrVBtN70zvP0T5vkgbJ8SKbMnpzJumxzKJm1mAsGox7e3Q5jqSaLh5nffnNsf2sZU5hg9QzbP_y0=w1888-h1260-no">
+                <v-img clas="project-img" src="https://rootstowingspictures.s3-us-west-1.amazonaws.com/ShowdyatPossibleCommunitybuilding.jpg">
                 </v-img>
             </div>
             <div class="project-info">

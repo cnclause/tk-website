@@ -1,9 +1,11 @@
 <template>
-    <h1>Plan Fundraiser</h1>
+    <h1>Frundraiser</h1>
 </template>
 
 <script>
+
 export default {
-    name: 'fundraiser'
+    name: 'plan',
 }
+
 </script>

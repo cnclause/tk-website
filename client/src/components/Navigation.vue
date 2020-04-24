@@ -65,7 +65,7 @@
           <v-list-item to="/volunteer">
             Volunteer
           </v-list-item>
-          <v-list-item to="/plan-a-fundrasier">
+          <v-list-item to="/plan-a-fundraiser">
             Plan a Fundraiser
           </v-list-item>
           <v-list-item to="/contact-us">
