@@ -66,12 +66,17 @@ export default {
     padding: 0pt;
 }
 
+.timeline-title.headline{
+    font-size: 30pt !important;
+}
+
 .small-timeline-text{
     font-size: 10pt;
 }
 
 .large-timeline-text{
     font-size: 15pt;
+    font-weight: 300 !important;
 }
 
 .timeline-title.body-2{
