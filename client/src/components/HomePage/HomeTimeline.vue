@@ -1,16 +1,16 @@
 <template>
   <v-timeline class='hometimeline' :class="[$vuetify.breakpoint.mdAndUp ? 'large-timeline' : 'small-timeline']">
       <v-timeline-item
-        v-for="(project, i) in projects"
+        v-for="(value, i) in values"
         :key="i"
-        :color="project.color"
+        :color="value.color"
         medium
         fill-dot
       >
         <v-card flat>
-          <v-card-title class="timeline-title" :class="[$vuetify.breakpoint.mdAndUp ? `headline font-weight-light ${project.color}--text` : `body-2 font-weight-light ${project.color}--text`]">{{project.project}}</v-card-title>
+          <v-card-title class="timeline-title" :class="[$vuetify.breakpoint.mdAndUp ? `headline font-weight-light ${value.color}--text` : `body-2 font-weight-light ${value.color}--text`]">{{value.value}}</v-card-title>
           <v-card-text :class="[$vuetify.breakpoint.mdAndUp ? 'large-timeline-text' : 'small-timeline-text']">
-            Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.
+            {{value.info}}
           </v-card-text>
         </v-card>
       </v-timeline-item>
@@ -21,26 +21,32 @@
 export default {
     data(){
         return{
-            projects: [
+            values: [
                 {
-                    project: 'Community',
-                    color: 'cyan'
+                    value: 'Empowerment',
+                    color: 'cyan',
+                    info: 'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.'
+
                 },
                 {
-                    project: 'Education',
-                    color: 'green'
+                    value: 'Sustainability',
+                    color: 'green',
+                    info: 'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.'
                 },
                 {
-                    project: 'Mentorship',
-                    color: 'pink'
+                    value: 'Integrity',
+                    color: 'pink',
+                    info: 'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.'
                 },
                 {
-                    project: 'Health & Wellness',
-                    color: 'amber'
+                    value: 'Collaboration',
+                    color: 'amber',
+                    info: 'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.'
                 },
                 {
-                    project: 'Respect (values?)',
-                    color: 'orange'
+                    value: 'Innovation',
+                    color: 'orange',
+                    info: 'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.'
                 }
             ]
         }
@@ -60,12 +66,17 @@ export default {
     padding: 0pt;
 }
 
+.timeline-title.headline{
+    font-size: 30pt !important;
+}
+
 .small-timeline-text{
     font-size: 10pt;
 }
 
 .large-timeline-text{
     font-size: 15pt;
+    font-weight: 300 !important;
 }
 
 .timeline-title.body-2{
