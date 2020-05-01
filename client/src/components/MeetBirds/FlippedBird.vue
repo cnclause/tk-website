@@ -7,7 +7,7 @@
             <p>{{bird.bio}}</p>
         </div>
         <div class="meet-bird-img-containter">
-                <v-img class="meet-bird-img" :src='bird.thumbnail' 
+                <v-img eager class="meet-bird-img" :src='bird.thumbnail' 
                 max-height="20rem"
                 contain></v-img>
         </div>

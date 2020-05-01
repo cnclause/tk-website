@@ -1,7 +1,7 @@
 <template>
    <div :class="[$vuetify.breakpoint.mdAndUp ? 'bird-card-large' : 'bird-card-small']">
             <div class="meet-bird-img-containter">
-                <v-img class="meet-bird-img"
+                <v-img eager class="meet-bird-img"
                 max-height="20rem"
                 contain
                 :src='bird.thumbnail'></v-img>

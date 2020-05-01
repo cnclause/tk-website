@@ -50,7 +50,7 @@ export default {
 
     .meet-staff-title-txt-container.large{
         display: flex;
-        width: 50%;
+        width: 70%;
     }
 
     .meet-staff-title-txt-container.small{
@@ -60,7 +60,7 @@ export default {
 
     .meet-staff-title-img-container.large{
         display: flex;
-        width: 50%;
+        width: 30%;
         justify-items: left;
         margin-right: 4rem;
     }
