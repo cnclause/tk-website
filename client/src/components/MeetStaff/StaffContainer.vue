@@ -18,6 +18,16 @@ export default {
             staff: [
                 {
                     id: 1,
+                    name: 'Isamel (Showdy) St Jour',
+                    position: 'Co-Founder',
+                    blurb: 'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.',
+                    img: 'https://rootstowingspictures.s3-us-west-1.amazonaws.com/JoeMeetStaff.jpg',
+                    imgposition: 'center',
+                    show: false
+
+                },
+                {
+                    id: 2,
                     name: 'Catherine Clause',
                     position: 'Co-Founder',
                     blurb: 'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.',
@@ -27,7 +37,7 @@ export default {
 
                 },
                 {
-                    id: 2,
+                    id: 3,
                     name: 'Joe McDoal',
                     position: 'Co-Founder',
                     blurb: 'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.',
@@ -37,21 +47,48 @@ export default {
 
                 },
                 {
-                    id: 3,
+                    id: 4,
+                    name: 'Esdras Sylvain',
+                    position: 'Chief Financial Officer',
+                    blurb: 'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.',
+                    img: 'https://rootstowingspictures.s3-us-west-1.amazonaws.com/EsdrasMeetStaff.JPG',
+                    imgposition: 'center',
+                    show: false
+
+                },
+                {
+                    id: 5,
+                    name: 'Hinal Modasia',
+                    position: 'Business Development Director',
+                    blurb: 'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.',
+                    img: 'https://rootstowingspictures.s3-us-west-1.amazonaws.com/JoeMeetStaff.jpg',
+                    imgposition: 'center',
+                    show: false
+                },
+                {
+                    id: 6,
+                    name: 'Jonas Sylvain',
+                    position: 'Education Development Director',
+                    blurb: 'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.',
+                    img: 'https://rootstowingspictures.s3-us-west-1.amazonaws.com/JonasMeetStaff.JPG',
+                    imgposition: 'top',
+                    show: false
+                },
+                {
+                    id: 7,
                     name: 'Kenny Casals',
                     position: 'Public Relations Director',
                     blurb: 'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.',
                     img: 'https://rootstowingspictures.s3-us-west-1.amazonaws.com/KennyMeetStaff.jpeg',
                     imgposition: 'top',
                     show: false
-
                 },
                 {
-                    id: 4,
-                    name: 'Hinal Modasia',
-                    position: 'Business Development Director',
+                    id: 8,
+                    name: 'Davidson',
+                    position: 'Staff',
                     blurb: 'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.',
-                    img: 'https://rootstowingspictures.s3-us-west-1.amazonaws.com/JoeMeetStaff.jpg',
+                    img: 'https://rootstowingspictures.s3-us-west-1.amazonaws.com/DavidsonMeetStaff.JPG',
                     imgposition: 'center',
                     show: false
                 },
