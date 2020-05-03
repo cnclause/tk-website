@@ -1,75 +1,111 @@
 <template>
-  <div class="meet-staff">
-    <div class="meet-staff-title-container">
-            <div class="meet-staff-title-txt-container" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']">
-                <h1 class ="meet-staff-title" :class="[$vuetify.breakpoint.mdAndUp ? 'display-4' : 'display-2']">Meet the Staff</h1>
-            </div>
-            <div class="meet-staff-title-img-container" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']">
-                <v-img class="meet-staff-title-img" src="https://rootstowingspictures.s3-us-west-1.amazonaws.com/TK+Logo+Transparent+Background+no+words-01+(1).png"
-                    max-height="40rem"
-                    contain
-                ></v-img>
-            </div>
+    <div class="staff-cards-container">
+        <div class="staff-card-container" :key="person.id" v-for="person in staff">
+            <StaffCard :person="person"/>
         </div>
-  </div>
+    </div>
 </template>
 
 <script>
+import StaffCard from './StaffCard.vue'
+
 export default {
-  name: 'staff',
+    components: {
+        StaffCard
+    },
+     data(){
+        return{
+            staff: [
+                {
+                    id: 1,
+                    name: 'Isamel (Showdy) St Jour',
+                    position: 'Co-Founder',
+                    blurb: 'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.',
+                    img: 'https://rootstowingspictures.s3-us-west-1.amazonaws.com/JoeMeetStaff.jpg',
+                    imgposition: 'center',
+                    show: false
+
+                },
+                {
+                    id: 2,
+                    name: 'Catherine Clause',
+                    position: 'Co-Founder',
+                    blurb: 'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.',
+                    img: 'https://rootstowingspictures.s3-us-west-1.amazonaws.com/CatMeetStaff.JPG',
+                    imgposition: 'center',
+                    show: false
+
+                },
+                {
+                    id: 3,
+                    name: 'Joe McDoal',
+                    position: 'Co-Founder',
+                    blurb: 'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.',
+                    img: 'https://rootstowingspictures.s3-us-west-1.amazonaws.com/JoeMeetStaff.jpg',
+                    imgposition: 'center',
+                    show: false
+
+                },
+                {
+                    id: 4,
+                    name: 'Esdras Sylvain',
+                    position: 'Chief Financial Officer',
+                    blurb: 'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.',
+                    img: 'https://rootstowingspictures.s3-us-west-1.amazonaws.com/EsdrasMeetStaff.JPG',
+                    imgposition: 'center',
+                    show: false
+
+                },
+                {
+                    id: 5,
+                    name: 'Hinal Modasia',
+                    position: 'Business Development Director',
+                    blurb: 'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.',
+                    img: 'https://rootstowingspictures.s3-us-west-1.amazonaws.com/JoeMeetStaff.jpg',
+                    imgposition: 'center',
+                    show: false
+                },
+                {
+                    id: 6,
+                    name: 'Jonas Sylvain',
+                    position: 'Education Development Director',
+                    blurb: 'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.',
+                    img: 'https://rootstowingspictures.s3-us-west-1.amazonaws.com/JonasMeetStaff.JPG',
+                    imgposition: 'top',
+                    show: false
+                },
+                {
+                    id: 7,
+                    name: 'Kenny Casals',
+                    position: 'Public Relations Director',
+                    blurb: 'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.',
+                    img: 'https://rootstowingspictures.s3-us-west-1.amazonaws.com/KennyMeetStaff.jpeg',
+                    imgposition: 'top',
+                    show: false
+                },
+                {
+                    id: 8,
+                    name: 'Davidson',
+                    position: 'Staff',
+                    blurb: 'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.',
+                    img: 'https://rootstowingspictures.s3-us-west-1.amazonaws.com/DavidsonMeetStaff.JPG',
+                    imgposition: 'center',
+                    show: false
+                },
+
+            ]
+        }
+    }
 }
 </script>
 
 <style lang="scss">
 
-  .meet-staff-title.display-4{
-        text-align: right;
-        letter-spacing: 0.75rem !important;
-        width: 100%;
-        align-self: center;
-        padding: 0pt;
-    }
-
-
-    .meet-staff-title.display-2{
-        font-size: 30pt !important;
-        text-align: right;
-    }
-
-    .meet-staff{
+    .staff-cards-container{
+        width: 80%;
         display: flex;
-        flex-flow: column;
-        align-items: center;
-    }
-
-    .meet-staff-title-txt-container.large{
-        display: flex;
-        width: 50%;
-    }
-
-    .meet-staff-title-txt-container.small{
-        display: flex;
-        width: 60%;
-    }
-
-    .meet-staff-title-img-container.large{
-        display: flex;
-        width: 50%;
-        justify-items: left;
-        margin-right: 4rem;
-    }
-
-    .meet-staff-title-img-container.small{
-        display: flex;
-        width: 40%;
-        justify-items: left;
-   
-    }
-
-    .meet-staff-title-container{
-        display: flex;
-        justify-items: center;
-        width: 100%;
+        flex-flow: wrap;
+        justify-content: space-evenly;
     }
 
 </style>
