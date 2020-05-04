@@ -58,7 +58,7 @@
             id: 6,
             name: "Johnny Volcey",
             bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            thumbnail: "https://rootstowingspictures.s3-us-west-1.amazonaws.com/JohnnyVolcey.jpg"
+            thumbnail: "https://rootstowingspictures.s3-us-west-1.amazonaws.com/JohnnyVolcey.png"
             },
             {
             id: 7,
@@ -82,14 +82,14 @@
             id:10,
             name: "Darkenlove Alexandre",
             bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            thumbnail: "https://rootstowingspictures.s3-us-west-1.amazonaws.com/DarkenloveAlexandre.jpg",
+            thumbnail: "https://rootstowingspictures.s3-us-west-1.amazonaws.com/DarkenloveAlexandre.png",
             flipped: true
             },
              {
             id:11,
             name: "Wideline Alexandre",
             bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            thumbnail: "https://rootstowingspictures.s3-us-west-1.amazonaws.com/Wideline+Alexandre.jpg"
+            thumbnail: "https://rootstowingspictures.s3-us-west-1.amazonaws.com/Wideline+Alexandre.png"
             },
           ]
       }

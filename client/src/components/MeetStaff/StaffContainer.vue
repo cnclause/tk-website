@@ -70,7 +70,7 @@ export default {
                     name: 'Jonas Sylvain',
                     position: 'Education Development Director',
                     blurb: 'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.',
-                    img: 'https://rootstowingspictures.s3-us-west-1.amazonaws.com/JonasMeetStaff.JPG',
+                    img: 'https://rootstowingspictures.s3-us-west-1.amazonaws.com/JonasMeetStaff.png',
                     imgposition: 'top',
                     show: false
                 },
