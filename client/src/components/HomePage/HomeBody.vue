@@ -1,6 +1,6 @@
 <template>
     <div class='home-body'>
-        <div :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']" class='mission-statement'> From Roots to Wings exists to helps develop communities by following the lead of community members and leaders something something</div>
+        <div :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']" class='mission-statement'> From Roots to Wings exists to develop sustainable, community-based avenues towards empowerment.</div>
         <HomeTimeline />
         <AmazonSmile />
     </div>  
@@ -34,8 +34,9 @@ export default {
 
 .mission-statement.body-1{
     text-align: center;
-    width: 30%;
-    margin-top: 2rem;
+    width: 50%;
+    margin-top: 0.5rem;
+    line-height: 2rem !important;
 }
 
 /* .mission-statement{

@@ -7,9 +7,9 @@
     >
       <v-img
         max-height="32rem"
-        class="white--text align-end"
+        class="white--text align-end footer-img"
         gradient="to top, rgba(255,255,255,0), rgba(255,255,255,1)"
-        src='https://rootstowingspictures.s3-us-west-1.amazonaws.com/HaitianNature-HaitiSt-TapTapjpg'
+        src='https://rootstowingspictures.s3-us-west-1.amazonaws.com/footer.jpg'
       >
             <v-card-text class="footer-card-top">
                 <v-btn
@@ -79,5 +79,10 @@ export default {
 .footer-card-slogan{
     text-align: left;
 }
+
+.footer-card{
+    width: 100%;
+}
+
 
 </style>
