@@ -33,10 +33,14 @@ export default {
 }
 
 .mission-statement.body-1{
-    text-align: center;
-    width: 50%;
+    /* text-align: center; */
+    width: 70%;
     margin-top: 0.5rem;
     line-height: 2rem !important;
+    text-align: center;
+    /* text-transform: uppercase; */
+    letter-spacing: 0.25rem !important;
+    font-size: 20pt !important;
 }
 
 /* .mission-statement{
