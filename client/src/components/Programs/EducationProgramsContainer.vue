@@ -13,7 +13,7 @@
         </div>
         <div class="each-program-container" :class="[$vuetify.breakpoint.mdAndUp ? 'each-program-container-large' : 'each-program-container-small']">
             <div class="program-img-container">
-                <v-img clas="program-img" src="https://rootstowingspictures.s3-us-west-1.amazonaws.com/showdymentoringMckenely.jpg" eager>
+                <v-img clas="program-img" src="https://rootstowingspictures.s3-us-west-1.amazonaws.com/ShowdymentoringMckenely.jpg" eager>
                 </v-img>
             </div>
             <div class="program-info">
