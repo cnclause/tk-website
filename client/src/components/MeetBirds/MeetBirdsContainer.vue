@@ -5,8 +5,8 @@
                 <h1 class ="meet-birds-title" :class="[$vuetify.breakpoint.mdAndUp ? 'display-4' : 'display-2']">Meet the Birds</h1>
             </div>
             <div class="meet-birds-title-img-container" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']">
-                <v-img class="meet-birds-title-img" src="https://rootstowingspictures.s3-us-west-1.amazonaws.com/TK+Logo+Transparent+Background+no+words-01+(1).png"
-                    max-height="40rem"
+                <v-img class="meet-birds-title-img" src="https://rootstowingspictures.s3-us-west-1.amazonaws.com/logo.jpeg"
+                    max-height="15rem"
                     contain
                 ></v-img>
             </div>

@@ -10,7 +10,7 @@
                 <v-img class="meet-bird-img" 
                     :src='bird.thumbnail' 
                     :lazy-src="bird.thumbnail"
-                    max-height="20rem"
+                    max-height="320px"
                     contain
                 >
                     <template v-slot:placeholder>

@@ -2,7 +2,7 @@
    <div :class="[$vuetify.breakpoint.mdAndUp ? 'bird-card-large' : 'bird-card-small']">
             <div class="meet-bird-img-containter">
                 <v-img eager class="meet-bird-img"
-                max-height="20rem"
+                max-height="320px"
                 contain
                 :src='bird.thumbnail'></v-img>
             </div>

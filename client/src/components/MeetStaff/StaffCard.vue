@@ -8,6 +8,7 @@
                 eager
                 :src="person.img"
                 height="250px"
+                width="320px"
                 :position="person.imgposition"
             ></v-img>
             <v-card-title>
@@ -49,5 +50,6 @@ export default {
 
     .staff-card-container{
         margin-top: 2rem;
+        margin: 1rem;
     }
 </style>

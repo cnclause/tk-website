@@ -27,31 +27,31 @@
             id: 1,
             name: "Charma Fleurelus",
             bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            thumbnail: "https://rootstowingspictures.s3-us-west-1.amazonaws.com/CharmaDonatePic-outsideSchool.jpg"},
+            thumbnail: "https://rootstowingspictures.s3-us-west-1.amazonaws.com/charma.jpg"},
             {
             id: 2,
             name: "Lawerence Nelson",
             bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            thumbnail: "https://rootstowingspictures.s3-us-west-1.amazonaws.com/Lawerence.jpg",
+            thumbnail: "https://rootstowingspictures.s3-us-west-1.amazonaws.com/lawerence.jpg",
             flipped: true,
             lawerence: true
             },
             {
             id: 3,
             name: "Volcey Family",
-            thumbnail: "https://rootstowingspictures.s3-us-west-1.amazonaws.com/VolceyFamily-inhouse.jpg"
+            thumbnail: "https://rootstowingspictures.s3-us-west-1.amazonaws.com/VolceyFamily.jpg"
             },
              {
             id: 4,
             name: "Genise Volcey",
             bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            thumbnail: "https://rootstowingspictures.s3-us-west-1.amazonaws.com/GeniseVolcey.jpg"
+            thumbnail: "https://rootstowingspictures.s3-us-west-1.amazonaws.com/Genise.jpg"
             },
              {
             id: 5,
             name: "Gonet Volcey",
             bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            thumbnail: "https://rootstowingspictures.s3-us-west-1.amazonaws.com/GonetVolcey.jpg",
+            thumbnail: "https://rootstowingspictures.s3-us-west-1.amazonaws.com/Gonet.jpg",
             flipped: true
             },
             {
@@ -64,19 +64,19 @@
             id: 7,
             name: "Markenson Jean",
             bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            thumbnail: "https://rootstowingspictures.s3-us-west-1.amazonaws.com/MarkensonJean.jpg",
+            thumbnail: "https://rootstowingspictures.s3-us-west-1.amazonaws.com/Markenson.jpg",
             flipped: true
             },
             {
             id:8,
             name: "Alexandre Family",
-            thumbnail: "https://rootstowingspictures.s3-us-west-1.amazonaws.com/AlexandreFamily-minusDarkenlove.jpg"
+            thumbnail: "https://rootstowingspictures.s3-us-west-1.amazonaws.com/AlexandreFam-minusDarkenlove.jpg"
             },
             {
             id:9,
             name: "Christiana Alexandre",
             bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            thumbnail: "https://rootstowingspictures.s3-us-west-1.amazonaws.com/ChristianaAlexandre.jpg"
+            thumbnail: "https://rootstowingspictures.s3-us-west-1.amazonaws.com/Christiana.jpg"
             },
              {
             id:10,
