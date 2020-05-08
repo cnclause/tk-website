@@ -70,9 +70,7 @@
 //     margin-top: 2rem;
 // }
 
-// .plan-fundraiser-info-heading{
-//     padding: 0rem;
-// }
+
 
 
 </style>
