@@ -59,11 +59,8 @@
           </v-btn>
         </template>
         <v-list>
-          <v-list-item to="/positions-available">
-            Positions Available
-          </v-list-item>
-          <v-list-item to="/volunteer">
-            Volunteer
+          <v-list-item to="/join-us">
+            Join Us
           </v-list-item>
           <v-list-item to="/plan-a-fundraiser">
             Plan a Fundraiser

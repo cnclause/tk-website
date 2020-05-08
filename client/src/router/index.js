@@ -9,9 +9,8 @@ import Programs from '../components/Programs/Programs.vue'
 import Projects from '../components/Projects/Projects.vue'
 import Birds from '../components/MeetBirds/MeetBirdsContainer.vue'
 import Staff from '../components/MeetStaff/MeetStaff.vue'
-import Volunteer from '../components/Volunteer.vue'
+import JoinUs from '../components/JoinUs/JoinUs.vue'
 import PlanFundraiser from '../components/PlanFundraiser/PlanFundraiser.vue'
-import PositionsAvailable from '../components/Positions.vue'
 import ContactUs from '../views/ContactUs.vue'
 
 Vue.use(VueRouter)
@@ -63,14 +62,9 @@ const routes = [
     component: GetInvolved
   },
   {
-    path: '/positions-available',
-    name: 'positions',
-    component: PositionsAvailable
-  },
-  {
-    path: '/volunteer',
-    name: 'volunteer',
-    component: Volunteer
+    path: '/join-us',
+    name: 'JoinUs',
+    component: JoinUs
   },
   {
     path: '/plan-a-fundraiser',
