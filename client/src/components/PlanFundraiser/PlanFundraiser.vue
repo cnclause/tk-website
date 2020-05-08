@@ -4,16 +4,19 @@
       <h1 class ="plan-fundraiser-title" :class="[$vuetify.breakpoint.mdAndUp ? 'display-4' : 'display-2']">Plan a Fundraiser</h1>
     </div>
     <PlanFundraiserSubHeader />
+    <PlanFundraiserInfo />
   </div>
 </template>
 
 <script>
 import PlanFundraiserSubHeader from './PlanFundraiserSubHeader'
+import PlanFundraiserInfo from './PlanFundraiserInfo'
 
 export default {
     name: 'plan',
     components: {
-        PlanFundraiserSubHeader
+        PlanFundraiserSubHeader,
+        PlanFundraiserInfo
     }
 }
 
