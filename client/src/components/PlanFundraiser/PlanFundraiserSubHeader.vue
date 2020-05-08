@@ -3,9 +3,10 @@
         <div :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']" class='plan-fundraiser-subheader'> 
             Take a lead and change <strong>Everything</strong></div>
         <div :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']"       class='plan-fundraiser-subheader-info'>
-            Organized fundraisers are a primary way From Roots to Wings funds its programs and activities. We have teams that organize and execute fundraisers in many cities across the United States. You can lead a team. Contact us to learn how!
+            Organized fundraisers are a primary way From Roots to Wings funds its programs and activities. We have teams that organize and execute fundraisers in many cities across the United States. Contact us if you would like to join one of these teams or start your own in your city!
+
         </div>
-        <v-btn color="green white--text" depressed rounded class="plan-fundraiser-subheader-btn" to="/donate"> Contact Us</v-btn>
+        <v-btn color="green white--text" depressed rounded class="plan-fundraiser-subheader-btn" to="/contact-us"> Contact Us</v-btn>
     </div>
 </template>
 
