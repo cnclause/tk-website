@@ -1,6 +1,8 @@
 <template>
     <section class="donate-container" :class="[$vuetify.breakpoint.mdAndUp ? 'donatebox-large' : 'donatebox-small']">
-        <iframe  allowpaymentrequest="" frameborder="0" height="40rem" name="donorbox" scrolling="no" seamless="seamless" src="https://donorbox.org/embed/recurring-donation-34" style="max-width: 500px; min-width: 310px; max-height:none!important" width="100%"></iframe>
+        <iframe  allowpaymentrequest="" frameborder="0" 
+        height="40rem" 
+        name="donorbox" scrolling="no" seamless="seamless" src="https://donorbox.org/embed/recurring-donation-34" style="max-width: 500px; min-width: 310px; max-height:none!important" width="100%"></iframe>
 
     </section>
 </template>
