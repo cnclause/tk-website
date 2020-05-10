@@ -1,19 +1,26 @@
 <template>
     <div class='donate-page' :class="[$vuetify.breakpoint.mdAndUp ? 'donate-large' : 'donate-small']">
-        <div class="donate-title-container" :class="[$vuetify.breakpoint.mdAndUp ? 'title-large' : 'title-small']" >
+        <!-- <div class="donate-form-image-container"> -->
+        <!-- <div class="donate-title-container" :class="[$vuetify.breakpoint.mdAndUp ? 'title-large' : 'title-small']" >
             <h1 class="donate-title" :class="[$vuetify.breakpoint.mdAndUp ? 'display-4' : 'display-2']"> YOU Can Make a Difference </h1>
-        </div>
-        <DonateContainer />
+        </div> -->
+            <DonateInfoContainer />
+            <DonateContainer />
+        <!-- </div> -->
+        <!-- <DonateInfo /> -->
     </div>
 
 </template>
 
 <script>
 import DonateContainer from '../components/Donate/donateContainer'
+import DonateInfoContainer from '../components/Donate/DonationInfoContainer'
+
 export default {
     name: 'donate',
     components: {
-        DonateContainer
+        DonateContainer,
+        DonateInfoContainer
     }
 }
 </script>
@@ -21,6 +28,8 @@ export default {
 <style>
 .donate-page.donate-large{
     display: flex;
+    justify-content: center;
+    /* flex-flow: column; */
 }
 
 .donate-page.donate-small{
@@ -28,15 +37,24 @@ export default {
     flex-flow: column;
 }
 
+/* .donate-form-image-container{
+    display: flex;
+} */
+
+.donation-info-container{
+    width: 50%;
+    margin-top: 2rem;
+
+}
 
 .donate-title-container{
     width: 50%;
     margin: 2rem;
     z-index: 0;
-    height: 40rem;
+    /* height: 40rem; */
     background-image: url('https://rootstowingspictures.s3-us-west-1.amazonaws.com/CharmaSmile-inSchool.jpg');
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
+    background-position: center; 
+    background-repeat: no-repeat; 
     background-size: cover;
 }
 
