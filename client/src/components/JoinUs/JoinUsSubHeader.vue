@@ -5,7 +5,7 @@
         <div :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']"       class='join-us-subheader-info'>
             From Roots to Wings was built by volunteers, and we still greatly depend on volunteer support.  Volunteers do outreach in their communities, raise funds, and provide other assistance for From Roots to Wings. As a volunteer, you’ll have opportunities to learn more about our work. We are always looking for new volunteers to help us advance our mission.
         </div>
-        <v-btn color="pink white--text" depressed rounded class="join-us-subheader-btn" to="/donate"> Contact Us</v-btn>
+        <v-btn color="pink white--text" depressed rounded class="join-us-subheader-btn" to="/contact-us"> Contact Us</v-btn>
     </div>
 </template>
 
