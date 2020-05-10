@@ -56,7 +56,7 @@
 
     .get-involved-volunteer-title.body-1{
         text-transform: uppercase;
-        margin-right: 5rem;
+        /* margin-right: 5rem; */
         margin-top: 2.5rem;
         font-size: 25pt !important;
         letter-spacing: 0.5rem !important;

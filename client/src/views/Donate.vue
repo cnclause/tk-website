@@ -4,9 +4,7 @@
         <!-- <div class="donate-title-container" :class="[$vuetify.breakpoint.mdAndUp ? 'title-large' : 'title-small']" >
             <h1 class="donate-title" :class="[$vuetify.breakpoint.mdAndUp ? 'display-4' : 'display-2']"> YOU Can Make a Difference </h1>
         </div> -->
-        <div class="donation-info-container">
-            <DonateInfo />
-        </div>
+            <DonateInfoContainer />
             <DonateContainer />
         <!-- </div> -->
         <!-- <DonateInfo /> -->
@@ -16,13 +14,13 @@
 
 <script>
 import DonateContainer from '../components/Donate/donateContainer'
-import DonateInfo from '../components/Donate/DonationInfo'
+import DonateInfoContainer from '../components/Donate/DonationInfoContainer'
 
 export default {
     name: 'donate',
     components: {
         DonateContainer,
-        DonateInfo
+        DonateInfoContainer
     }
 }
 </script>
