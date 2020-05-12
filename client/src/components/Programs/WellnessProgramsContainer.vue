@@ -57,7 +57,7 @@
 }
 
 .program-img-container{
-    width: 50%;
+    width: 33% !important;
 }
 
 .program-description{

@@ -26,7 +26,7 @@ export default {
     margin: 2rem;
     z-index: 0;
     height: 35rem;
-    background-image: url('https://rootstowingspictures.s3-us-west-1.amazonaws.com/Yoga-kidsMeditating-inSchool.jpg');
+    background-image: url('https://rootstowingspictures.s3-us-west-1.amazonaws.com/YogaMEditation-OurImpactTitle-large.jpg');
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;

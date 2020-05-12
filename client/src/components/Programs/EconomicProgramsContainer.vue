@@ -7,7 +7,7 @@
                 <p class="program-description" :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']"> orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
             </div>
             <div class="program-img-container">
-                <v-img clas="program-img" src="https://rootstowingspictures.s3-us-west-1.amazonaws.com/HatianArtist.jpg" eager>
+                <v-img clas="program-img" src="https://rootstowingspictures.s3-us-west-1.amazonaws.com/DSC_1430.JPG" eager>
                 </v-img>
             </div>
         </div>
@@ -46,7 +46,7 @@
 }
 
 .program-img-container{
-    width: 50%;
+    width: 33% !important;
 }
 
 .program-description{

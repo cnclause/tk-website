@@ -33,7 +33,7 @@ export default {
   // overflow: hidden;
   z-index: 0;
   height: 35rem;
-  background-image: url('https://rootstowingspictures.s3-us-west-1.amazonaws.com/Yoga-Yellow-ShowdyLeading.jpg');
+  background-image: url('https://rootstowingspictures.s3-us-west-1.amazonaws.com/HomeTitlePic-large.jpg');
   background-position: center center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   // background-size: auto;

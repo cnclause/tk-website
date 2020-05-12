@@ -46,7 +46,7 @@
 }
 
 .project-img-container{
-    width: 50%;
+    width: 33%;
 }
 
 .project-description{

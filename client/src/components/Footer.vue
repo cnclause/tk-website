@@ -9,7 +9,7 @@
         max-height="32rem"
         class="white--text align-end footer-img"
         gradient="to top, rgba(255,255,255,0), rgba(255,255,255,1)"
-        src='https://rootstowingspictures.s3-us-west-1.amazonaws.com/footer.jpg'
+        src='https://rootstowingspictures.s3-us-west-1.amazonaws.com/Footer-large.jpg'
       >
             <v-card-text class="footer-card-top">
                 <v-btn
