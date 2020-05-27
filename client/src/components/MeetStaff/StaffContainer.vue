@@ -21,7 +21,7 @@ export default {
                     name: 'Isamel (Showdy) St Jour',
                     position: 'Co-Founder',
                     blurb: 'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.',
-                    img: 'https://rootstowingspictures.s3-us-west-1.amazonaws.com/JoeMeetStaff.jpg',
+                    img: 'https://rootstowingspictures.s3-us-west-1.amazonaws.com/ShowdyMeetStaff.jpg',
                     imgposition: 'center',
                     show: false
 
