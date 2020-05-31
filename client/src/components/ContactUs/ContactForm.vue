@@ -1,7 +1,11 @@
 <template>
     <div class="contact-form-container" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']">
         <h1 class="contact-form-title" :class="[$vuetify.breakpoint.mdAndUp ? 'subtitle-1' : 'subtitle-2']"> We Look Forward to Hearing from You </h1>
-        <v-form class="contact-form" v-model="isValid" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']">
+        <v-form 
+            class="contact-form"
+            v-on:submit.prevent="contactUs" 
+            v-model="isValid" 
+            :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']">
             <v-text-field
                 v-model="name"
                 label="Name"
@@ -10,17 +14,19 @@
             ></v-text-field>
             <v-text-field
                 v-model="email"
+                name="email"
                 label="E-mail"
                 required
                 :rules="emailRules"
             ></v-text-field>
             <v-textarea
                 v-model="message"
+                name="message"
                 label="Message"
                 :rules="messageRules"
                 outlined
             ></v-textarea>
-            <v-btn class="contact-us-submit-btn" type="submit" depressed :disabled="!isValid">Send</v-btn>
+            <input class="contact-us-submit-btn" type="submit" value="Send" depressed :disabled="!isValid"/>
         </v-form>
     </div>
 </template>
@@ -42,6 +48,24 @@ export default {
             messageRules:[
                 v => !!v || 'Message is required'
             ]
+        }
+    }, 
+    methods: {
+        contactUs(event){
+            event.preventDefault()
+            const formData = new FormData(event.target)
+
+            fetch('https://7zw9v29bid.execute-api.us-east-1.amazonaws.com/Development/', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({
+                    email: formData.get("email"),
+                    message: formData.get("message")
+                })
+            }).then(response => console.log(response))
+                .then(result => console.log(result))
+
+            event.target.reset()
         }
     }
 }
