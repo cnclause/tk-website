@@ -1,26 +1,41 @@
 <template>
     <div class="contact-form-container" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']">
+        <!-- <div class="alert-container"> -->
+            <v-alert
+                v-model='alert'
+                v-if="alert.alertMessage"
+                :type="alert.type"
+            > {{alert.alertMessage}}
+            </v-alert>
+        <!-- </div> -->
         <h1 class="contact-form-title" :class="[$vuetify.breakpoint.mdAndUp ? 'subtitle-1' : 'subtitle-2']"> We Look Forward to Hearing from You </h1>
-        <v-form class="contact-form" v-model="isValid" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']">
+        <v-form 
+            class="contact-form"
+            v-on:submit.prevent="contactUs" 
+            v-model="isValid" 
+            :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']">
             <v-text-field
                 v-model="name"
+                name="name"
                 label="Name"
                 required
                 :rules="nameRules"
             ></v-text-field>
             <v-text-field
                 v-model="email"
+                name="email"
                 label="E-mail"
                 required
                 :rules="emailRules"
             ></v-text-field>
             <v-textarea
                 v-model="message"
+                name="message"
                 label="Message"
                 :rules="messageRules"
                 outlined
             ></v-textarea>
-            <v-btn class="contact-us-submit-btn" type="submit" depressed :disabled="!isValid">Send</v-btn>
+            <input class="contact-us-submit-btn" type="submit" value="Send" depressed :disabled="!isValid"/>
         </v-form>
     </div>
 </template>
@@ -41,7 +56,37 @@ export default {
             message:'',
             messageRules:[
                 v => !!v || 'Message is required'
-            ]
+            ],
+            alert: {
+                alertMessage: null,
+                type: null
+            }
+
+        }
+    }, 
+    methods: {
+        contactUs(event){
+            event.preventDefault()
+            const formData = new FormData(event.target)
+
+            fetch('https://7zw9v29bid.execute-api.us-east-1.amazonaws.com/Development/', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({
+                    email: formData.get("email"),
+                    message: formData.get("message"),
+                    name: formData.get("name")
+                })
+            }).then(response => {
+                if(!response.ok) throw new Error
+                this.alert.alertMessage = 'Your message was sent!'
+                this.alert.type = 'success'
+                event.target.reset()
+            }).catch(error => {
+                this.alert.alertMessage = 'There was a problem sending your message, try again later!'
+                this.alert.type = 'error'
+                console.log(error)
+            })
         }
     }
 }
