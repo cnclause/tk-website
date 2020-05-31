@@ -8,6 +8,7 @@
             :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']">
             <v-text-field
                 v-model="name"
+                name="name"
                 label="Name"
                 required
                 :rules="nameRules"
@@ -60,7 +61,8 @@ export default {
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({
                     email: formData.get("email"),
-                    message: formData.get("message")
+                    message: formData.get("message"),
+                    name: formData.get("name")
                 })
             }).then(response => console.log(response))
                 .then(result => console.log(result))
