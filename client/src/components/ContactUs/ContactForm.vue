@@ -1,5 +1,13 @@
 <template>
     <div class="contact-form-container" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']">
+        <!-- <div class="alert-container"> -->
+            <v-alert
+                v-model='alert'
+                v-if="alert.alertMessage"
+                :type="alert.type"
+            > {{alert.alertMessage}}
+            </v-alert>
+        <!-- </div> -->
         <h1 class="contact-form-title" :class="[$vuetify.breakpoint.mdAndUp ? 'subtitle-1' : 'subtitle-2']"> We Look Forward to Hearing from You </h1>
         <v-form 
             class="contact-form"
@@ -48,7 +56,12 @@ export default {
             message:'',
             messageRules:[
                 v => !!v || 'Message is required'
-            ]
+            ],
+            alert: {
+                alertMessage: null,
+                type: null
+            }
+
         }
     }, 
     methods: {
@@ -64,10 +77,16 @@ export default {
                     message: formData.get("message"),
                     name: formData.get("name")
                 })
-            }).then(response => console.log(response))
-                .then(result => console.log(result))
-
-            event.target.reset()
+            }).then(response => {
+                if(!response.ok) throw new Error
+                this.alert.alertMessage = 'Your message was sent!'
+                this.alert.type = 'success'
+                event.target.reset()
+            }).catch(error => {
+                this.alert.alertMessage = 'There was a problem sending your message, try again later!'
+                this.alert.type = 'error'
+                console.log(error)
+            })
         }
     }
 }
