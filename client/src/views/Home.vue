@@ -16,21 +16,15 @@ export default {
 
   components: {
     HomeBody
-  }, 
-  // mounted () {
-  //   console.log(this.$vuetify.breakpoint)
-  // },
+  }
 }
 </script>
 
 <style lang="scss">
 @import '../styles/global.scss';
-// @import '~vuetify/src/styles/settings/variables.scss';
 
 .title-header-container{
   margin: 2rem;
-  // position: relative;
-  // overflow: hidden;
   z-index: 0;
   height: 35rem;
   background-image: url('https://rootstowingspictures.s3-us-west-1.amazonaws.com/HomeTitlePic-large.jpg');
@@ -41,11 +35,7 @@ export default {
 }
 
 .title-header-container h1{
-    // padding: 100px;
-    // position: relative;
     z-index: 2;
-    // text-shadow: 1px 1px 1px #ffffff;
-    // font-size: 80pt;
     font-weight: bold;
 }
 

@@ -4,7 +4,7 @@
         <div class="each-program-container" :class="[$vuetify.breakpoint.mdAndUp ? 'each-program-container-large' : 'each-program-container-small']">
             <div class="program-info">
                 <h1 class="each-program-title" :class="[$vuetify.breakpoint.mdAndUp ? 'subtitle-1' : 'subtitle-2']"> Yoga </h1>
-                <p class="program-description" :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']"> orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <p class="program-description" :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']"> Every Saturday, Showdy, Co-Founder of FRW, hosts a free yoga class at the FRW office in Port-au-Prince. Approximately 30 children from the local community participate. At the conclusion of the session, a small lunch is provided along with other recreational activities such as coloring, reading, and sports. The goal of this program is to provide a platform to obtain necessary resources in managing stress, raise awareness of yoga and meditation, and escape their daily lives. Click here to support our yoga program! </p>
             </div>
             <div class="program-img-container">
                 <v-img clas="program-img" src="https://rootstowingspictures.s3-us-west-1.amazonaws.com/Yoga-Yellow-bow-pose.jpg" eager>
@@ -18,7 +18,7 @@
             </div>
             <div class="program-info">
                 <h1 class="each-program-title" :class="[$vuetify.breakpoint.mdAndUp ? 'subtitle-1' : 'subtitle-2']"> Women's Health and Sex Eduation </h1>
-                <p class="program-description" :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']"> orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <p class="program-description" :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']"> Seminars are held annually to educate the public of Haiti on reproductive, menstrual, and sexual health. Approximately 30 women and 15 men of all ages typically attend. FRW provides food and refreshments at the end of each seminar. Some women are also given menstruation kits provided by our partner organization, Days for Girls. Click here to support our women’s health program!  </p>
             </div>
         </div>
         <v-divider class="program-divider"></v-divider>

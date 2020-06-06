@@ -7,7 +7,7 @@
             </div>
             <div class="fundraiser-info-description">
                 <h1 class="fundraiser-info-title" :class="[$vuetify.breakpoint.mdAndUp ? 'subtitle-1' : 'subtitle-2']"> What it takes to plan a fundraiser </h1>
-                <p class="fundraiser-info-paragraph" :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']"> orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <p class="fundraiser-info-paragraph" :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']"> FRW funds programs and activities through donations and fundraisers. FRW is in the process of setting up teams in cities across the US to organize and execute various fundraisers. Fundraising teams consist of a team leader, PR person and volunteers. Click here if you would like to join one of these teams or start your own in your city! </p>
             </div>
         </div>
     </div>

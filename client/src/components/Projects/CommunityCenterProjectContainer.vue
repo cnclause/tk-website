@@ -8,7 +8,7 @@
             </div>
             <div class="project-info">
                 <h1 class="each-project-title" :class="[$vuetify.breakpoint.mdAndUp ? 'subtitle-1' : 'subtitle-2']"> Community Center </h1>
-                <p class="project-description" :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']"> orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <p class="project-description" :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']"> In the future, FRW hopes to provide a community center for the local community. This building will serve many purposes including a home for children without families, a playground/learning center, and a dormitory for staff. It will also be utilized by the local community during normal hours, to obtain necessary learning resources. Through this framework, we will ensure that the children are taken care of and families who are struggling and would otherwise give up their children to orphanages and other institutions, have the resources to improve and succeed. The estimated cost for this establishment is approximately $60,000 USD, which FRW is expecting to build in the next 5 years. </p>
             </div>
         </div>
     </div>
