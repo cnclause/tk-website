@@ -17,7 +17,7 @@
     .get-involved-join.large{
         width: 50%;
         display: flex;
-        justify-content: flex-end;
+        justify-content: flex-start;
         margin: 0pt;
         margin-top: 3rem;
         margin-right: 1rem;

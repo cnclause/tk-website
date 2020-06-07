@@ -17,7 +17,7 @@
     .get-involved-other.large{
         width: 50%;
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         margin: 0pt;
         margin-top: 3rem;
         margin-left: 1rem;

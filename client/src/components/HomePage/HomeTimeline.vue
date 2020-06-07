@@ -25,28 +25,28 @@ export default {
                 {
                     value: 'Empowerment',
                     color: 'cyan',
-                    info: 'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.'
+                    info: 'Ensuring each individual has the knowledge and skills to create their own opportunities'
 
                 },
                 {
                     value: 'Sustainability',
                     color: 'green',
-                    info: 'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.'
+                    info: 'Breaking the old cycle of poverty and creating a new cycle of opportunity'
                 },
                 {
                     value: 'Integrity',
                     color: 'pink',
-                    info: 'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.'
+                    info: 'Maintaining respect and honesty in all aspects of our commitment to service'
                 },
                 {
                     value: 'Collaboration',
                     color: 'amber',
-                    info: 'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.'
+                    info: 'Working together with community members to understand their needs and wants'
                 },
                 {
                     value: 'Innovation',
                     color: 'orange',
-                    info: 'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.'
+                    info: 'Staying on the frontier of knowledge and its applications in aid and development'
                 }
             ]
         }
@@ -77,6 +77,7 @@ export default {
 .large-timeline-text{
     font-size: 15pt;
     font-weight: 300 !important;
+    line-height: 2rem !important;
 }
 
 .timeline-title.body-2{

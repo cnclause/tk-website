@@ -2,10 +2,11 @@
     <div class="get-involved-options-container">
         <div class="get-involved-options" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']">
             <GetInvolvedFundraise />
-            <GetInvolvedVolunteer />
+            <GetInvolvedJoinTeam />
+            <!-- <GetInvolvedVolunteer /> -->
         </div>
         <div class="get-involved-options" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']">
-            <GetInvolvedJoinTeam />
+            <!-- <GetInvolvedJoinTeam /> -->
             <GetInvolvedOtherWays />
         </div>
     </div>
@@ -13,14 +14,14 @@
 
 <script>
 import GetInvolvedFundraise from './GetInvolvedFundraise'
-import GetInvolvedVolunteer from './GetInvolvedVolunteer'
+// import GetInvolvedVolunteer from './GetInvolvedVolunteer'
 import GetInvolvedJoinTeam from './GetInvolvedJoinTeam'
 import GetInvolvedOtherWays from './GetInvolvedOtherWays'
 
 export default {
     components:{
         GetInvolvedFundraise,
-        GetInvolvedVolunteer,
+        // GetInvolvedVolunteer,
         GetInvolvedJoinTeam,
         GetInvolvedOtherWays
     }
@@ -36,6 +37,8 @@ export default {
     .get-involved-options.large{
         display: flex;
         flex-direction: row;
+        /* justify-items: center; */
+        justify-content: center;
     }
 
     .get-involved-options.small{
