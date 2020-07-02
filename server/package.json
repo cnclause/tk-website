@@ -7,6 +7,9 @@
     "dev": "nodemon ./bin/www"
   },
   "dependencies": {
+    "@sendgrid/client": "^7.1.1",
+    "@sendgrid/helpers": "^7.0.1",
+    "@sendgrid/mail": "^7.1.1",
     "cookie-parser": "~1.4.4",
     "cors": "^2.8.5",
     "debug": "~2.6.9",
