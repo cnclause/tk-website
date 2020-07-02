@@ -10,7 +10,7 @@
                 <div class="meet-bird-name-container">
                     <h1 class="meet-bird-kid-name" :class="[$vuetify.breakpoint.mdAndUp ? 'display-4' : 'display-2']">{{bird.name}}</h1>
                 </div>
-            <p>{{bird.bio}}</p>
+            
         </div>
     </div>
 </template>

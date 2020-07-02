@@ -85,8 +85,8 @@ export default {
                 },
                 {
                     id: 8,
-                    name: 'Davidson',
-                    position: 'Staff',
+                    name: 'Davidson Dasema',
+                    position: 'Secretary General',
                     blurb: ' Hey guys, my name is Davidson Dasema and I am the Secretary General and a board member of the Haitian staff. I was born in City Soleil but I grew up and attended school in a small area called Lintho. After completing primary and secondary school, I pursued further education, studying Social Economic Administration in university. Currently, I am a social activist in multiple NGOs and a frequent volunteer in my community. Esdras and I attended school together and we share a common purpose of helping the less fortunate progress out of the dreadful conditions they currently reside in. When Showdy proposed the idea of establishing an organization with similar aspirations, we wanted to help immediately. I have been with FRW ever since. One day, I hope to own and run my own primary, secondary and professional schools so I can help to grow and educate the future children of Haiti.',
                     img: 'https://rootstowingspictures.s3-us-west-1.amazonaws.com/Davidson.JPG',
                     imgposition: 'center',
