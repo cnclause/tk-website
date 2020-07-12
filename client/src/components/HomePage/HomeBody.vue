@@ -37,14 +37,11 @@ export default {
 .mission-statement.body-1{
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 0.3rem !important;
-    font-size: 20pt !important;
     margin-top: 3rem;
     line-height: 2.5rem !important;
     text-align: center;
     width: 60%;
     /* letter-spacing: 0.25rem !important; */
-   
 }
 
 /* .mission-statement{

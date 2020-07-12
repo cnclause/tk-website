@@ -1,7 +1,7 @@
 <template>
     <div class="projects">
         <div class="project-container">
-            <h1 class ="project-title" :class="[$vuetify.breakpoint.mdAndUp ? 'display-4' : 'display-2']">Our Projects</h1>
+            <h1 class ="page-title" :class="[$vuetify.breakpoint.mdAndUp ? 'display-4' : 'display-2']">Our Projects</h1>
         </div>
         <CoronaProjectContainer />
         <CommunityCenterProjectContainer />
@@ -34,16 +34,13 @@ export default {
         background-size: cover;
     }
 
-    .project-title{
+    .page-title{
         color: white;
     }
 
-    .project-title.display-4{
+    .page-title.display-4{
         margin-left: 5rem;
     }
 
-    .project-title.display-2{
-        font-size: 40pt;
-    }
 
 </style>

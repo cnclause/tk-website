@@ -1,7 +1,7 @@
 <template>
     <div class="plan-fundraiser">
     <div class="plan-fundraiser-container">
-      <h1 class ="plan-fundraiser-title" :class="[$vuetify.breakpoint.mdAndUp ? 'display-4' : 'display-2']">Plan a Fundraiser</h1>
+      <h1 class ="page-title" :class="[$vuetify.breakpoint.mdAndUp ? 'display-4' : 'display-2']">Plan a Fundraiser</h1>
     </div>
     <PlanFundraiserSubHeader />
     <PlanFundraiserInfo />
@@ -35,17 +35,17 @@ export default {
     align-items: center;
     }
 
-    .plan-fundraiser-title{
-        color: white;
-        // text-align: center
-    }
+    // .plan-fundraiser-title{
+    //     color: white;
+    //     // text-align: center
+    // }
 
-    .plan-fundraiser-title.display-4{
-        margin-left: 5rem;
-        padding-top: 3rem !important;
-    }
+    // .plan-fundraiser-title.display-4{
+    //     margin-left: 5rem;
+    //     padding-top: 3rem !important;
+    // }
 
-    .plan-fundraiser-title.display-2{
-        font-size: 40pt;
-    }
+    // .plan-fundraiser-title.display-2{
+    //     font-size: 40pt;
+    // }
 </style>

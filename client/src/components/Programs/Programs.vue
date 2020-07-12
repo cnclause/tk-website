@@ -1,7 +1,7 @@
 <template>
     <div class="programs">
     <div class="program-container">
-      <h1 class ="program-title" :class="[$vuetify.breakpoint.mdAndUp ? 'display-4' : 'display-2']">Our Programs</h1>
+      <h1 class ="page-title" :class="[$vuetify.breakpoint.mdAndUp ? 'display-4' : 'display-2']">Our Programs</h1>
     </div>
     <EducationProgramsContainer />
     <WellnessProgramsContainer />
@@ -40,12 +40,9 @@ export default {
         color: white;
     }
 
-    .program-title.display-4{
+    .page-title.display-4{
         margin-left: 5rem;
     }
 
-    .program-title.display-2{
-        font-size: 40pt;
-    }
 
 </style>

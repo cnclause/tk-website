@@ -117,6 +117,7 @@ export default {
     .contact-form-title.subtitle-2{
         font-size: 15pt !important;
         color: #00BCD4;
+        text-align: center;
     }
 
     .contact-form.large{

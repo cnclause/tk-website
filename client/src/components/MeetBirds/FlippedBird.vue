@@ -2,7 +2,8 @@
   <div :class="[$vuetify.breakpoint.mdAndUp ? 'bird-card-large' : 'bird-card-small']">
         <div class="meet-bird-info-containter">
             <div class="meet-bird-name-container">
-                <h1 class="meet-bird-kid-name" :class="[$vuetify.breakpoint.mdAndUp ? 'display-4' : 'display-2']">{{bird.name}}</h1>
+                <h1 class="meet-bird-kid-name" :class="[$vuetify.breakpoint.mdAndUp ? 'subtitle-1' : 'subtitle-2']">{{bird.name}}</h1>
+                <p class="meet-bird-bio" :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']">{{bird.bio}}</p>
                 </div>
             <!-- <p>{{bird.bio}}</p> -->
         </div>
@@ -76,20 +77,8 @@
         }
     }
 
-    .meet-bird-kid-name.display-4{
-        color: #28abe2;
-        padding: 0pt;
-        font-size: 35pt !important;
-        font-weight: 700 !important;
-        letter-spacing: 0.75rem !important;
+    .meet-bird-bio{
+        margin-top: 1.5rem;
     }
-
-    .meet-bird-kid-name.display-2{
-        color: #28abe2;
-        font-size: 30pt !important;
-        font-weight: 700 !important;
-        text-align: center;
-    }
-    
 
 </style>

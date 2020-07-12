@@ -39,14 +39,16 @@ export default {
     font-weight: bold;
 }
 
-.display-4{
+.title.display-4{
   padding-top: 100px;
+  text-align: center;
+  z-index: -1;
   
 }
 
-.display-2{
+.title.display-2{
   padding: 30px;
-  font-size: 30pt;
+  // font-size: 30pt;
 }
 
 
@@ -64,14 +66,21 @@ export default {
 //     height: auto;
 // }
 
-.title{
-  font-family: $title-font;
+// .title{
+//   font-family: $title-font;
+//   text-align: center;
+//   z-index: -1;
+// }
+
+.slogan.display-3 {
+  font-size: 30pt;
   text-align: center;
-  z-index: -1;
+  line-height: 5rem !important;
 }
 
-.slogan {
-  font-size: 30pt;
+.slogan.display-1 {
+  font-size: 15pt !important;
+  text-align: center;
 }
 
 </style>

@@ -28,8 +28,10 @@
     }
 
     .our-story-text.body-2{
-        font-size: 13pt !important;
-        font-weight: 300;
         line-height: 2rem !important;
     }
+
+    // .our-story-text.body-1{
+    //     font-size: 13pt !important;
+    // }
 </style>

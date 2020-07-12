@@ -1,7 +1,7 @@
 <template>
     <div class="get-involved">
       <div class="get-involved-container">
-      <h1 class ="get-involved-title" :class="[$vuetify.breakpoint.mdAndUp ? 'display-4' : 'display-2']">Get Involved</h1>
+      <h1 class ="page-title" :class="[$vuetify.breakpoint.mdAndUp ? 'display-4' : 'display-2']">Get Involved</h1>
     </div>
     <GetInvolvedSubHeaderContainer />
     <GetInvolvedOptions />
@@ -33,9 +33,8 @@ export default {
     background-size: cover;
   }
 
-  .get-involved-title.display-4{
+  .page-title.display-4{
     margin-left: 5rem;
-    // padding-top: 0px;
     color: white;
   }
 

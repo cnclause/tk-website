@@ -2,8 +2,8 @@
     <div class="get-involved-join" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']">
         <v-card outlined class="get-involved-join-card" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']" flat>
             <div class="get-involved-join-title-container" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']" >
-                <v-img class="get-involved-join-icon-img" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']" src="https://rootstowingspictures.s3-us-west-1.amazonaws.com/JoinUsIcon.png"></v-img> 
-                <h1 class="get-involved-join-title" :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']"> Join Our Team</h1>
+                <v-img class="get-involved-join-icon-img" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']" src="https://rootstowingspictures.s3-us-west-1.amazonaws.com/JoinUsIcon.png" contain></v-img> 
+                <h1 class="get-involved-title" :class="[$vuetify.breakpoint.mdAndUp ? 'subtitle-1' : 'subtitle-2']"> Join Our Team</h1>
             </div>
             <div class="get-involved-join-info">
                 <p class="get-involved-join-info-description" :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']"> orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
@@ -52,24 +52,6 @@
         width: 100%;
         display: flex;
         justify-content: space-evenly;
-    }
-
-    .get-involved-join-title.body-1{
-        text-transform: uppercase;
-        margin: 0pt;
-        /* margin-right: 5rem; */
-        margin-top: 2.5rem;
-        font-size: 25pt !important;
-        letter-spacing: 0.5rem !important;
-        line-height: 2.5rem !important;
-    }
-
-     .get-involved-join-title.body-2{
-        text-transform: uppercase;
-        margin-top: 2rem;
-        margin-right: 1rem;
-        font-size: 18pt !important;
-        letter-spacing: 0.5rem !important;
     }
 
     .get-involved-join-icon-img.large{
