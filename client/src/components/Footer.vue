@@ -15,11 +15,12 @@
                 <v-btn
                     v-for="icon in icons"
                     :key="icon"
+                    :href="icon.link"
                     class="mx-4 footer-btn"
                     icon
                     color='grey darken-4'
                 >
-                    <v-icon size="24px">{{ icon }}</v-icon>
+                    <v-icon size="24px">{{ icon.icon }}</v-icon>
                 </v-btn>
             </v-card-text>
             <v-card-text class="footer-card-bottom">
@@ -43,9 +44,18 @@ export default {
     data(){
         return {
         icons: [
-          'fa fa-facebook',
-          'fa fa-linkedin',
-          'fa fa-instagram',
+          {
+              icon: 'fa fa-facebook',
+              link: 'https://www.facebook.com/TimounKontan'
+          },
+          {
+              icon: 'fa fa-linkedin',
+              link: 'https://www.linkedin.com/company/timoun-kontan/'
+          },
+          {
+              icon: 'fa fa-instagram',
+              link: 'https://www.instagram.com/timounkontan/'
+          }
         ]
         }
     }

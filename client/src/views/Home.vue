@@ -48,29 +48,13 @@ export default {
 
 .title.display-2{
   padding: 30px;
-  // font-size: 30pt;
 }
 
 
 .title-header-container h3{
     padding-bottom: 75px;
-    // position: relative;
     z-index: 2;
 }
-
-// .title-header-container img {
-//     position: absolute;
-//     left: 0;
-//     top: 0;
-//     width: 100%;
-//     height: auto;
-// }
-
-// .title{
-//   font-family: $title-font;
-//   text-align: center;
-//   z-index: -1;
-// }
 
 .slogan.display-3 {
   font-size: 30pt;

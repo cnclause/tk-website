@@ -30,8 +30,9 @@
                 class="btn-text-progress"
                 text
                 color="blue accent-4"
+                to="/projects"
                 >
-                Learn About Our Programs
+                Learn About Our Projects
                 </v-btn>
             </v-card-actions>
             </v-card>
@@ -61,6 +62,7 @@
                 color="blue accent-4"
                 :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']"
                 class="btn-text-progress"
+                to="/programs"
                 >
                 Learn About Our Programs
                 </v-btn>

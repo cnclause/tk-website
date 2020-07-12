@@ -80,6 +80,7 @@ $body-font-family: 'Roboto', sans-serif;
         width: 80%;
         margin-top: 3rem;
         margin-bottom: 3rem;
+        align-items: center;
     }
     
     .each-prog-proj-container.small{
@@ -94,7 +95,7 @@ $body-font-family: 'Roboto', sans-serif;
     .prog-proj-info.large{
         width: 50%;
         align-content: center;
-        margin: 2rem;
+        // margin: 2rem;
     }
 
     .prog-proj-info.small{
@@ -115,6 +116,7 @@ $body-font-family: 'Roboto', sans-serif;
         margin-top: 2rem;
         color: rgba(0, 0, 0, 0.6);
         margin: 1rem;
+        width: 100%;
     }
 
     .proj-prog-divider{
