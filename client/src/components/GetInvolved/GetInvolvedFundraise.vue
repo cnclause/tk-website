@@ -6,7 +6,7 @@
                 <h1 class="get-involved-title" :class="[$vuetify.breakpoint.mdAndUp ? 'subtitle-1' : 'subtitle-2']"> Fundraise</h1>
             </div>
             <div class="get-involved-fundraise-info">
-                <p class="get-involved-fundraise-info-description" :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']"> orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <p class="get-involved-fundraise-info-description" :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']"> As a 501(c)(3) organization, FRW relies on grants, donations and fundraisers. You can help us by volunteering or hosting a fundraising event. </p>
                 <v-btn class="get-involved-fundraise-btn green--text" text> Fundraise With Us </v-btn>
             </div>
         </v-card>

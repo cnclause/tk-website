@@ -6,7 +6,7 @@
                 <h1 class="get-involved-title" :class="[$vuetify.breakpoint.mdAndUp ? 'subtitle-1' : 'subtitle-2']"> Other Ways to Give</h1>
             </div>
             <div class="get-involved-other-info">
-                <p class="get-involved-other-info-description" :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']"> orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <p class="get-involved-other-info-description" :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']"> Shop on <a href="https://smile.amazon.com/ch/82-2250118">AmazonSmile</a>, donate on your <a href="https://socialgood.fb.com/charitable-giving/birthday-fundraiser/">birthday</a>, or include From Roots to Wings on your wedding registry. The possibilities for making a difference are limited only by your creativity and passion. </p>
                 <!-- <v-btn class="get-involved-other-btn"> other With Us </v-btn> -->
             </div>
         </v-card>

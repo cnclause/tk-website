@@ -6,7 +6,7 @@
                 <h1 class="get-involved-title" :class="[$vuetify.breakpoint.mdAndUp ? 'subtitle-1' : 'subtitle-2']"> Join Our Team</h1>
             </div>
             <div class="get-involved-join-info">
-                <p class="get-involved-join-info-description" :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']"> orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <p class="get-involved-join-info-description" :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']"> Become a part of From Roots to Wings by volunteering, applying for an open position or using your skills to help us execute a project. </p>
                 <v-btn class="get-involved-join-btn pink--text" text> Join Our Team </v-btn>
             </div>
         </v-card>
