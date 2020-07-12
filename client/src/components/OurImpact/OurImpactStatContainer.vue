@@ -1,6 +1,6 @@
 <template>
     <div class="our-impact-stat-container">
-        <div class="stat-title headline subtitle-1" :class="[$vuetify.breakpoint.mdAndUp ? 'stat-title-large' : 'stat-title-small']">
+        <div class="stat-title subtitle-1" :class="[$vuetify.breakpoint.mdAndUp ? 'stat-title-large' : 'stat-title-small']">
                 Out of 1,239 Families Surveys
         </div>
         <div class="stat-card-container" :class="[$vuetify.breakpoint.mdAndUp ? 'progress-container-large' : 'progress-container-small']">
@@ -157,21 +157,12 @@ export default {
 
     .card-text.body-1{
         color: rgba(0, 0, 0, 0.75);
-        font-size: 15pt !important;
     }
 
     .card-text.body-2{
         color: rgba(0, 0, 0, 0.75);
-        font-size: 12pt !important;
         margin-top: 1rem;
     }
 
-    .btn-text-progress.body-2{
-        font-size: 12pt !important;
-    }
-
-    .btn-text-progress.body-1{
-        font-size: 16pt !important;
-    }
 
 </style>

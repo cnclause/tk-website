@@ -40,7 +40,6 @@
   .get-involved-subheader-info.body-1{
     text-align: center;
     margin-top: 1rem;
-    font-size: 15pt !important;
   }
 
   .get-involved-subheader-info.body-2{

@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <div class="about-container">
-      <h1 class ="about-title" :class="[$vuetify.breakpoint.mdAndUp ? 'display-4' : 'display-2']">About Us</h1>
+      <h1 class ="page-title about-title" :class="[$vuetify.breakpoint.mdAndUp ? 'display-4' : 'display-2']">About Us</h1>
     </div>
     <AboutUsContainer />
   </div>
@@ -29,7 +29,18 @@ export default {
     background-size: cover;
   }
 
-  .about-title.display-4{
+  .page-title.display-4{
     margin-left: 5rem;
+    padding-top: 2rem;
+  }
+  
+  .page-title.about-title{
+    color: black !important;
+  }
+
+  .page-title.display-2{
+    margin-left: 1rem;
+    padding-top: 1rem;
+    color: black !important;
   }
 </style>

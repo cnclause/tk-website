@@ -2,4 +2,165 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 $title-font: 'Amatic SC', cursive;
-$body-font: 'Roboto', sans-serif;
+$body-font-family: 'Roboto', sans-serif;
+
+.v-application {
+  .display-1
+  .display-2,
+  .display-3,
+  .display-4,
+  .headline,
+  .subtitle-1{
+    font-family: $body-font-family !important;
+    font-size: 25pt !important;
+    font-weight: 300 !important;
+  }
+  .subtitle-2,
+  .body-1{
+    font-size: 14pt !important;
+    font-weight: 300 !important;
+    line-height: 2rem !important;
+    letter-spacing: 0.3rem !important;
+  }
+  .body-2{
+    font-size: 12pt !important;
+    font-weight: 300 !important;
+  }
+  .caption,
+  .overline {
+    font-family: $body-font-family !important;
+    font-weight: 300 !important;
+  }
+  .display-1{
+      font-size: 15pt !important;
+      font-weight: 300 !important;
+  }
+}
+
+.v-application{
+    .title.display-4{
+        font-family: $title-font !important;
+        font-size: 70pt !important;
+        line-height: 6rem !important;
+    }
+    .title.display-2{
+        font-family: $title-font !important;
+        font-size: 30pt !important;
+        line-height: 6rem !important;
+    }
+    .page-title.display-4{
+        font-family: $body-font-family !important;
+        font-size: 60pt !important;
+    }
+    .page-title.display-2{
+        font-family: $body-font-family !important;
+        font-size: 30pt !important;
+        font-weight: 300;
+    }
+    .get-involved-title.subtitle-1{
+        text-transform: uppercase;
+        letter-spacing: 0.5rem !important;
+        margin-top: 2.5rem;
+    }
+    .get-involved-title.subtitle-2{
+        text-transform: uppercase;
+        margin-top: 1rem;
+        margin-right: 0.5rem;
+        font-size: 15pt !important;
+        letter-spacing: 0.5rem !important;
+    }
+    .program-proj-container{
+        margin-top: 2rem;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+    .each-prog-proj-container.large{
+        display: flex;
+        width: 80%;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    
+    .each-prog-proj-container.small{
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+        align-items: center;
+    }
+    
+    .prog-proj-info.large{
+        width: 50%;
+        align-content: center;
+        margin: 2rem;
+    }
+
+    .prog-proj-info.small{
+        width: 90%;
+        align-content: center;
+        margin: 2rem;
+    }
+    
+    .proj-prog-img-container.large{
+        width: 33%;
+    }
+    
+    .proj-prog-img-container.small{
+        width: 50%;
+    }
+    
+    .proj-prog-description{
+        margin-top: 2rem;
+        color: rgba(0, 0, 0, 0.6);
+        margin: 1rem;
+    }
+
+    .proj-prog-divider{
+        background-color: rgba(0, 0, 0, 0.12);
+        margin: 1rem;
+        width: 80%;
+    }
+
+    .each-proj-prog-title.subtitle-2{
+        font-size: 18pt !important;
+        text-align: center;
+        line-height: 2rem !important;
+    }
+    
+    .each-proj-prog-title.subtitle-1{
+        line-height: 3rem !important;
+        margin: 1rem;
+    }
+
+    .projects-heading.subtitle-1{
+        padding-top: 3rem;
+    }
+    
+    .meet-bird-kid-name.subtitle-1{
+        color: #28abe2 !important;
+        padding: 0pt;
+        letter-spacing: 0.5rem !important;
+    }
+
+    .meet-bird-kid-name.subtitle-2{
+        color: #28abe2 !important;
+        text-align: center;
+        font-size: 20pt !important;
+        margin-top: 1rem;
+    }
+
+    .family-name.subtitle-1{
+        margin-bottom: 1rem;
+        letter-spacing: 0.5rem !important;
+    }
+
+    .family-name.subtitle-2{
+        font-size: 35pt !important;
+        padding-top: 0pt !important;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+}
+@import '~vuetify/src/styles/settings/_variables.scss';
