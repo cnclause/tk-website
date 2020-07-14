@@ -82,10 +82,10 @@ export default {
                 this.alert.alertMessage = 'Your message was sent!'
                 this.alert.type = 'success'
                 event.target.reset()
-            }).catch(error => {
+            // eslint-disable-next-line no-unused-vars
+            }).catch(error => { // eslint-disable-line no-use-before-define
                 this.alert.alertMessage = 'There was a problem sending your message, try again later!'
                 this.alert.type = 'error'
-                console.log(error)
             })
         }
     }

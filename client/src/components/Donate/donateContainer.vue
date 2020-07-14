@@ -70,15 +70,12 @@ export default {
         },
         createToken() {
             let STRIPE_SERVER = `${process.env.STRIPE_SERVER_URL || 'http://localhost:3000'}/stripe/charge`
-            console.log("stripekey", this.stripePublishableKey)
-            console.log("stripeserver", STRIPE_SERVER)
             this.stripeCheck = true;
             window.Stripe.setPublishableKey(this.stripePublishableKey);
             window.Stripe.createToken(this.card, (status, response) => {
             if (response.error) {
                 this.stripeCheck = false;
                 this.errors.push(response.error.message);
-                console.error('response', response);
             } else {
                 const payload = {
                     token: response.id,
@@ -91,7 +88,6 @@ export default {
                     },
                     body: JSON.stringify(payload)
                 })
-                    .then( resp => console.log('resp after stripe fetch', resp))
             }
             });
         },
