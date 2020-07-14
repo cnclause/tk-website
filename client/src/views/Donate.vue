@@ -1,13 +1,9 @@
 <template>
     <div class='donate-page' :class="[$vuetify.breakpoint.mdAndUp ? 'donate-large' : 'donate-small']">
-        <div class="donate-form-image-container">
-        <!-- <div class="donate-title-container" :class="[$vuetify.breakpoint.mdAndUp ? 'title-large' : 'title-small']" >
-            <h1 class="donate-title" :class="[$vuetify.breakpoint.mdAndUp ? 'display-4' : 'display-2']"> YOU Can Make a Difference </h1>
-        </div> -->
+        <div class="donate-form-image-container" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']">
             <DonateInfoContainer />
             <DonateContainer />
         </div>
-        <!-- <DonateInfo /> -->
     </div>
 
 </template>
@@ -37,8 +33,14 @@ export default {
     flex-flow: column;
 }
 
-.donate-form-image-container{
+.donate-form-image-container.large{
     display: flex;
+}
+
+.donate-form-image-container.small{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .donation-info-container{

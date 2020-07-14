@@ -3,9 +3,9 @@
         <div :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']"           class='donation-info-text'>
             You can change lives and communities - empowering individuals forever
         </div>
-        <v-img 
+        <v-img :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']" 
             src="https://rootstowingspictures.s3-us-west-1.amazonaws.com/CharmaDonatePic-outsideSchool.jpg"
-            class="donate-img"
+            class="hidden-sm-and-down donate-img"
         >
         </v-img>
     </div>
@@ -27,5 +27,7 @@
       margin-left: 4rem;
       margin-top: 4rem;
   }
+
+
 
 </style>
