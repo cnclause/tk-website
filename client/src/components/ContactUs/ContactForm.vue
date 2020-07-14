@@ -69,7 +69,7 @@ export default {
             event.preventDefault()
             const formData = new FormData(event.target)
 
-            fetch('https://7zw9v29bid.execute-api.us-east-1.amazonaws.com/Development/', {
+            fetch('https://uvlyjw4xwh.execute-api.us-west-1.amazonaws.com/Production', {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({
