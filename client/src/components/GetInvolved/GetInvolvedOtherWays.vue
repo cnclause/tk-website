@@ -6,7 +6,8 @@
                 <h1 class="get-involved-title" :class="[$vuetify.breakpoint.mdAndUp ? 'subtitle-1' : 'subtitle-2']"> Other Ways to Give</h1>
             </div>
             <div class="get-involved-other-info">
-                <p class="get-involved-other-info-description" :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']"> Shop on <a href="https://smile.amazon.com/ch/82-2250118">AmazonSmile</a>, donate on your <a href="https://socialgood.fb.com/charitable-giving/birthday-fundraiser/">birthday</a>, or include From Roots to Wings on your wedding registry. The possibilities for making a difference are limited only by your creativity and passion. </p>
+                <p class="get-involved-other-info-description" :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']"> Shop on <v-btn text color="yellow darken-4" x-large max-width=135 href="https://smile.amazon.com/ch/82-2250118">AmazonSmile</v-btn>, donate on your <v-btn color="yellow darken-4" x-large max-width=80
+                 text href="https://socialgood.fb.com/charitable-giving/birthday-fundraiser/">birthday</v-btn>, or include From Roots to Wings on your wedding registry. The possibilities for making a difference are limited only by your creativity and passion. </p>
                 <!-- <v-btn class="get-involved-other-btn"> other With Us </v-btn> -->
             </div>
         </v-card>

@@ -1,6 +1,9 @@
 <template>
     <div class='home-body'>
         <div :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']" class='mission-statement'> <strong>From Roots to Wings</strong> exists to develop sustainable, community-based avenues towards empowerment.</div>
+        <div :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']" class='mission-statement'>
+        We envision a world where all individuals have access to basic necessities of life, knowledge, and opportunities to <strong>break out of poverty</strong>.
+        </div>
         <HomeTimeline />
         <AmazonSmile />
     </div>  

@@ -7,7 +7,7 @@
             </div>
             <div class="get-involved-join-info">
                 <p class="get-involved-join-info-description" :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']"> Become a part of From Roots to Wings by volunteering, applying for an open position or using your skills to help us execute a project. </p>
-                <v-btn class="get-involved-join-btn pink--text" text> Join Our Team </v-btn>
+                <v-btn class="get-involved-join-btn pink--text" to="/join-us" text> Join Our Team </v-btn>
             </div>
         </v-card>
     </div>
