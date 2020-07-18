@@ -85,11 +85,32 @@
             <v-list-item to='/about'>
               About Us
             </v-list-item>
+            <v-list-item to='/meet-the-birds'>
+              Meet the Birds
+            </v-list-item>
+            <v-list-item to='/staff'>
+              Meet the Staff
+            </v-list-item>
             <v-list-item to='/our-impact'>
               Our Impact
             </v-list-item>
+            <v-list-item to='/projects'>
+              Projects
+            </v-list-item>
+            <v-list-item to='/programs'>
+              Programs
+            </v-list-item>
             <v-list-item to='/get-involved'>
               Get Involved
+            </v-list-item>
+            <v-list-item to="/join-us">
+            Join Us
+            </v-list-item>
+            <v-list-item to="/plan-a-fundraiser">
+              Plan a Fundraiser
+            </v-list-item>
+            <v-list-item to="/contact-us">
+              Contact Us
             </v-list-item>
             <v-list-item to='/donate'>
               Donate
