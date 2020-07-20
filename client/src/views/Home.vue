@@ -48,6 +48,7 @@ export default {
 
 .title.display-2{
   padding: 30px;
+  text-align: center;
 }
 
 
@@ -62,8 +63,8 @@ export default {
   line-height: 5rem !important;
 }
 
-.slogan.display-1 {
-  font-size: 15pt !important;
+.title.slogan.display-1 {
+  font-size: 25pt !important;
   text-align: center;
 }
 

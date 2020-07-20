@@ -18,7 +18,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scope>
   .about-container{
     margin: 2rem;
     z-index: 0;
@@ -32,6 +32,7 @@ export default {
   .page-title.display-4{
     margin-left: 5rem;
     padding-top: 2rem;
+    color: black !important;
   }
   
   .page-title.about-title{

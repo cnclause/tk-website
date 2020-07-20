@@ -1,8 +1,11 @@
 <template>
     <div class='home-body'>
-        <div :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']" class='mission-statement'> <strong>From Roots to Wings</strong> exists to develop sustainable, community-based avenues towards empowerment.</div>
         <div :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']" class='mission-statement'>
-        We envision a world where all individuals have access to basic necessities of life, knowledge, and opportunities to <strong>break out of poverty</strong>.
+        <p><strong>Our Mission</strong></p>
+            <strong>From Roots to Wings</strong> exists to develop sustainable, community-based avenues towards empowerment.</div>
+        <div :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']" class='mission-statement'>
+        <p><strong>Our Vision</strong></p>
+            We envision a world where all individuals have access to basic necessities of life, knowledge, and opportunities to <strong>break out of poverty</strong>.
         </div>
         <HomeTimeline />
         <AmazonSmile />
@@ -46,14 +49,6 @@ export default {
     width: 60%;
     /* letter-spacing: 0.25rem !important; */
 }
-
-/* .mission-statement{
-    text-align: center;
-    margin-top: 1rem;
-    font-size: 15pt;
-    width: 30%;
-    font-weight: 300;
-} */
 
 .card-text{
     text-align: center;

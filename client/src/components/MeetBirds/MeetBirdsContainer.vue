@@ -45,9 +45,7 @@ export default {
 
 
 .meet-birds-title.display-2{
-    font-size: 30pt !important;
-    text-align: right;
-    color: black !important;
+    text-align: center;
 }
 
 .meet-bird-container{
@@ -74,9 +72,8 @@ export default {
 
 .meet-birds-title-img-container.small{
     display: flex;
-    width: 40%;
-    justify-items: left;
-
+    width: 20%;
+    justify-items: left
 }
 
 .meet-birds-title-container{

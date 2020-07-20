@@ -1,7 +1,7 @@
 <template>
     <div class="our-impact">
       <div class="our-impact-container">
-        <h1 class ="page-title" :class="[$vuetify.breakpoint.mdAndUp ? 'display-4' : 'display-2']">Our Impact</h1>
+        <h1 class ="page-title impact" :class="[$vuetify.breakpoint.mdAndUp ? 'display-4' : 'display-2']">Our Impact</h1>
       </div>
       <OurImpactStatContainer />
       <ProgramImpact />
@@ -21,7 +21,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scope>
  .our-impact-container{
     margin: 2rem;
     z-index: 0;
@@ -32,14 +32,14 @@ export default {
     background-size: cover;
   }
 
-  .page-title.display-4{
+  .page-title.impact.display-4{
     margin-left: 5rem;
     padding-top: 3.5rem;
+    color: white !important;
   }
 
-  .page-title.display-2{
-    color: white;
+  .page-title.impact.display-2{
+    color: white !important;
     padding-top: 1rem;
-    color: black !important;
   }
 </style>

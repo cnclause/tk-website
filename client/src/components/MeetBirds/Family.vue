@@ -1,6 +1,6 @@
 <template>
    <div :class="[$vuetify.breakpoint.mdAndUp ? 'family-card-large' : 'family-card-small']">
-        <div class='family-name-container'>
+        <div class='family-name-container' :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']">
             <h1 class="family-name" :class="[$vuetify.breakpoint.mdAndUp ? 'subtitle-1' : 'subtitle-2']">{{bird.name}}</h1>
         </div>
         <div class='family-img-container' :class="[$vuetify.breakpoint.mdAndUp ? 'family-img-container-large' : 'family-img-container-small']">
@@ -41,5 +41,11 @@
     .family-img-small{
         margin-bottom: 3rem;
 
+    }
+
+    .family-name-container.small{
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 </style>

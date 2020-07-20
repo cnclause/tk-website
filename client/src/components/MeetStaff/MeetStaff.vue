@@ -45,8 +45,7 @@ export default {
 
 
     .meet-staff-title.display-2{
-        font-size: 30pt !important;
-        text-align: right;
+        text-align: center;
     }
 
     .meet-staff{

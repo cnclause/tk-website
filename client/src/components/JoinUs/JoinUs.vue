@@ -1,7 +1,7 @@
 <template>
     <div class="join-us">
     <div class="join-us-container">
-      <h1 class ="page-title" :class="[$vuetify.breakpoint.mdAndUp ? 'display-4' : 'display-2']">Join Us</h1>
+      <h1 class ="page-title join" :class="[$vuetify.breakpoint.mdAndUp ? 'display-4' : 'display-2']">Join Us</h1>
     </div>
     <JoinUsSubHeader />
   </div>
@@ -30,7 +30,11 @@ export default {
     background-size: cover;
     }
 
-    .page-title.display-2{
+    .page-title.join.display-4{
+        color: white !important;
+    }
+    
+    .page-title.join.display-2{
         color: white !important;
     }
 </style>
