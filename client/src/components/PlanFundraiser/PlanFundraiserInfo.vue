@@ -7,7 +7,7 @@
             </div>
             <div class="fundraiser-info-description">
                 <h1 class="each-proj-prog-title fundraiser-title" :class="[$vuetify.breakpoint.mdAndUp ? 'subtitle-1' : 'subtitle-2']"> What it takes to plan a fundraiser </h1>
-                <p class="fundraiser-info-paragraph" :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']"> Fom Roots to Wings funds programs and activities through donations and fundraisers. FRW is in the process of setting up teams in cities across the US to organize and execute various fundraisers. Fundraising teams consist of a team leader, PR person and volunteers. Click here if you would like to join one of these teams or start your own in your city! </p>
+                <p class="fundraiser-info-paragraph" :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']"> Fom Roots to Wings funds programs and activities through donations and fundraisers. FRW is in the process of setting up teams in cities across the US to organize and execute various fundraisers. Fundraising teams consist of a team leader, PR person and volunteers. <v-btn class="click-btn" text x-large color="yellow darken-4" max-width=90 :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']" to="/contact-us">Click here </v-btn> if you would like to join one of these teams or start your own in your city! </p>
             </div>
         </div>
     </div>
@@ -68,11 +68,10 @@
     text-align: center !important;
 }
 
-// .plan-fundraiser-info-heading.body-1{
-//     font-size: 30pt !important;
-//     padding-top: 0rem;
-//     margin-top: 2rem;
-// }
+.click-btn{
+    padding: 0px;
+    padding-right: 0.5rem;
+}
 
 
 

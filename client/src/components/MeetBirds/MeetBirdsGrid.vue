@@ -31,7 +31,7 @@
             {
             id: 2,
             name: "Lawerence Nelson",
-            bio: "Nelson is a quiet and thoughtful 13 year old boy in 6th grade. His favorite activity is to run with friends and play soccer. Nelson aspires to become a doctor and people in Haiti. Help us help Nelson achieve his dreams!.",
+            bio: "Lawerence is a quiet and thoughtful 13 year old boy in 6th grade. His favorite activity is to run with friends and play soccer. Lawerence aspires to become a doctor of the people of Haiti. Help us help Lawerence achieve his dreams!.",
             thumbnail: "https://rootstowingspictures.s3-us-west-1.amazonaws.com/lawerence.jpg",
             flipped: true,
             lawerence: true
