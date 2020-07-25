@@ -1,20 +1,23 @@
 <template>
-  <v-timeline class='hometimeline' :class="[$vuetify.breakpoint.mdAndUp ? 'large-timeline' : 'small-timeline']">
-      <v-timeline-item
-        v-for="(value, i) in values"
-        :key="i"
-        :color="value.color"
-        medium
-        fill-dot
-      >
-        <v-card flat>
-          <v-card-title class="timeline-title" :class="[$vuetify.breakpoint.mdAndUp ? `headline font-weight-light ${value.color}--text` : `body-2 font-weight-light ${value.color}--text`]">{{value.value}}</v-card-title>
-          <v-card-text :class="[$vuetify.breakpoint.mdAndUp ? 'large-timeline-text' : 'small-timeline-text']">
-            {{value.info}}
-          </v-card-text>
-        </v-card>
-      </v-timeline-item>
-    </v-timeline>
+    <div>
+        <p :class="[$vuetify.breakpoint.mdAndUp ? 'subtitle-1' : 'subtitle-2']" class='value-title'>What We<strong> Value</strong></p>
+        <v-timeline class='hometimeline' :class="[$vuetify.breakpoint.mdAndUp ? 'large-timeline' : 'small-timeline']">
+        <v-timeline-item
+            v-for="(value, i) in values"
+            :key="i"
+            :color="value.color"
+            medium
+            fill-dot
+        >
+            <v-card flat>
+            <v-card-title class="timeline-title" :class="[$vuetify.breakpoint.mdAndUp ? `headline font-weight-light ${value.color}--text` : `body-2 font-weight-light ${value.color}--text`]">{{value.value}}</v-card-title>
+            <v-card-text :class="[$vuetify.breakpoint.mdAndUp ? 'large-timeline-text' : 'small-timeline-text']">
+                {{value.info}}
+            </v-card-text>
+            </v-card>
+        </v-timeline-item>
+        </v-timeline>
+    </div>
 </template>
 
 <script>
@@ -56,12 +59,27 @@ export default {
 
 <style lang="scss">
 
-.large-timeline{
+.value-title.subtitle-2{
+    text-align: center;
     margin-top: 5rem;
-    width: 65%;
+    font-weight: 300;
+    // line-height: 1.75rem !important;
+}
+
+.value-title.subtitle-1{
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 5.5rem;
+    text-align: center;
+    letter-spacing: 0.75rem !important;
+}
+
+.large-timeline{
+    margin-top: 1rem;
+    width: 100%;
 }
 .small-timeline{
-    margin-top: 5rem;
+    margin-top: 1rem;
     width: 100%;
     padding: 0pt;
 }

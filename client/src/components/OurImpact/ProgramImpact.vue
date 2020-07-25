@@ -3,7 +3,7 @@
         <div class="program-impact-container" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']">
             <div class="program-impact-info" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']">
                 <h1 class="program-impact-title" :class="[$vuetify.breakpoint.mdAndUp ? 'subtitle-1' : 'subtitle-2']"> Health and Wellness </h1>
-                <p class="program-impact-description" :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']"> From Roots to Wings encourages individuals’ part of the organization to take ownership of their own health through a variety of educational and interactive programs. </p>
+                <p class="program-impact-description" :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']"> From Roots to Wings encourages individuals that are part of the organization to take ownership of their own health through a variety of educational and interactive programs. </p>
                 <v-btn class="learn-about-programs-btn white--text" depressed color="pink" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']" to="/programs"> Learn About Our Programs </v-btn>
             </div>
             <div class="program-impact-img-container" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']">
