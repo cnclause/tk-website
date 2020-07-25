@@ -27,7 +27,7 @@
         <div class="program-impact-container" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']">
             <div class="program-impact-info" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']">
                 <h1 class="program-impact-title" :class="[$vuetify.breakpoint.mdAndUp ? 'subtitle-1' : 'subtitle-2']"> Economics </h1>
-                <p class="program-impact-description" :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']"> From Roots to Wings offers small business loans to individuals with prospective business. </p>
+                <p class="program-impact-description" :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']"> From Roots to Wings offers small business loans to individuals with a prospective business. </p>
                 <v-btn class="learn-about-programs-btn white--text" depressed color="green" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']" to="/programs"> Learn About Our Programs </v-btn>
             </div>
             <div class="program-impact-img-container" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']">

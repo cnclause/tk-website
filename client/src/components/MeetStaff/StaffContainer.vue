@@ -30,7 +30,7 @@ export default {
                     id: 2,
                     name: 'Catherine Clause',
                     position: 'Co-Founder',
-                    blurb: "Catherine Clause (Cat) is a founding member of From Roots to Wings. She graduated from Penn State in 2016 with degrees in Sociology and Criminology. After moving to Denver, CO she began her career in software engineering. She hopes to use technology to provide social solutions to global issues and is excited to use her skills to help support From Roots to Wing's initatives. Cat enjoys spending time outdoors, reading, writing, and snowboarding.",
+                    blurb: "Catherine Clause (Cat) is a founding member of From Roots to Wings. She graduated from The Pennsylvania State University in 2016 with degrees in Sociology and Criminology. After moving to Denver, CO she began her career in software engineering. She hopes to use technology to provide social solutions to global issues and is excited to use her skills to help support From Roots to Wing's initatives. Cat enjoys spending time outdoors, reading, writing, and snowboarding.",
                     img: 'https://rootstowingspictures.s3-us-west-1.amazonaws.com/CatMeetStaff.JPG',
                     imgposition: 'center',
                     show: false
@@ -40,7 +40,7 @@ export default {
                     id: 3,
                     name: 'Joe McDoal',
                     position: 'Co-Founder',
-                    blurb: 'Joseph McDoal is a founding member of From Roots to Wings. He graduated from Penn State in 2019 with a degree in physics and pre-medicine and a minor in global health. Joe intends to go to medical school after taking 2 gap years first to focus on his art, writing and his work for this organization. He plans on becoming a trauma surgeon in the US military and then going on to pursue a career in politics and aid work. Joe enjoys outdoor activities, sports, reading, making art, photography, writing poetry and listening to music. Simply put, “I’m just trying to make this world a better place.”',
+                    blurb: 'Joseph McDoal is a founding member of From Roots to Wings. He graduated from The Pennsylvania State University in 2019 with a degree in physics and pre-medicine and a minor in global health. Joe intends to go to medical school after taking 2 gap years first to focus on his art, writing and his work for this organization. He plans on becoming a trauma surgeon in the US military and then going on to pursue a career in politics and aid work. Joe enjoys outdoor activities, sports, reading, making art, photography, writing poetry and listening to music. Simply put, “I’m just trying to make this world a better place.”',
                     img: 'https://rootstowingspictures.s3-us-west-1.amazonaws.com/JoeMeetStaff.jpg',
                     imgposition: 'center',
                     show: false
@@ -60,7 +60,7 @@ export default {
                     id: 5,
                     name: 'Hinal Modasia',
                     position: 'Business Development Director',
-                    blurb: 'Hinal Modasia is the Business Development Director for Timoun Kontan. She is a Penn State alumni who studied Agriculture Business Management alongside minoring in International Agriculture and Sociology. She is currently working in Carlisle, PA as an HR Assistant for Amazon. Hinal has traveled to Port Au Prince, Haiti and Nyeri, Kenya where she directed workshops of business and agriculture development. Her future goals for TK include creating individualized programs for each child in the organization. When Hinal is not working her full time job she spends most of her time with family and friends. Her favorite pass times are exploring local coffee shops and working out.',
+                    blurb: 'Hinal Modasia is the Business Development Director for From Roots to Wings. She is a Penn State alumni who studied Agriculture Business Management alongside minoring in International Agriculture and Sociology. She is currently working in Carlisle, PA as an HR Assistant for Amazon. Hinal has traveled to Port Au Prince, Haiti and Nyeri, Kenya where she directed workshops of business and agriculture development. Her future goals for TK include creating individualized programs for each child in the organization. When Hinal is not working her full time job she spends most of her time with family and friends. Her favorite pass times are exploring local coffee shops and working out.',
                     img: 'https://rootstowingspictures.s3-us-west-1.amazonaws.com/HinalMeetStaff.jpeg',
                     imgposition: 'center',
                     show: false
@@ -95,7 +95,7 @@ export default {
                     id: 9,
                     name: 'Mayra Herrera',
                     position: 'Social Media Coordinator',
-                    blurb: 'Mayra Herrera graduated from the Pennsylvania State University with a bachelors degree in Broadcast Journalism and a minor in Recreation Parks and Tourism Management with a focus on Event Planning. She currently works as an Events and Marketing Coordinator in Philadelphia, PA. Mayra has a passion for social media and content creation. In her future she hopes to create new spaces for communities to come together through social media.',
+                    blurb: 'Mayra Herrera graduated from The Pennsylvania State University with a bachelors degree in Broadcast Journalism and a minor in Recreation Parks and Tourism Management with a focus on Event Planning. She currently works as an Events and Marketing Coordinator in Philadelphia, PA. Mayra has a passion for social media and content creation. In her future she hopes to create new spaces for communities to come together through social media.',
                     img: 'https://rootstowingspictures.s3-us-west-1.amazonaws.com/MayraMeetStaff.jpg',
                     imgposition: 'center',
                     show: false
@@ -104,7 +104,7 @@ export default {
                     id: 10,
                     name: 'Sarah Ross',
                     position: 'Staff',
-                    blurb: ' Sarah has always had a knack for service and traveling. After graduating from Penn State, she took off to various parts of the world and landed herself in Haiti, alone. There, she met the rest of the team and the rest is history. She can’t thank the team enough for allowing her to travel and still work alongside them. She’s excited to see the organization grow and can’t wait to get back down to see the kids and staff.',
+                    blurb: ' Sarah has always had a knack for service and traveling. After graduating from The Pennsylvania State University, she took off to various parts of the world and landed herself in Haiti, alone. There, she met the rest of the team and the rest is history. She can’t thank the team enough for allowing her to travel and still work alongside them. She’s excited to see the organization grow and can’t wait to get back down to see the kids and staff.',
                     img: 'https://rootstowingspictures.s3-us-west-1.amazonaws.com/SarahMeetStaff.jpeg',
                     imgposition: 'center',
                     show: false
