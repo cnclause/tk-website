@@ -3,7 +3,7 @@
         <div :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']" class='join-us-subheader'> 
             <strong>THIS </strong> is how you can make an impact</div>
         <div :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']"       class='join-us-subheader-info'>
-            From Roots to Wings was built by volunteers, and we still greatly depend on volunteer support.  Volunteers do outreach in their communities, raise funds, and provide other assistance for From Roots to Wings. As a volunteer, you’ll have opportunities to learn more about our work. We are always looking for new volunteers to help us advance our mission.
+            From Roots to Wings was built by volunteers, and we still greatly depend on volunteer support.  Volunteers do outreach in their communities, raise funds, and provide other assistance for From Roots to Wings. As a volunteer, you’ll have opportunities to learn more about our work. We are always looking for new volunteers to help us advance<v-btn class="link-mission-btn pink--text" to="/" text> our mission</v-btn>.
         </div>
         <v-btn color="pink white--text" depressed rounded class="join-us-subheader-btn" to="/contact-us"> Contact Us</v-btn>
     </div>
@@ -52,5 +52,9 @@
     margin-top: 2rem;
     font-weight: 400;
   }
+
+  .link-mission-btn{
+        font-size: 12pt !important;
+    }
 
 </style>

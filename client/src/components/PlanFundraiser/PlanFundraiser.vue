@@ -3,6 +3,7 @@
     <div class="plan-fundraiser-container">
       <h1 class ="page-title fundraise" :class="[$vuetify.breakpoint.mdAndUp ? 'display-4' : 'display-2']">Plan a Fundraiser</h1>
     </div>
+    <p class="artist-credit-label"> Artist Christy Xu: @GeomatrixArts </p>
     <PlanFundraiserSubHeader />
     <PlanFundraiserInfo />
   </div>
@@ -25,6 +26,7 @@ export default {
 <style lang="scss">
   .plan-fundraiser-container{
     margin: 2rem;
+    margin-bottom: 0rem;
     z-index: 0;
     height: 35rem;
     background-image: url('https://rootstowingspictures.s3-us-west-1.amazonaws.com/ArtShow-ChristysTable.jpg');
@@ -41,6 +43,12 @@ export default {
 
     .page-title.fundraise.display-2{
       color: white !important;
+    }
+
+    .artist-credit-label{
+      text-align: right;
+      margin-right: 3rem;
+      font-weight: 300;
     }
 
 </style>

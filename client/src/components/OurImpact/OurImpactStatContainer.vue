@@ -88,17 +88,17 @@ export default {
   },
   mounted () {
     this.schoolInterval = setInterval(() => {
-      if (this.schoolValue === 55) {
-        return (this.schoolValue = 0)
+      if (this.schoolValue === 50) {
+        clearInterval(this.schoolInterval)
       }
       this.schoolValue += 5
     }, 600)
     this.incomeInterval = setInterval(() => {
-      if (this.incomeValue === 96) {
-        return (this.incomeValue = 0)
+      if (this.incomeValue === 84) {
+        clearInterval(this.incomeInterval)
       }
       this.incomeValue += 12
-    }, 600)
+    }, 1000)
   }
 }
 </script>
