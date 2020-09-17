@@ -71,6 +71,7 @@
         </v-list>
       </v-menu>
       <v-btn class="yellow darken-4" text to="/donate"> Donate </v-btn>
+      <v-btn class="k-btn" color="pink" text to="/fivek"> 5k </v-btn>
     </v-toolbar-items>
     <v-menu class="hidden-md-and-up">
       <template v-slot:activator="{ on }" >
@@ -115,6 +116,9 @@
             <v-list-item to='/donate'>
               Donate
             </v-list-item>
+            <v-list-item to='/fivek'>
+              5k
+            </v-list-item>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -129,4 +133,7 @@
   margin-left: 0.5rem;
 }
 
+.k-btn{
+  font-size: 16pt !important;
+}
 </style>
