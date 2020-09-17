@@ -4,6 +4,7 @@
         <div class="fivek-info-container">
             <p class="fundraiser-info-paragraph k-paragraph" :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']"> From <strong>October 30th-November 1st</strong>, you can walk or run at anytime, anywhere, at any pace you want. After completing the payment below, you will receive
             an email with further information and instructions. <br>
+            The deadline to register is <strong> October 17th </strong>. 
             </p>
             <p class="fundraiser-info-paragraph k-paragraph-thanks" :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']"> Thank you for helping us change lives and communities - empowering individuals forever </p>
         </div>
