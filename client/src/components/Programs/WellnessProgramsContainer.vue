@@ -17,7 +17,7 @@
                 </v-img>
             </div>
             <div class="prog-proj-info womens-heath-description" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']">
-                <h1 class="each-proj-prog-title" :class="[$vuetify.breakpoint.mdAndUp ? 'subtitle-1' : 'subtitle-2']"> Women's Health and Sex Eduation </h1>
+                <h1 class="each-proj-prog-title" :class="[$vuetify.breakpoint.mdAndUp ? 'subtitle-1' : 'subtitle-2']"> Women's Health and Sex Education </h1>
                 <p class="proj-prog-description" :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']"> Seminars are held annually to educate the public of Haiti on reproductive, menstrual, and sexual health. Approximately 30 women and 15 men of all ages typically attend. FRW provides food and refreshments at the end of each seminar. Some women are also given menstruation kits provided by our partner organization, Days for Girls. <v-btn text max-width=90 color="yellow darken-4" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']" to="/donate">Click here </v-btn> to support our women’s health program!  </p>
             </div>
         </div>
