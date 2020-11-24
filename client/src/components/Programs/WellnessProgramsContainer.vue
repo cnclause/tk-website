@@ -13,7 +13,7 @@
         </div>
         <div class="each-prog-proj-container womens-health" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']">
             <div class="proj-prog-img-container" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']">
-                <v-img clas="program-img" src="https://rootstowingspictures.s3-us-west-1.amazonaws.com/DaysforGirlsProgram-womanleading.jpg" eager>
+                <v-img class="program-img" src="https://rootstowingspictures.s3-us-west-1.amazonaws.com/DaysforGirlsProgram-womanleading.jpg" eager>
                 </v-img>
             </div>
             <div class="prog-proj-info womens-heath-description" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']">
