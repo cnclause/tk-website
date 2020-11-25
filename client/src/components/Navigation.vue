@@ -83,8 +83,8 @@
             <v-list-item to='/' exact>
               Home
             </v-list-item>
-            <v-list-item color="pink" to='/fivek'>
-              5k
+            <v-list-item id="fundraise-link" to='/givingtuesday'>
+              Giving Tuesday
             </v-list-item>
             <v-list-item to='/donate'>
               Donate
@@ -110,20 +110,14 @@
             <v-list-item to='/get-involved'>
               Get Involved
             </v-list-item>
-            <!-- <v-list-item to="/join-us">
+            <v-list-item to="/join-us">
               Join Us
-            </v-list-item> -->
+            </v-list-item>
             <v-list-item to="/plan-a-fundraiser">
               Plan a Fundraiser
             </v-list-item>
             <v-list-item to="/contact-us">
               Contact Us
-            </v-list-item>
-            <v-list-item to='/donate'>
-              Donate
-            </v-list-item>
-            <v-list-item to='/givingtuesday'>
-              Giving Tuesday
             </v-list-item>
           </v-list-item-content>
         </v-list-item>
@@ -141,5 +135,9 @@
 
 .k-btn{
   font-size: 16pt !important;
+}
+
+#fundraise-link.theme--light.v-list-item{
+  color: #1565C0 !important;
 }
 </style>

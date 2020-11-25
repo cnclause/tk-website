@@ -103,7 +103,7 @@ export default {
                 {
                     id: 10,
                     name: 'Sarah Ross',
-                    position: 'Staff',
+                    position: 'Fundraising Director',
                     blurb: ' Sarah has always had a knack for service and traveling. After graduating from The Pennsylvania State University, she took off to various parts of the world and landed herself in Haiti, alone. There, she met the rest of the team and the rest is history. She can’t thank the team enough for allowing her to travel and still work alongside them. She’s excited to see the organization grow and can’t wait to get back down to see the kids and staff.',
                     img: 'https://rootstowingspictures.s3-us-west-1.amazonaws.com/SarahMeetStaff.jpeg',
                     imgposition: 'center',
