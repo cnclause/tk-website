@@ -14,8 +14,13 @@
                 eager
             >
             </v-img>
-           <iframe class="donorbox" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']" allowpaymentrequest="" frameborder="0" height="900px" name="donorbox" scrolling="no" seamless="seamless" src="https://donorbox.org/embed/giving-tuesday-70" style="max-width: 500px; min-width: 250px; max-height:none!important" width="100%">
-           </iframe>
+           <!-- <iframe class="donorbox" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']" allowpaymentrequest="" frameborder="0" height="900px" name="donorbox" scrolling="no" seamless="seamless" src="https://donorbox.org/embed/giving-tuesday-70" style="max-width: 500px; min-width: 250px; max-height:none!important" width="100%">
+           </iframe> -->
+           <div class="donorbox-container" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']">
+                <iframe :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']" allowpaymentrequest="" frameborder="0" height="900px" name="donorbox" scrolling="no" seamless="seamless" src="https://donorbox.org/embed/giving-tuesday-70?default_interval=m&amount=15" style="max-width: 500px; min-width: 310px; max-height:none!important" width="100%"></iframe>
+                <iframe frameborder="0" name="donorbox" scrolling="no" seamless="seamless" src="https://donorbox.org/embed/giving-tuesday-70?only_donor_wall=true" style="width: 500%; max-width:500px; min-width:310px; max-height: none !important">
+                </iframe>
+           </div>
         </div>
     </div>
 </template>
@@ -71,6 +76,7 @@ export default {
     flex-flow: column;
     align-items: center;
     padding-top: 1rem;
+    width: 100%;
 
 }
 
@@ -86,11 +92,27 @@ export default {
     text-align: center;
 }
 
-.donorbox.large{
-    padding-top: 2rem;
-    margin-top: 3rem;
-    margin-left: 4rem;
+.donorbox-container.large{
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    padding-top: 4rem;
+    // margin-top: 3rem;
+
 }
+
+.donorbox-container.small{
+    display: flex;
+    flex-flow: column;
+    width: 70%;
+    padding-top: 4rem;
+    // margin-top: 3rem;
+
+}
+
+// .domationbox.large{
+//     margin-left: 2rem;
+// }
 
 .donorbox.small{
     padding-top: 2rem;
@@ -99,10 +121,8 @@ export default {
 
 .giving-pic.small{
     max-width: 400px !important;
+    width: 80% !important;
 }
 
-// .tabs.donation-wiget{
-//     margin: 0rem !important;
-// }
 
 </style>
