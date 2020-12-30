@@ -91,15 +91,7 @@ export default {
                     img: 'https://rootstowingspictures.s3-us-west-1.amazonaws.com/Davidson.JPG',
                     imgposition: 'center',
                     show: false
-                },  {
-                    id: 9,
-                    name: 'Mayra Herrera',
-                    position: 'Social Media Coordinator',
-                    blurb: 'Mayra Herrera graduated from The Pennsylvania State University with a bachelors degree in Broadcast Journalism and a minor in Recreation Parks and Tourism Management with a focus on Event Planning. She currently works as an Events and Marketing Coordinator in Philadelphia, PA. Mayra has a passion for social media and content creation. In her future she hopes to create new spaces for communities to come together through social media.',
-                    img: 'https://rootstowingspictures.s3-us-west-1.amazonaws.com/MayraMeetStaff.jpg',
-                    imgposition: 'center',
-                    show: false
-                },
+                }, 
                 {
                     id: 10,
                     name: 'Sarah Ross',
