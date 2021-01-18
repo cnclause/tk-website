@@ -3,16 +3,15 @@
         <h1 class="k-title" :class="[$vuetify.breakpoint.mdAndUp ? 'subtitle-1' : 'subtitle-2']"> MLK Day Fundraiser! </h1>
         <div class="mlk-info-container">
             <p class="fundraiser-info-paragraph k-paragraph" :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']">   
-                Martin Luther King, Jr was a civil rights activist, who encouraged peaceful protests to end racial discrimination and inequality. Each year, MLK Day is celebrated to commemorate his legacy and it is celebrated on the third Monday of January.
-                The goal of MLK Day of Service is to move us closer to Dr. King’s vision of equality by empowering individuals, strengthening communities by finding solutions to social issues, and bridging the barriers between our differences. 
-                <br><br>
+                Martin Luther King, Jr. was a civil rights activist, who encouraged peaceful protests to end racial discrimination and inequality. Each year, MLK Day is celebrated to commemorate his legacy and it is celebrated on the third Monday of January.
+                The goal of MLK Day of Service is to move us closer to Dr. King’s vision of equality by empowering individuals, strengthening communities, and bridging the barriers of social issues.<br><br>
 
                 From Roots to Wings is working towards Dr. King’s vision by developing sustainable, community-based avenues towards empowerment.  To honor MLK Day of Service, FRW is holding a donation drive for our mentorship program. The purpose of this program is to guide these children to break the cycle of poverty, with empowerment being an important ingredient of that success. Each child who is in our scholarship program meets with a mentor to discuss grades, future plans, diet, exercise and mental health. Help us build up funding for our mentorship program, to ensure students and families are supported on a personal level.<br><br>
 
                <strong>We want to honor his Day by advocating for educational and economical inequalities in Haiti. Help us support this cause by donating to our mentorship program. </strong>
 
             </p>
-            <p class="fundraiser-info-paragraph k-paragraph-thanks" :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']"> Thank you for helping us change lives and communities - empowering individuals forever </p>
+            <p class="fundraiser-info-paragraph k-paragraph-thanks" :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']"> Thank you for helping us change lives and communities! </p>
         </div>
         <div class="cost-breakdown" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']">
             <div class="cost-resources-container" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']">
@@ -91,7 +90,7 @@ data: () => ({
     items: [
         {
             text: 'Supplies',
-            cost: '$500',
+            cost: '$500/year',
             reason: 'Provide blackboards, chalk, and academic supplies'
         },
         {
