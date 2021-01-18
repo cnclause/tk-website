@@ -71,7 +71,7 @@
         </v-list>
       </v-menu>
       <v-btn class="yellow darken-4" text to="/donate"> Donate </v-btn>
-      <!-- <v-btn class="blue darken-3 white--text" text to="/givingtuesday"> Giving Tuesday </v-btn> -->
+      <v-btn class="deep-purple darken-1 white--text" text to="/mlkday"> MLK Day </v-btn>
     </v-toolbar-items>
     <v-menu class="hidden-md-and-up">
       <template v-slot:activator="{ on }" >
@@ -83,9 +83,9 @@
             <v-list-item to='/' exact>
               Home
             </v-list-item>
-            <!-- <v-list-item id="fundraise-link" to='/givingtuesday'>
-              Giving Tuesday
-            </v-list-item> -->
+            <v-list-item id="fundraise-link" to='/mlkday'>
+              MLK Day
+            </v-list-item>
             <v-list-item to='/donate'>
               Donate
             </v-list-item>
