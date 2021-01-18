@@ -31,6 +31,7 @@
                                     v-for="(item, i) in items"
                                     :key="i"
                                     inactive
+                                    class="list-item"
                                 >   
                                     <v-list-item-content>
                                         <v-list-item-title class="item-text" :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']">
@@ -49,7 +50,7 @@
                     </v-card>
                 </v-sheet>
                 <v-sheet class= "cost-breakdown-container" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']" outlined=True color="deep-purple darken-1" rounded>
-                    <v-card flat class="cost-list" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']" outlined width="100%">
+                    <v-card flat class="cost-list" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']" width="100%">
                         <v-card-title class="resource-title" :class="[$vuetify.breakpoint.mdAndUp ? 'subtitle-1' : 'subtitle-2']">
                             MLK Day Resources: 
                         </v-card-title>
@@ -204,6 +205,13 @@ data: () => ({
     margin-top: 1rem !important;
 }
 
+.cost-breakdown-container.small{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 1rem !important;
+}
 .donorbox-container.large{
     width: 50%;
     padding-top: 2rem;
@@ -232,7 +240,17 @@ data: () => ({
 } 
 
 .cost-list.large{
-    width: 100%;
+    width: 100% !important;
+    justify-self: center;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding-bottom: 1rem;
+    margin: 0.1rem;
+}
+
+.cost-list.small{
+    width: 99%;
     justify-self: center;
     display: flex;
     flex-flow: column;
