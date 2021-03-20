@@ -27,70 +27,57 @@
             id: 1,
             name: "Charma Fleurelus",
             bio: "Charma is an energetic and charming 9 year old girl in 3rd grade. She loves to play tag with friends. One day, she hopes to catch people professionally as a police officer. Help us help Shama achieve her dreams.",
-            thumbnail: "https://rootstowingspictures.s3-us-west-1.amazonaws.com/charma.jpg"},
+            thumbnail: "https://rootstowingspictures.s3-us-west-1.amazonaws.com/meet_the_kids/charma_img.jpg"},
             {
             id: 2,
-            name: "Lawerence Nelson",
+            name: "Lawrence Nelson",
             bio: "Lawerence is a quiet and thoughtful 13 year old boy in 6th grade. His favorite activity is to run with friends and play soccer. Lawerence aspires to become a doctor of the people of Haiti. Help us help Lawerence achieve his dreams!.",
-            thumbnail: "https://rootstowingspictures.s3-us-west-1.amazonaws.com/lawerence.jpg",
+            thumbnail: "https://rootstowingspictures.s3-us-west-1.amazonaws.com/meet_the_kids/lawrence_img.jpg",
             flipped: true,
-            lawerence: true
             },
             {
             id: 3,
-            name: "Volcey Family",
-            thumbnail: "https://rootstowingspictures.s3-us-west-1.amazonaws.com/VolceyFamily.jpg"
+            name: "Markenley Julien",
+            bio: "Markenley is a quiet and thoughtful 7 year old boy in 3rd grade. His favorite activity is to run with friends and play soccer. Markenley aspires to become a doctor of the people of Haiti. Help us help Markenley achieve his dreams!.",
+            thumbnail: "https://rootstowingspictures.s3-us-west-1.amazonaws.com/meet_the_kids/markenley_img.jpg",
             },
-             {
+            {
             id: 4,
-            name: "Genise Volcey",
-            bio: "Genise is a gentle 9 year old girl with a constant smile. After finishing school, she wants to help heal people as a nurse. Help us help Genise achieve her dreams!",
-            thumbnail: "https://rootstowingspictures.s3-us-west-1.amazonaws.com/Genise.jpg"
+            name: "Volcey Family",
+            thumbnail: "https://rootstowingspictures.s3-us-west-1.amazonaws.com/meet_the_kids/volcey_fam.jpg"
             },
              {
             id: 5,
-            name: "Gonet Volcey",
-            bio: "Gonet is an intelligent 12 year old boy with a strong desire to help others. In the future, Gonet plans to serve his community as a doctor. Help us help Gonet achieve his dreams!",
+            name: "Dieunise Volcey",
+            bio: "Genise is a gentle 9 year old girl with a constant smile. After finishing school, she wants to help heal people as a nurse. Help us help Genise achieve her dreams!",
+            thumbnail: "https://rootstowingspictures.s3-us-west-1.amazonaws.com/meet_the_kids/dieunise_img.jpg"
+            },
+             {
+            id: 6,
+            name: "Jonet Volcey",
+            bio: "Jonet is an intelligent 12 year old boy with a strong desire to help others. In the future, Gonet plans to serve his community as a doctor. Help us help Gonet achieve his dreams!",
             thumbnail: "https://rootstowingspictures.s3-us-west-1.amazonaws.com/Gonet.jpg",
             flipped: true
             },
             {
-            id: 6,
+            id: 7,
             name: "Johnny Volcey",
             bio: "Johnny is a friendly and talkative 15 year old boy in 4th grade. He hopes to go on to become a doctor so he can work to save lives. Help us help Johnny achieve his dreams!",
-            thumbnail: "https://rootstowingspictures.s3-us-west-1.amazonaws.com/JohnnyVolcey.png"
+            thumbnail: "https://rootstowingspictures.s3-us-west-1.amazonaws.com/meet_the_kids/johnny_img.jpg"
             },
             {
-            id: 7,
-            name: "Markenson Jean",
-            bio: "Markenson is a reserved but kind 17 year old boy in 8th grade. He is very industrious and plans to become a mechanic in the near future. Help us help Mackenson achieve his dreams!",
-            thumbnail: "https://rootstowingspictures.s3-us-west-1.amazonaws.com/Markenson.jpg",
+            id: 8,
+            name: "Mackenson Jean",
+            bio: "Mackenson is a reserved but kind 17 year old boy in 8th grade. He is very industrious and plans to become a mechanic in the near future. Help us help Mackenson achieve his dreams!",
+            thumbnail: "https://rootstowingspictures.s3-us-west-1.amazonaws.com/meet_the_kids/mackenson_img.jpg",
             flipped: true
             },
-            {
-            id:8,
-            name: "Alexandre Family",
-            thumbnail: "https://rootstowingspictures.s3-us-west-1.amazonaws.com/AlexandreFam-minusDarkenlove.jpg"
-            },
-            {
-            id:9,
-            name: "Christiana Alexandre",
-            bio:"Christiana is an adorable and kind 6 year old girl in 1st grade. She loves to dance and sing. Her favorite snack is bananas. When asked what she wants to do when she’s older, she shrugged and said “have fun”. Help us help Christiana achieve her dreams!",
-            thumbnail: "https://rootstowingspictures.s3-us-west-1.amazonaws.com/Christiana.jpg"
-            },
-             {
-            id:10,
-            name: "Darkenlove Alexandre",
-            bio: "Darkenlove is a fun and playful 7 year old girl in 2nd grade. She loves to run and dance. Her favorite meal is meat with rice and beans. Darkenlove is driven to become a professional dancer. Help us help Darkenlove achieve her dreams!",      
-            thumbnail: "https://rootstowingspictures.s3-us-west-1.amazonaws.com/DarkenloveAlexandre.png",
-            flipped: true
-            },
-             {
-            id:11,
-            name: "Wideline Alexandre",
-            bio: "Wideline is a kind and intelligent 14 year old girl in 3rd grade. She loves to eat rice and has a large appetite. In the future, Wideline hopes to become a nurse and be a frontline healthcare provider in Haiti. Help us help Wideline achieve her dreams!",           
-            thumbnail: "https://rootstowingspictures.s3-us-west-1.amazonaws.com/Wideline+Alexandre.png"
-            },
+            //  {
+            // id:8,
+            // name: "Wideline Alexandre",
+            // bio: "Wideline is a kind and intelligent 14 year old girl in 3rd grade. She loves to eat rice and has a large appetite. In the future, Wideline hopes to become a nurse and be a frontline healthcare provider in Haiti. Help us help Wideline achieve her dreams!",           
+            // thumbnail: "https://rootstowingspictures.s3-us-west-1.amazonaws.com/Wideline+Alexandre.png"
+            // },
           ]
       }
   },
