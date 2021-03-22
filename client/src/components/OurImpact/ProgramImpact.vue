@@ -7,14 +7,14 @@
                 <v-btn class="learn-about-programs-btn white--text" depressed color="pink" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']" to="/programs"> Learn About Our Programs </v-btn>
             </div>
             <div class="program-impact-img-container" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']">
-                <v-img clas="program-impact-img" src="https://rootstowingspictures.s3-us-west-1.amazonaws.com/CharmaLawerenceHinalSwinging.jpg" eager>
+                <v-img clas="program-impact-img" src="https://rootstowingspictures.s3-us-west-1.amazonaws.com/our_impact/EsdrasLeadingDaysForGirlsGathering.jpg" eager>
                 </v-img>
             </div>
         </div>
         <v-divider class="impact-divider"></v-divider>
         <div class="program-impact-container" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']">
             <div class="program-impact-img-container" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']">
-                <v-img clas="program-impact-img" src="https://rootstowingspictures.s3-us-west-1.amazonaws.com/EsdrasLeadingDaysForGirlsGathering.jpg" eager>
+                <v-img clas="program-impact-img" src="https://rootstowingspictures.s3-us-west-1.amazonaws.com/our_impact/davidson_markenley_tutor.jpg" eager>
                 </v-img>
             </div>
             <div class="program-impact-info" :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']">

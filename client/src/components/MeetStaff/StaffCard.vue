@@ -7,8 +7,8 @@
             <v-img
                 eager
                 :src="person.img"
-                height="250px"
-                width="320px"
+                height="400px"
+                width="420px"
                 :position="person.imgposition"
             ></v-img>
             <v-card-title>

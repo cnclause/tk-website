@@ -21,13 +21,42 @@ export default {
                     name: 'Isamel (Showdy) St Jour',
                     position: 'Co-Founder',
                     blurb: 'Hello my name is Ismael St. Jour and I am a Co-Founder and Haitian board member for FRW. I was born in City Soleil, Port-au Prince, an area overrun by gang violence and uproar. For the average Haitian, life was difficult and dangerous, but I was determined to change that way of life. Through my dedication, ingenuity and hard work, I completed my education and was able to relocate to a safer part of the city. Unfortunately, there are many people close to my heart who continue to struggle under such harsh circumstances. I worked as a translator, yoga instructor and logistical support with a number of aid organizations, prior to spearheading FRW. In the future, I plan on furthering my education in business and helping my community create jobs.',
-                    img: 'https://rootstowingspictures.s3-us-west-1.amazonaws.com/ShowdyMeetStaff.jpg',
+                    img: 'https://rootstowingspictures.s3-us-west-1.amazonaws.com/meet_the_staff/showdy_img.jpeg',
+                    imgposition: 'top',
+                    show: false
+
+                },
+                 {
+                    id: 2,
+                    name: 'Esdras Sylvain',
+                    position: 'Chief Financial Officer',
+                    blurb: 'Hello everybody, my name is Esdras Sylvain and I am a professional accountant. I am the financial manager and Haitian board member of FRW. I grew up and went to school in City Soleil in an area called Cite Fequiere. Early on my life was incredibly hard and I’ve come a long way since then. But ever since I was young, I’ve had a desire and passion for helping the other poor families around me. I shared this dream with everyone in FRW and from that dream this organization was born. I plan to continue working with FRW so that it grows much larger and is able to help more children and their families. People are living in dehumanizing conditions and we need to work together to end this suffering.',
+                    img: 'https://rootstowingspictures.s3-us-west-1.amazonaws.com/meet_the_staff/esdras_img.jpg',
                     imgposition: 'center',
                     show: false
 
                 },
                 {
-                    id: 2,
+                    id: 3,
+                    name: 'Jonas Sylvain',
+                    position: 'Education Development Director',
+                    blurb: 'Hey everyone! My name is Jonas Sylvain and I am the Education Development Director for FRW. I was born in City Soleil, where I completed both primary and secondary school. Although I no longer live there, I am grateful to community organizations for their support in helping me grow out of there. I am currently pursuing studies in Management Science through PID, an organization where I initially worked as a translator and a mechanic. Because I was provided the adequate resources and opportunities to become a self-sufficient citizen, I feel a sense of responsibility to return some of that energy back to the community. Besides community service, I am also involved with FRW. I want to give children the same resources and opportunities that I had. In the future I hope to go into politics and become a Minister of Commerce in Haiti to help my community on a larger scale',
+                    img: 'https://rootstowingspictures.s3-us-west-1.amazonaws.com/meet_the_staff/jonas_img.jpg',
+                    imgposition: 'top',
+                    show: false
+                },
+                {
+                    id: 4,
+                    name: 'Davidson Dasema',
+                    position: 'Secretary General',
+                    blurb: ' Hey guys, my name is Davidson Dasema and I am the Secretary General and a board member of the Haitian staff. I was born in City Soleil but I grew up and attended school in a small area called Lintho. After completing primary and secondary school, I pursued further education, studying Social Economic Administration in university. Currently, I am a social activist in multiple NGOs and a frequent volunteer in my community. Esdras and I attended school together and we share a common purpose of helping the less fortunate progress out of the dreadful conditions they currently reside in. When Showdy proposed the idea of establishing an organization with similar aspirations, we wanted to help immediately. I have been with FRW ever since. One day, I hope to own and run my own primary, secondary and professional schools so I can help to grow and educate the future children of Haiti.',
+                    img: 'https://rootstowingspictures.s3-us-west-1.amazonaws.com/meet_the_staff/davidson_img.jpg',
+                    imgposition: 'center',
+                    show: false
+                }, 
+                
+                {
+                    id: 5,
                     name: 'Catherine Clause',
                     position: 'Co-Founder',
                     blurb: "Catherine Clause (Cat) is a founding member of From Roots to Wings. She graduated from The Pennsylvania State University in 2016 with degrees in Sociology and Criminology. After moving to Denver, CO she began her career in software engineering. She hopes to use technology to provide social solutions to global issues and is excited to use her skills to help support From Roots to Wing's initatives. Cat enjoys spending time outdoors, reading, writing, and snowboarding.",
@@ -37,7 +66,7 @@ export default {
 
                 },
                 {
-                    id: 3,
+                    id: 6,
                     name: 'Joe McDoal',
                     position: 'Co-Founder',
                     blurb: 'Joseph McDoal is a founding member of From Roots to Wings. He graduated from The Pennsylvania State University in 2019 with a degree in physics and pre-medicine and a minor in global health. Joe intends to go to medical school after taking 2 gap years first to focus on his art, writing and his work for this organization. He plans on becoming a trauma surgeon in the US military and then going on to pursue a career in politics and aid work. Joe enjoys outdoor activities, sports, reading, making art, photography, writing poetry and listening to music. Simply put, “I’m just trying to make this world a better place.”',
@@ -47,17 +76,7 @@ export default {
 
                 },
                 {
-                    id: 4,
-                    name: 'Esdras Sylvain',
-                    position: 'Chief Financial Officer',
-                    blurb: 'Hello everybody, my name is Esdras Sylvain and I am a professional accountant. I am the financial manager and Haitian board member of FRW. I grew up and went to school in City Soleil in an area called Cite Fequiere. Early on my life was incredibly hard and I’ve come a long way since then. But ever since I was young, I’ve had a desire and passion for helping the other poor families around me. I shared this dream with everyone in FRW and from that dream this organization was born. I plan to continue working with FRW so that it grows much larger and is able to help more children and their families. People are living in dehumanizing conditions and we need to work together to end this suffering.',
-                    img: 'https://rootstowingspictures.s3-us-west-1.amazonaws.com/EsdrasMeetStaff.JPG',
-                    imgposition: 'center',
-                    show: false
-
-                },
-                {
-                    id: 5,
+                    id: 7,
                     name: 'Hinal Modasia',
                     position: 'Business Development Director',
                     blurb: 'Hinal Modasia is the Business Development Director for From Roots to Wings. She is a Penn State alumni who studied Agriculture Business Management alongside minoring in International Agriculture and Sociology. She is currently working in Carlisle, PA as an HR Assistant for Amazon. Hinal has traveled to Port Au Prince, Haiti and Nyeri, Kenya where she directed workshops of business and agriculture development. Her future goals for From Roots to Wings include creating individualized programs for each child in the organization. When Hinal is not working her full time job she spends most of her time with family and friends. Her favorite pass times are exploring local coffee shops and working out.',
@@ -66,39 +85,30 @@ export default {
                     show: false
                 },
                 {
-                    id: 6,
-                    name: 'Jonas Sylvain',
-                    position: 'Education Development Director',
-                    blurb: 'Hey everyone! My name is Jonas Sylvain and I am the Education Development Director for FRW. I was born in City Soleil, where I completed both primary and secondary school. Although I no longer live there, I am grateful to community organizations for their support in helping me grow out of there. I am currently pursuing studies in Management Science through PID, an organization where I initially worked as a translator and a mechanic. Because I was provided the adequate resources and opportunities to become a self-sufficient citizen, I feel a sense of responsibility to return some of that energy back to the community. Besides community service, I am also involved with FRW. I want to give children the same resources and opportunities that I had. In the future I hope to go into politics and become a Minister of Commerce in Haiti to help my community on a larger scale',
-                    img: 'https://rootstowingspictures.s3-us-west-1.amazonaws.com/jonas.png',
-                    imgposition: 'top',
-                    show: false
-                },
-                {
-                    id: 7,
+                    id: 8,
                     name: 'Kenny Casals',
                     position: 'Public Relations Director',
-                    blurb: "Kenny Casals is 22 years old and is an alumnus of The Pennsylvania State University with a B.S. in Biology and a minor in Sociology. He recently accepted a full-time position as a Healthcare Recruiter and has interests in fashion, fitness, the outdoors, watches, film and learning new skills. Kenny's involvement with From Roots to Wings started from the beginning with the trip to Haiti in 2017. During and after his time in Haiti, he realized the value of education and how he would be able to contribute to this new organization.",
+                    blurb: "Kenny Casals is 23 years old and is an alumnus of The Pennsylvania State University with a B.S. in Biology and a minor in Sociology. He recently accepted a full-time position as a Healthcare Recruiter and has interests in fashion, fitness, the outdoors, watches, film and learning new skills. Kenny's involvement with From Roots to Wings started from the beginning with the trip to Haiti in 2017. During and after his time in Haiti, he realized the value of education and how he would be able to contribute to this new organization.",
                     img: 'https://rootstowingspictures.s3-us-west-1.amazonaws.com/KennyMeetStaff.jpeg',
                     imgposition: 'top',
                     show: false
                 },
                 {
-                    id: 8,
-                    name: 'Davidson Dasema',
-                    position: 'Secretary General',
-                    blurb: ' Hey guys, my name is Davidson Dasema and I am the Secretary General and a board member of the Haitian staff. I was born in City Soleil but I grew up and attended school in a small area called Lintho. After completing primary and secondary school, I pursued further education, studying Social Economic Administration in university. Currently, I am a social activist in multiple NGOs and a frequent volunteer in my community. Esdras and I attended school together and we share a common purpose of helping the less fortunate progress out of the dreadful conditions they currently reside in. When Showdy proposed the idea of establishing an organization with similar aspirations, we wanted to help immediately. I have been with FRW ever since. One day, I hope to own and run my own primary, secondary and professional schools so I can help to grow and educate the future children of Haiti.',
-                    img: 'https://rootstowingspictures.s3-us-west-1.amazonaws.com/Davidson.JPG',
-                    imgposition: 'center',
-                    show: false
-                }, 
-                {
-                    id: 10,
+                    id: 9,
                     name: 'Sarah Ross',
                     position: 'Fundraising Director',
                     blurb: ' Sarah has always had a knack for service and traveling. After graduating from The Pennsylvania State University, she took off to various parts of the world and landed herself in Haiti, alone. There, she met the rest of the team and the rest is history. She can’t thank the team enough for allowing her to travel and still work alongside them. She’s excited to see the organization grow and can’t wait to get back down to see the kids and staff.',
                     img: 'https://rootstowingspictures.s3-us-west-1.amazonaws.com/SarahMeetStaff.jpeg',
                     imgposition: 'center',
+                    show: false
+                },
+                {
+                    id: 10,
+                    name: 'Austin Kurtanichs',
+                    position: 'Social Media',
+                    blurb: 'Austin Kurtanich is a 22 year old Penn State alumnus. He graduated in 2020 with a Bachelors of Arts in International Politics and a minor in Sociology. After taking a gap year, Austin plans to attend Law School and obtain a Juris Doctorate focused on Immigration and Public Interest Law. As a part of the From Roots to Wings social media team, he hopes to use online platforms to showcase the amazing people your donations help, and display the great work our team members have done!',
+                    img: 'https://rootstowingspictures.s3-us-west-1.amazonaws.com/meet_the_staff/austin_img.jpg',
+                    imgposition: 'top',
                     show: false
                 },
 

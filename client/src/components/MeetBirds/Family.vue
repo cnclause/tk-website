@@ -4,7 +4,7 @@
             <h1 class="family-name" :class="[$vuetify.breakpoint.mdAndUp ? 'subtitle-1' : 'subtitle-2']">{{bird.name}}</h1>
         </div>
         <div class='family-img-container' :class="[$vuetify.breakpoint.mdAndUp ? 'family-img-container-large' : 'family-img-container-small']">
-            <v-img eager :src='bird.thumbnail' :class="[$vuetify.breakpoint.mdAndUp ? 'family-img-large' : 'family-img-small']" contain max-height="350px"></v-img>
+            <v-img eager :src='bird.thumbnail' :class="[$vuetify.breakpoint.mdAndUp ? 'family-img-large' : 'family-img-small']" contain max-height="500px"></v-img>
         </div>
     </div> 
 </template>
@@ -24,6 +24,10 @@
         margin-top: 8rem;
         margin-bottom: 5rem;
        
+    }
+
+    .family-name-container.large{
+        margin: 2rem !important;
     }
 
      .family-card-small{
