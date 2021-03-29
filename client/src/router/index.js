@@ -12,7 +12,7 @@ import Staff from '../components/MeetStaff/MeetStaff.vue'
 import JoinUs from '../components/JoinUs/JoinUs.vue'
 import PlanFundraiser from '../components/PlanFundraiser/PlanFundraiser.vue'
 import ContactUs from '../views/ContactUs.vue'
-// import MlkDay from '../components/MlkDay/mlkday.vue'ß
+import Trivia from '../components/TriviaNight/trivia.vue'
 
 
 Vue.use(VueRouter)
@@ -78,11 +78,11 @@ const routes = [
     name: 'contact',
     component: ContactUs
   },
-  // {
-  //   path: '/mlkday',
-  //   name: 'mlkday',
-  //   component: MlkDay
-  // },
+  {
+    path: '/trivia-night',
+    name: 'trivia',
+    component: Trivia
+  },
 ]
 
 const router = new VueRouter({

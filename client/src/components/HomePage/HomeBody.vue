@@ -1,5 +1,6 @@
 <template>
     <div class='home-body'>
+        <v-btn color='deep-purple darken-1' :class="[$vuetify.breakpoint.mdAndUp ? 'large' : 'small']" class='fundraise-button' text to="/trivia-night"> Click Here to Register for our<br> Trivia Night Fundraiser! </v-btn>
         <div :class="[$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2']" class='mission-statement'>
         <p><strong>Our Mission</strong></p>
             <strong>From Roots to Wings</strong> exists to develop sustainable, community-based avenues towards empowerment.</div>
@@ -25,6 +26,17 @@ export default {
 </script>
 
 <style>
+.fundraise-button.large{
+    font-size: 1.5rem !important;
+    text-align: center;
+    line-height: 2.5rem !important;
+}
+
+.fundraise-button.small{
+    text-align: center;
+    line-height: 1.5rem !important;
+}
+
 .home-body {
     display: flex;
     flex-direction: column;
