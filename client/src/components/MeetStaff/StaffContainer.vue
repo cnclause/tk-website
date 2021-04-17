@@ -104,7 +104,7 @@ export default {
                 },
                 {
                     id: 10,
-                    name: 'Austin Kurtanichs',
+                    name: 'Austin Kurtanich',
                     position: 'Social Media Staff',
                     blurb: 'Austin Kurtanich is a 22 year old Penn State alumnus. He graduated in 2020 with a Bachelors of Arts in International Politics and a minor in Sociology. After taking a gap year, Austin plans to attend Law School and obtain a Juris Doctorate focused on Immigration and Public Interest Law. As a part of the From Roots to Wings social media team, he hopes to use online platforms to showcase the amazing people your donations help, and display the great work our team members have done!',
                     img: 'https://rootstowingspictures.s3-us-west-1.amazonaws.com/meet_the_staff/austin_img.jpg',
